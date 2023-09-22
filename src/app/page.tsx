@@ -13,24 +13,28 @@ const data = [
 ];
 
 const imageUrls = {
-  image1: 'http://www.vithiitsolutions.com/images/4b12216502d3566707e37c109ec622c8.png', // Replace with the actual URL for image1
-  image2: 'http://www.vithiitsolutions.com/images/cd2dd0d095bb3ba0958482abbb3d4baa.png', // Replace with the actual URL for image2
+  image1: 'http://www.vithiitsolutions.com/images/4b12216502d3566707e37c109ec622c8.png',
+  image2: 'http://www.vithiitsolutions.com/images/cd2dd0d095bb3ba0958482abbb3d4baa.png',
 };
 
 export default function Home() {
   return (
-    <div className="flex justify-evenly sm:flex-row gap-2 sm:gap-8 md:gap-2">
-      
-      <ImageComponent image1={imageUrls.image1} image2={imageUrls.image2} />
-   
-      <ContainBox
-        header={data[0].headLine}
-        para={data[0].ParaGraph}
-        link={data[0].link}
-      />
-
+    <>
       <Navbar />
       <Home />
-    </div>
+      {/* <div className="flex justify-evenly sm:flex-row gap-2 sm:gap-8 md:gap-2">
+
+        <ImageComponent image1={imageUrls.image1} image2={imageUrls.image2} />
+
+        <ContainBox
+          header={data[0].headLine}
+          para={data[0].ParaGraph}
+          link={data[0].link}
+        />
+
+
+      </div> */}
+    </>
+
   );
 }
