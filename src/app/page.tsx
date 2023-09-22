@@ -1,7 +1,8 @@
 // Home.jsx
-import ContainBox from '@/Components/ContainBox';
-import ImageComponent from '@/Components/ImageComponent';
+import ContainBox from './Components/ContainBox';
+import ImageComponent from './Components/ImageComponent';
 import React from 'react';
+import Navbar from './Components/Navbar';
 
 const data = [
   {
@@ -27,6 +28,9 @@ export default function Home() {
         para={data[0].ParaGraph}
         link={data[0].link}
       />
+
+      <Navbar />
+      <Home />
     </div>
   );
 }
