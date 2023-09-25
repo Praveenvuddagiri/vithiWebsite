@@ -10,6 +10,7 @@ import VideoBackgroundComponent from './Components/VideoBackgroundComponent';
 import MoveToTop from './Components/MoveToUp';
 import FullContactForm from './Components/FullContactForm';
 import data from '@/constant';
+import Footer from './Components/Footer';
 
 
 export const metadata: Metadata = {
@@ -67,6 +68,8 @@ export default function Home() {
       <FullContactForm />
 
       <MoveToTop />
+
+      <Footer />
     </>
 
   );
