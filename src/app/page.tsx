@@ -8,6 +8,8 @@ import HomeServicesBox from './Components/HomeServicesBox';
 import { Metadata } from 'next';
 import VideoBackgroundComponent from './Components/VideoBackgroundComponent';
 import MoveToTop from './Components/MoveToUp';
+import FullContactForm from './Components/FullContactForm';
+import data from '@/constant';
 
 
 export const metadata: Metadata = {
@@ -15,18 +17,7 @@ export const metadata: Metadata = {
   description: 'VITHI IT SOLUTIONS',
 }
 
-const data = [
-  {
-    headLine: "Transforming Businesses With Innovation",
-    ParaGraph: "We are a full-stack software development and analytics company that is committed to building world-class digital products. At Vithi IT Solutions, we place immense value on trust, collaboration and going the extra mile to ensure excellence. We believe our responsibility doesn't end with just delivering a solution. We constantly strive to help you navigate all the complexity of digital transformation to scale your business.",
-    link: ["Know More About Us"],
-  },
-];
 
-const imageUrls = {
-  image1: 'http://www.vithiitsolutions.com/images/4b12216502d3566707e37c109ec622c8.png',
-  image2: 'http://www.vithiitsolutions.com/images/cd2dd0d095bb3ba0958482abbb3d4baa.png',
-};
 
 export default function Home() {
   return (
@@ -34,21 +25,46 @@ export default function Home() {
       <Navbar />
       <Hero />
       <div className="flex justify-evenly sm:flex-row gap-2 sm:gap-8 md:gap-2">
-
-        <ImageComponent image1={imageUrls.image1} image2={imageUrls.image2} />
-
+        <ImageComponent image1={data[0].imageUrls.image1} image2={data[0].imageUrls.image2} />
         <ContainBox
           header={data[0].headLine}
           para={data[0].ParaGraph}
           link={data[0].link}
         />
-
-
-
-
       </div>
+
+
       <HomeServicesBox />
+
+      <div className="flex flex-row-reverse sm:flex-row gap-2 sm:gap-8 md:gap-2">
+        <ImageComponent image1={data[1].imageUrls.image1} image2={data[1].imageUrls.image2} />
+        <ContainBox
+          header={data[1].headLine}
+          para={data[1].ParaGraph}
+          link={data[1].link}
+        />
+      </div>
+
+      <div className="flex justify-evenly sm:flex-row gap-2 sm:gap-8 md:gap-2">
+        <ImageComponent image1={data[2].imageUrls.image1} image2={data[2].imageUrls.image2} />
+        <ContainBox
+          header={data[2].headLine}
+          para={data[2].ParaGraph}
+          link={data[2].link}
+        />
+      </div>
+
+      <div className="flex justify-evenly sm:flex-row gap-2 sm:gap-8 md:gap-2">
+        <ImageComponent image1={data[3].imageUrls.image1} image2={data[3].imageUrls.image2} />
+        <ContainBox
+          header={data[3].headLine}
+          para={data[3].ParaGraph}
+          link={data[3].link}
+        />
+      </div>
+
       <VideoBackgroundComponent />
+      <FullContactForm />
 
       <MoveToTop />
     </>
