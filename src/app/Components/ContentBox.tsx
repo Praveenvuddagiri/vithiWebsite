@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsArrowUpRight } from 'react-icons/bs';
 
-const ContainBox = ({ header, para, link }: any) => {
+const ContentBox = ({ header, para, link }: any) => {
   return (
     <div className="h-fit font-serif flex flex-col p-4 gap-y-5 sm:w-full md:w-2/3 lg:w-1/2 xl:w-1/3">
       <h2 className="text-2xl font-bold text-blue-500">{header}</h2>
@@ -20,4 +20,4 @@ const ContainBox = ({ header, para, link }: any) => {
   );
 };
 
-export default ContainBox;
+export default ContentBox;
