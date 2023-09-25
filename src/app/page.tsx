@@ -4,6 +4,8 @@ import ImageComponent from './Components/ImageComponent';
 import React from 'react';
 import Navbar from './Components/Navbar';
 import Hero from './HeroSection';
+import ContactForm from './Components/ContactForm';
+import FullContactForm from './Components/FullContactForm';
 
 const data = [
   {
@@ -32,9 +34,8 @@ export default function Home() {
         para={data[0].ParaGraph}
         link={data[0].link}
       />
-
-      
     </div>
+    <FullContactForm/>
     </>
     
   );
