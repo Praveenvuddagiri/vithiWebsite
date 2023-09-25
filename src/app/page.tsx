@@ -4,8 +4,16 @@ import ImageComponent from './Components/ImageComponent';
 import React from 'react';
 import Navbar from './Components/Navbar';
 import Hero from './HeroSection';
-import ContactForm from './Components/ContactForm';
-import FullContactForm from './Components/FullContactForm';
+import HomeServicesBox from './Components/HomeServicesBox';
+import { Metadata } from 'next';
+import VideoBackgroundComponent from './Components/VideoBackgroundComponent';
+import MoveToTop from './Components/MoveToUp';
+
+
+export const metadata: Metadata = {
+  title: 'Home',
+  description: 'VITHI IT SOLUTIONS',
+}
 
 const data = [
   {
@@ -17,7 +25,7 @@ const data = [
 
 const imageUrls = {
   image1: 'http://www.vithiitsolutions.com/images/4b12216502d3566707e37c109ec622c8.png',
-  image2: 'http://www.vithiitsolutions.com/images/cd2dd0d095bb3ba0958482abbb3d4baa.png', 
+  image2: 'http://www.vithiitsolutions.com/images/cd2dd0d095bb3ba0958482abbb3d4baa.png',
 };
 
 export default function Home() {
@@ -26,17 +34,24 @@ export default function Home() {
       <Navbar />
       <Hero />
       <div className="flex justify-evenly sm:flex-row gap-2 sm:gap-8 md:gap-2">
-      
-      <ImageComponent image1={imageUrls.image1} image2={imageUrls.image2} />
-   
-      <ContainBox
-        header={data[0].headLine}
-        para={data[0].ParaGraph}
-        link={data[0].link}
-      />
-    </div>
-    <FullContactForm/>
+
+        <ImageComponent image1={imageUrls.image1} image2={imageUrls.image2} />
+
+        <ContainBox
+          header={data[0].headLine}
+          para={data[0].ParaGraph}
+          link={data[0].link}
+        />
+
+
+
+
+      </div>
+      <HomeServicesBox />
+      <VideoBackgroundComponent />
+
+      <MoveToTop />
     </>
-    
+
   );
 }
