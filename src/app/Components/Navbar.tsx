@@ -67,7 +67,7 @@ const Navbar = () => {
                   Services
                 </button>
                 {servicesDropdownOpen && (
-                  <ul className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-64"
+                  <ul className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-64 p-2"
                     onMouseEnter={toggleServicesDropdown}
                     onMouseLeave={closeServicesDropdown}>
                     <li className="px-3 py-2 hover:bg-gray-100">
@@ -93,10 +93,10 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden mt-4 p-4">
+        <div className="md:hidden mt-3 p-4">
           <ul className="flex flex-col space-y-4 text-lg   text-blue-500">
-            <li>Home</li>
-            <li>About Us</li>
+            <li>Home</li><hr />
+            <li>About Us</li><hr />
             <li
                 className="relative"
                 onMouseEnter={toggleServicesDropdown}
@@ -108,7 +108,7 @@ const Navbar = () => {
                   Services
                 </button>
                 {servicesDropdownOpen && (
-                  <ul className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-64 text-gray-600"
+                  <ul className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-64 text-gray-600 p-2"
                     onMouseEnter={toggleServicesDropdown}
                     onMouseLeave={closeServicesDropdown}>
                     <li className="px-3 py-2 hover:bg-gray-100">
@@ -123,9 +123,9 @@ const Navbar = () => {
                     {/* Add more services as needed */}
                   </ul>
                 )}
-              </li>
-            <li>Careers</li>
-            <li>Contact</li>
+              </li><hr />
+            <li>Careers</li><hr />
+            <li>Contact</li><hr />
             <li>Schedule A Call</li>
           </ul>
         </div>
