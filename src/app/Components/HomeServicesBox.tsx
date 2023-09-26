@@ -26,7 +26,7 @@ const HomeServicesBox = () => {
                     </div>
 
                     {/* Right box with content and services */}
-                    <div className="w-full md:w-2/3 flex flex-col justify-evenly">
+                    <div className="w-full md:w-2/3 flex flex-col justify-start">
                         <div className="text-white text-2xl font-semibold mb-4">
                             <h2 className="mb-5">Application Development</h2>
                             <p className="text-base">
