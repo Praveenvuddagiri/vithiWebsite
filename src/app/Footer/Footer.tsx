@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-5">
                     <div className='m-2'>
                         <img
-                            className="w-60 h-10 mb-4 md:mb-4"
+                            className="w-60 h-auto mb-4 md:mb-4"
                             src="https://www.vithiitsolutions.com/images/logo.png"
                             alt="Vithi IT Solutions Logo"
                         />
@@ -27,12 +27,12 @@ const Footer = () => {
                             <ul className="social-links flex items-center mt-2 text-center mb-4">
                                 <li>
                                     <a href="https://www.facebook.com">
-                                        <BsFacebook size={30} className='hover:text-blue-500' />
+                                        <BsFacebook size={30} className='hover:text-blue-500 text-blue-700' />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://www.linkedin.com/company/vithi-it-solutions">
-                                        <TiSocialLinkedinCircular size={43} className='hover:text-blue-500' />
+                                        <TiSocialLinkedinCircular size={43} className='hover:text-blue-500 text-blue-700' />
                                     </a>
                                 </li>
                             </ul>
