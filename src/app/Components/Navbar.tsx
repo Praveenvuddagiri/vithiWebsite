@@ -94,7 +94,7 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden mt-4 p-4">
-          <ul className="flex flex-col space-y-4 text-lg text-gray-600">
+          <ul className="flex flex-col space-y-4 text-lg   text-blue-500">
             <li>Home</li>
             <li>About Us</li>
             <li
@@ -103,12 +103,12 @@ const Navbar = () => {
                 onMouseLeave={closeServicesDropdown}
               >
                 <button
-                  className={`text-gray-600 dark:text-white hover:text-blue-500 focus:outline-none focus:text-blue-500 ${servicesDropdownOpen ? "text-blue-500" : ""}`}
+                  className={` dark:text-white hover:text-blue-500 focus:outline-none focus:text-blue-500 ${servicesDropdownOpen ? "text-blue-500" : ""}`}
                 >
                   Services
                 </button>
                 {servicesDropdownOpen && (
-                  <ul className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-64"
+                  <ul className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-64 text-gray-600"
                     onMouseEnter={toggleServicesDropdown}
                     onMouseLeave={closeServicesDropdown}>
                     <li className="px-3 py-2 hover:bg-gray-100">
