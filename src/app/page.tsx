@@ -1,4 +1,3 @@
-// Home.jsx
 import ContentBox from './Components/ContentBox';
 import ImageComponent from './Components/ImageComponent';
 import React from 'react';
@@ -25,8 +24,9 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      <div className="flex justify-evenly sm:flex-row gap-2 sm:gap-8 md:gap-2">
-        <ImageComponent image1={data[0].imageUrls.image1} image2={data[0].imageUrls.image2} />
+      <div className="flex justify-between flex-col md:flex-row items-center">
+      
+        <ImageComponent image1={data[0].imageUrls.image1} image2={data[0].imageUrls.image2} right={false}/>
         <ContentBox
           header={data[0].headLine}
           para={data[0].ParaGraph}
@@ -37,8 +37,8 @@ export default function Home() {
 
       <HomeServicesBox />
 
-      <div className="flex flex-row-reverse sm:flex-row gap-2 sm:gap-8 md:gap-2">
-        <ImageComponent image1={data[1].imageUrls.image1} image2={data[1].imageUrls.image2} />
+      <div className="flex justify-between flex-col-reverse md:flex-row-reverse items-center mt-20">
+        <ImageComponent image1={data[1].imageUrls.image1} image2={data[1].imageUrls.image2} right={true}/>
         <ContentBox
           header={data[1].headLine}
           para={data[1].ParaGraph}
@@ -46,8 +46,8 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex justify-evenly sm:flex-row gap-2 sm:gap-8 md:gap-2">
-        <ImageComponent image1={data[2].imageUrls.image1} image2={data[2].imageUrls.image2} />
+      <div className="flex flex-col md:flex-row items-center mt-10 md:mt-0">
+        <ImageComponent image1={data[2].imageUrls.image1} image2={data[2].imageUrls.image2} right={false}/>
         <ContentBox
           header={data[2].headLine}
           para={data[2].ParaGraph}
@@ -55,8 +55,8 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex justify-evenly sm:flex-row gap-2 sm:gap-8 md:gap-2">
-        <ImageComponent image1={data[3].imageUrls.image1} image2={data[3].imageUrls.image2} />
+      <div className="flex flex-col-reverse md:flex-row-reverse items-center mb-20">
+        <ImageComponent image1={data[3].imageUrls.image1} image2={data[3].imageUrls.image2} right={true}/>
         <ContentBox
           header={data[3].headLine}
           para={data[3].ParaGraph}

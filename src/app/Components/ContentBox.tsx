@@ -3,7 +3,7 @@ import { BsArrowUpRight } from 'react-icons/bs';
 
 const ContentBox = ({ header, para, link }: any) => {
   return (
-    <div className="h-fit font-serif flex flex-col p-4 gap-y-5 sm:w-full md:w-2/3 lg:w-1/2 xl:w-1/3">
+    <div className="h-fit font-serif flex flex-col p-4 gap-y-5 sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 ">
       <h2 className="text-2xl font-bold text-blue-500">{header}</h2>
       <div>
         <p>{para}</p>

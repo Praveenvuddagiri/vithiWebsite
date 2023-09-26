@@ -33,7 +33,7 @@ export const carouselData = [
 
 const Hero = () => {
     return (
-        <div className='min-w-full '>
+        <div className='min-w-full mt-36 md:mt-28 '>
             <HeroCarousel>
             {carouselData?.map((item, index) => (
                 <CarouselItem key={index} {...item} />

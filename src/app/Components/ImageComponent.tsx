@@ -1,24 +1,20 @@
-import React from 'react';
-
-const ImageComponent = ({ image1, image2 }: { image1: string; image2: string }) => {
+const ImageComponent = ({ image1, image2, right }: { image1: string; image2: string, right:boolean }) => {
   return (
-    <div className="relative">
-      {/* First image */}
-     
+    <div className={`relative flex ${right ? 'justify-end': ''}`}>
       <img
         src={image1}
         alt="Image 1"
-        className="w-7/12 h-auto left-2"
+        className="w-[70%] h-auto"
       />
-      {/* Second image */}
+
       <img
         src={image2}
         alt="Image 2"
-        className="absolute top-10 left-0 w-6/12 h- z-10"
+        className={`absolute top-10 w-[70%] h-auto z-10 ${right ? 'right-0': 'left-0'}}`}
       />
     </div>
   );
-};
+}
 
 export default ImageComponent;
 

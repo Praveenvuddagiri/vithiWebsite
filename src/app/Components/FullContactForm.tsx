@@ -9,11 +9,11 @@ const imageUrls = {
 
 const FullContactForm = () => {
   return (
-    <div className='flex flex-col lg:flex-row justify-evenly bg-blue-950'>
-        <div>
-            <ImageComponent image1={imageUrls.image1} image2={imageUrls.image2} />
-        </div>
-      <div className='flex-1 w-full p-4'>
+    <div className='grid grid-cols-1 md:grid-cols-2 justify-evenly bg-blue-950'>
+      <div>
+        <ImageComponent image1={imageUrls.image1} image2={imageUrls.image2} right={false}/>
+      </div>
+      <div className='p-4'>
         <ContactForm />
       </div>
     </div>
@@ -21,3 +21,4 @@ const FullContactForm = () => {
 };
 
 export default FullContactForm;
+

@@ -44,7 +44,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='text-center bg-[#007bff] text-white rounded-tr-[40px] rounded-tl-[40px] pl-5 w-3/4 p-1'>
+            <div className='text-center bg-[#007bff] text-white rounded-tr-[40px] rounded-tl-[40px] pl-5 w-3/4 p-2 text-xs md:text-lg'>
                 <>COPYRIGHT © 2023, VITHI IT SOLUTIONS. ALL RIGHTS RESERVED.</>
             </div>
         </div>
