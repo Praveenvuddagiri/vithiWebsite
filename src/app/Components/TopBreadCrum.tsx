@@ -13,7 +13,7 @@ const TopBreadCrum = ({ title, image, navigations }: { title: string, image: str
                     </Link> 
                     
                     
-                    {navigations.map((navigation, index) => (
+                    {navigations?.map((navigation, index) => (
                         <span key={index}>
                                 <span className='mx-4'>&gt;</span>
                                 <span className='text-base  text-blue-500 hover:text-blue-700'>{navigation}</span>
@@ -24,7 +24,7 @@ const TopBreadCrum = ({ title, image, navigations }: { title: string, image: str
                     <h1 className='text-lg md:text-4xl font-bold'>{title}</h1>
             </div>
             <div className=''>
-                <img src={image} alt={navigations[navigations.length - 1]} className='max-w-full' />
+                <img src={image} alt="top image" className='max-w-full' />
             </div>
         </div>
     )
