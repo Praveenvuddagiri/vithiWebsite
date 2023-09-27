@@ -6,11 +6,18 @@ import About from '../KeyDifferences'
 import Footer from '../Footer/Footer'
 import CoreValuesList from '../CoreValues/CoreValuesData'
 import AboutVisionBox from '../Components/AboutVisionBox'
+import { Metadata } from 'next'
 
 const aboutUsTopData = {
   title: ' All Your Technology and Data Management Needs. One Group of Technology Experts. ',
   image: 'https://www.vithiitsolutions.com/images/0a3116c138ebf8b4636c0eb67914c2be.png',
   navigations: ['About Us']
+}
+
+
+export const metadata: Metadata = {
+  title: 'About Us',
+  description: 'VITHI IT SOLUTIONS',
 }
 
 const page = () => {
