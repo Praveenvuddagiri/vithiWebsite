@@ -7,6 +7,7 @@ import Footer from '../Footer/Footer'
 import CoreValuesList from '../CoreValues/CoreValuesData'
 import AboutVisionBox from '../Components/AboutVisionBox'
 import { Metadata } from 'next'
+import MoveToTop from '../Components/MoveToUp'
 
 const aboutUsTopData = {
   title: ' All Your Technology and Data Management Needs. One Group of Technology Experts. ',
@@ -34,6 +35,7 @@ const page = () => {
       <About/>
       <CoreValuesList/>
       <Footer />
+      <MoveToTop />
     </div>
     
   )

@@ -1,3 +1,4 @@
+import MoveToTop from '@/app/Components/MoveToUp';
 import Navbar from '@/app/Components/Navbar';
 import ExpertiseBox from '@/app/Components/ServiceComponents/ExpertiseBox';
 import ServiceAboutContentBox from '@/app/Components/ServiceComponents/ServiceAboutContentBox';
@@ -31,6 +32,7 @@ const Service = ({ params }: any) => {
 
 
             <Footer />
+            <MoveToTop />
         </div>
     )
 }
