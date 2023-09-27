@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Navbar active='home' />
       <Hero />
       <div className="flex justify-between flex-col md:flex-row items-center">
       

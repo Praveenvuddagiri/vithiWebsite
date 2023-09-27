@@ -16,7 +16,7 @@ const aboutUsTopData = {
 const page = () => {
   return (
     <div>
-      <Navbar /> 
+      <Navbar active='aboutus'/> 
       <div className='mt-24'>
         <TopBreadCrum title={aboutUsTopData.title} image={aboutUsTopData.image} navigations={aboutUsTopData.navigations}/>
       </div>

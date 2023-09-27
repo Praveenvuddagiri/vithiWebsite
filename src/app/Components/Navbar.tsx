@@ -1,10 +1,11 @@
 'use client';
+import Link from "next/link";
 import React, { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({active}:{active:string}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
-  const [activeItem,setActiveItem]=useState("home");
+  const [activeItem,setActiveItem]=useState(active);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -52,9 +53,13 @@ const Navbar = () => {
             </button>
           </div>
           <div className={`${isOpen ? "block" : "hidden"} mt-4 md:flex md:items-center md:space-x-8 hidden`}>
-            <ul className="md:flex space-x-8 text-lg  text-gray-600 items-center cursor-pointer">
-              <li onClick={()=>setActiveItem('home')} className={`${activeItem === "home" ? "text-blue-500 border-b-2 border-b-blue-400" : "text-black"} hover:border-b-2 hover:border-b-blue-400`}>Home</li>
-              <li onClick={()=>setActiveItem("about")} className={`${activeItem === "about" ? "text-blue-500 border-b-2 border-b-blue-400" : "text-black"} hover:border-b-2 hover:border-b-blue-400`}>About Us</li>
+            <ul className="md:flex space-x-8 text-lg  text-[#595a5b] font-[500] text-[15px] capitalize items-center cursor-pointer">
+              <Link href="/">
+                <li onClick={()=>setActiveItem('home')} className={`${activeItem === "home" ? "text-blue-500 border-b-2 border-b-blue-400" : "text-black"} hover:border-b-2 hover:border-b-blue-400`}>Home</li>
+              </Link>
+              <Link href="/aboutus">
+                <li onClick={()=>setActiveItem("aboutus")} className={`${activeItem === "aboutus" ? "text-blue-500 border-b-2 border-b-blue-400" : "text-black"} hover:border-b-2 hover:border-b-blue-400`}>About Us</li>
+              </Link>
               <li
                 className={`relative ${activeItem === "services" ? "text-blue-500 border-b-2 border-b-blue-400" : "text-black"} hover:border-b-2 hover:border-b-blue-400`}
                 onMouseEnter={toggleServicesDropdown}
@@ -70,22 +75,38 @@ const Navbar = () => {
                   <ul className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-64 p-2"
                     onMouseEnter={toggleServicesDropdown}
                     onMouseLeave={closeServicesDropdown}>
-                    <li className="px-3 py-2 hover:bg-gray-100">
+                    <Link href='/services/application-development'>
+                      <li className="px-3 py-2 hover:bg-gray-100">
                       <a href="#">Application Development</a>
-                    </li>
-                    <li className="px-3 py-2 hover:bg-gray-100">
-                      <a href="#">Data Services</a>
-                    </li>
-                    <li className="px-3 py-2 hover:bg-gray-100">
-                      <a href="#">Integration & Automation</a>
-                    </li>
+                      </li><hr />
+                    </Link>
+                    
+                    <Link href='/services/data-services'>
+                      <li className="px-3 py-2 hover:bg-gray-100">
+                        <a href="#">Data Services</a>
+                      </li><hr />
+                    </Link>
+                    <Link href='/services/data-services'>
+                      <li className="px-3 py-2 hover:bg-gray-100">
+                        <a href="#">Integration & Automation</a>
+                      </li><hr />
+                    </Link>
+                    <Link href='/services/data-Innovation'>
+                      <li className="px-3 py-2 hover:bg-gray-100">
+                        <a href="#">Data Innovation</a>
+                      </li>
+                    </Link>
                     {/* Add more services as needed */}
                   </ul>
                 )}
               </li>
-              <li onClick={()=>setActiveItem("careers")} className={`${activeItem === "careers" ? "text-blue-500 border-b-2 border-b-blue-400" : "text-black"} hover:border-b-2 hover:border-b-blue-400`}>Careers</li>
-              <li onClick={()=>setActiveItem("contact")} className={`${activeItem === "contact" ? "text-blue-500 border-b-2 border-b-blue-400" : "text-black"} hover:border-b-2 hover:border-b-blue-400`}>Contact</li>
-              <button className="bg-blue-500 rounded-full px-4 py-2 text-white hover:bg-blue-600 items-start">
+              <Link href='/careers'>
+                <li onClick={()=>setActiveItem("careers")} className={`${activeItem === "careers" ? "text-blue-500 border-b-2 border-b-blue-400" : "text-black"} hover:border-b-2 hover:border-b-blue-400`}>Careers</li>
+              </Link>
+              <Link href='/contact'>
+                <li onClick={()=>setActiveItem("contact")} className={`${activeItem === "contact" ? "text-blue-500 border-b-2 border-b-blue-400" : "text-black"} hover:border-b-2 hover:border-b-blue-400`}>Contact</li>
+              </Link>
+              <button className="bg-[#1e85bd] rounded-full px-4 py-2 text-white hover:bg-[#28a745] items-start">
                 Schedule A Call
               </button>
             </ul>
@@ -111,19 +132,31 @@ const Navbar = () => {
                   <ul className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-64 text-gray-600 p-2"
                     onMouseEnter={toggleServicesDropdown}
                     onMouseLeave={closeServicesDropdown}>
-                    <li className="px-3 py-2 hover:bg-gray-100">
+                    <Link href='/services/application-development'>
+                      <li className="px-3 py-2 hover:bg-gray-100">
                       <a href="#">Application Development</a>
-                    </li>
-                    <li className="px-3 py-2 hover:bg-gray-100">
-                      <a href="#">Data Services</a>
-                    </li>
-                    <li className="px-3 py-2 hover:bg-gray-100">
-                      <a href="#">Integration & Automation</a>
-                    </li>
+                      </li>
+                    </Link>
+                    <Link href='/services/data-services'>
+                      <li className="px-3 py-2 hover:bg-gray-100">
+                        <a href="#">Data Services</a>
+                      </li>
+                    </Link>
+                    <Link href='/services/data-services'>
+                      <li className="px-3 py-2 hover:bg-gray-100">
+                        <a href="#">Integration & Automation</a>
+                      </li>
+                    </Link>
+                    <Link href='/services/data-Innovation'>
+                      <li className="px-3 py-2 hover:bg-gray-100">
+                        <a href="#">Data Innovation</a>
+                      </li>
+                    </Link>
                     {/* Add more services as needed */}
                   </ul>
                 )}
               </li><hr />
+              <Link href="/"></Link>
             <li>Careers</li><hr />
             <li>Contact</li><hr />
             <li>Schedule A Call</li>
