@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutContentBox = () => {
     return (
-        <div className='flex flex-col items-start justify-center gap-8 md:px-64 p-20'>
+        <div className='flex flex-col items-start justify-center gap-8 md:px-46 p-28'>
             <h1 className='text-blue-500 font-bold text-xl'>
                 ABOUT VITHI IT SOLUTIONS
             </h1>
