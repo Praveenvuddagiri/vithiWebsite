@@ -78,44 +78,25 @@ export const data = [
     },
 ];
 
-
-
-export const Keydifference=[
+export const coreValuesData = [
   {
-      id:1,
-      img:"http://www.vithiitsolutions.com/images/1da9f03f9bd1d5bb39ec4ed26a01b700.png",
-      heading :"Innovative",
-      content:"We offer innovative and creative thinking, delivering “real” cost effective solutions to our customers",
+    imgUrl: "https://www.vithiitsolutions.com/images/6d5a2612bbb49f560346ce931c21ad35.png",
+    title: "Value-Based Delivery & Quality",
+    paraGraph: "We take pride in providing high-value products and services that we stand behind, which ensures customer satisfaction, profitability and the future of our employees and our growth."
   },
   {
-      id:2,
-      img:"http://www.vithiitsolutions.com/images/dea17b68ebfe5a4572e1004c411d1a78.png",
-      heading :"Quality",
-      content:"Quality is the key that enables us to provide exceptional services to our customers which contributes to increasing the customer base",
+    imgUrl: "https://www.vithiitsolutions.com/images/a1ad8243dc5226f19c0679559ac5127b.png",
+    title: "Process Improvements",
+    paraGraph: "We relentlessly pursue continuous improvement and excellence in projects, products, processes, and services, to define success as getting the right things done well."
   },
   {
-      id:3,
-      img:"http://www.vithiitsolutions.com/images/116806aa906de0e09aa6a71ccb9fa283.png",
-      heading :"Long-Term Partnerships ",
-      content:"Building trusted, long-term partnerships with our customers by blending with your culture.",
-  },
-  {
-      id:4,
-      img:"http://www.vithiitsolutions.com/images/97088490eab7918d4fd83def7f1ad742.png",
-      heading :"Industry Best Practices ",
-      content:"Applying industry best practices and Frameworks to manage risk, deliver services & optimize costs.",
-  },
-  {
-      id:5,
-      img:"http://www.vithiitsolutions.com/images/78cb815df215bcbd613436faadf85e0a.png",
-      heading :"Digital Transformation  ",
-      content:"Helping our clients to transform their business needs through innovation and Digital Transformation.",
-  },
-  {
-      id:6,
-      img:"http://www.vithiitsolutions.com/images/a1ac29e0e404485bedf825eab3f9371b.png",
-      heading :"Continuous Training",
-      content:"Continuous training and managing the best teams by employing & nurturing our resources",
-  },
-
-]
+    imgUrl:"https://www.vithiitsolutions.com/images/93a18e572dca797e80a37feb96f74f56.png",
+    title:"Teamwork & People",
+    paraGraph:"We foster a work environment where creative thinking is encouraged and rewarded in order to create opportunities for process improvement and more cost-effective solutions and services."
+},
+{
+    imgUrl:"https://www.vithiitsolutions.com/images/d9726237c8338f2ccf395ec5cffda5aa.png",
+    title:"Customer Focused",
+    paraGraph:"We recognize that our customers are the reason for our success in business, and we are committed to listen and respond positively to their needs. We enthusiastically give our best service in all that we do."
+}
+];
