@@ -1,3 +1,4 @@
+import MoveToTop from '@/app/Components/MoveToUp';
 import Navbar from '@/app/Components/Navbar';
 import ServiceAboutContentBox from '@/app/Components/ServiceComponents/ServiceAboutContentBox';
 import TopBreadCrum from '@/app/Components/TopBreadCrum';
@@ -25,6 +26,7 @@ const Service = ({ params }: any) => {
 
 
             <Footer />
+            <MoveToTop />
         </div>
     )
 }
