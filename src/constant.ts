@@ -77,3 +77,45 @@ export const data = [
         ],
     },
 ];
+
+
+
+export const Keydifference=[
+  {
+      id:1,
+      img:"http://www.vithiitsolutions.com/images/1da9f03f9bd1d5bb39ec4ed26a01b700.png",
+      heading :"Innovative",
+      content:"We offer innovative and creative thinking, delivering “real” cost effective solutions to our customers",
+  },
+  {
+      id:2,
+      img:"http://www.vithiitsolutions.com/images/dea17b68ebfe5a4572e1004c411d1a78.png",
+      heading :"Quality",
+      content:"Quality is the key that enables us to provide exceptional services to our customers which contributes to increasing the customer base",
+  },
+  {
+      id:3,
+      img:"http://www.vithiitsolutions.com/images/116806aa906de0e09aa6a71ccb9fa283.png",
+      heading :"Long-Term Partnerships ",
+      content:"Building trusted, long-term partnerships with our customers by blending with your culture.",
+  },
+  {
+      id:4,
+      img:"http://www.vithiitsolutions.com/images/97088490eab7918d4fd83def7f1ad742.png",
+      heading :"Industry Best Practices ",
+      content:"Applying industry best practices and Frameworks to manage risk, deliver services & optimize costs.",
+  },
+  {
+      id:5,
+      img:"http://www.vithiitsolutions.com/images/78cb815df215bcbd613436faadf85e0a.png",
+      heading :"Digital Transformation  ",
+      content:"Helping our clients to transform their business needs through innovation and Digital Transformation.",
+  },
+  {
+      id:6,
+      img:"http://www.vithiitsolutions.com/images/a1ac29e0e404485bedf825eab3f9371b.png",
+      heading :"Continuous Training",
+      content:"Continuous training and managing the best teams by employing & nurturing our resources",
+  },
+
+]
