@@ -20,7 +20,7 @@ const page = () => {
       <div className='mt-24'>
         <TopBreadCrum title={aboutUsTopData.title} image={aboutUsTopData.image} navigations={aboutUsTopData.navigations}/>
       </div>
-      <div>
+      <div className='w-full'>
         <AboutContentBox />
       </div>
       <AboutVisionBox />
