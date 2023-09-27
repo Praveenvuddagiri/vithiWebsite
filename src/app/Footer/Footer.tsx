@@ -22,17 +22,17 @@ const Footer = () => {
                             Vithi IT Solutions is a <strong>Strategic Technology Partner</strong> helping companies achieve operational excellence by providing the best solutions in the form of End-to-End software solutions after analyzing the user’s needs and problems <br />
                         </h6>
                         <a href="#" className='border-b-2 border-b-gray-600 text-gray-700 font-[600] uppercase'>Read More</a>
-                        <div className="mt-4 md:mt-2">
-                            <h2 className="text-[#31a2df] text-sm font-semibold mt-1">Get Social With Us</h2>
+                        <div className="mt-4 md:mt-2 flex items-center gap-4">
+                            <h2 className="text-[#1e85bd] text-sm font-[700] mt-1">Get Social With Us</h2>
                             <ul className="flex items-center mt-2 text-center mb-4">
                                 <li>
                                     <a href="https://www.facebook.com">
-                                        <BsFacebook size={30} className='hover:text-blue-500 text-blue-700' />
+                                        <BsFacebook size={30} className='hover:text-[#0f1941] text-[#31a2df]' />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://www.linkedin.com/company/vithi-it-solutions">
-                                        <TiSocialLinkedinCircular size={43} className='hover:text-blue-500 text-blue-700' />
+                                        <TiSocialLinkedinCircular size={43} className='hover:text-[#0f1941] text-[#31a2df]' />
                                     </a>
                                 </li>
                             </ul>
