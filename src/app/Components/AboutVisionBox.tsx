@@ -10,30 +10,30 @@ const visionPoints = [
 
 const AboutVisionBox = () => {
   return (
-    <div className='relative'>
-      <div className="flex gap-10">
-        <img
-          src="https://www.vithiitsolutions.com/images/25290e5e13bb2803eaccb15365bbca98.jpg"
-          alt="Vision Image"
-          className="absolute"
-        />
-        <div className="">
+    <div className="bg-blue-50 p-8 md:p-12 lg:p-16 xl:p-20 2xl:p-32">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
+        <div className="md:w-1/2 flex-shrink-0 relative flex md:justify-end justify-center">
+          <img
+            src="https://www.vithiitsolutions.com/images/25290e5e13bb2803eaccb15365bbca98.jpg"
+            alt="Vision Image"
+            className="h-auto w-3/4 object-cover"
+          />
+        </div>
+        <div className="md:w-1/2 p-4 md:p-10 bg-white">
           <div className="text-blue-500 font-semibold text-lg mb-5">Our Vision</div>
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
             At Vithi IT Solutions, we’re driven by the purpose of "Building your Business"
           </h1>
           <ul className="list-outside list-none pl-6">
             {visionPoints.map((vision, index) => (
-              <li key={index} className="mb-4 flex">
-                <BiSolidRightArrow className='mr-3 w-5 h-10 font-bold text-blue-500' />
-
+              <li key={index} className="mb-4 flex items-start">
+                <BiSolidRightArrow className="mr-3 w-5 h-10 font-bold text-blue-500" />
                 {vision}
               </li>
             ))}
           </ul>
         </div>
       </div>
-
     </div>
   );
 };
