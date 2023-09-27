@@ -80,6 +80,31 @@ export const data = [
 
 
 
+export const coreValuesData = [
+  {
+    imgUrl: "https://www.vithiitsolutions.com/images/6d5a2612bbb49f560346ce931c21ad35.png",
+    title: "Value-Based Delivery & Quality",
+    paraGraph: "We take pride in providing high-value products and services that we stand behind, which ensures customer satisfaction, profitability and the future of our employees and our growth."
+  },
+  {
+    imgUrl: "https://www.vithiitsolutions.com/images/a1ad8243dc5226f19c0679559ac5127b.png",
+    title: "Process Improvements",
+    paraGraph: "We relentlessly pursue continuous improvement and excellence in projects, products, processes, and services, to define success as getting the right things done well."
+  },
+  {
+    imgUrl:"https://www.vithiitsolutions.com/images/93a18e572dca797e80a37feb96f74f56.png",
+    title:"Teamwork & People",
+    paraGraph:"We foster a work environment where creative thinking is encouraged and rewarded in order to create opportunities for process improvement and more cost-effective solutions and services."
+  },
+  {
+      imgUrl:"https://www.vithiitsolutions.com/images/d9726237c8338f2ccf395ec5cffda5aa.png",
+      title:"Customer Focused",
+      paraGraph:"We recognize that our customers are the reason for our success in business, and we are committed to listen and respond positively to their needs. We enthusiastically give our best service in all that we do."
+  }
+];
+
+
+
 export const Keydifference=[
   {
       id:1,

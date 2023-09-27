@@ -2,6 +2,10 @@ import React from 'react'
 import TopBreadCrum from '../Components/TopBreadCrum'
 import Navbar from '../Components/Navbar'
 import AboutContentBox from '../Components/AboutContentBox'
+import About from '../KeyDifferences'
+import Footer from '../Footer/Footer'
+import CoreValuesList from '../CoreValues/CoreValuesData'
+import AboutVisionBox from '../Components/AboutVisionBox'
 
 const aboutUsTopData = {
   title: ' All Your Technology and Data Management Needs. One Group of Technology Experts. ',
@@ -19,7 +23,10 @@ const page = () => {
       <div>
         <AboutContentBox />
       </div>
-      
+      <AboutVisionBox />
+      <About/>
+      <CoreValuesList/>
+      <Footer />
     </div>
     
   )

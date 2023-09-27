@@ -4,7 +4,7 @@ import { coreValuesData } from '@/constant'
 
 const CoreValuesList = () => {
   return (
-    <div className='p-12'>
+    <div className='p-12 bg-[#f3f6ff]'>
       <div className='text-center text-3xl font-bold mb-8'>
       <h1>CORE VALUES</h1>
       </div>

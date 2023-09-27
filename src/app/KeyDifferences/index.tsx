@@ -4,7 +4,7 @@ import {Keydifference} from '@/constant'
 
 const About = () => {
   return (
-    <div className='relative bg-[#0b163b] h-fit flex justify-center'>
+    <div className='relative bg-[#0b163b] h-fit flex justify-center pt-10'>
         <img src="http://www.vithiitsolutions.com/images/team-business-people-stacking-.jpg" alt="" className='w-full h-full absolute inset-0 object-cover opacity-10' />
       <div className='w-[90%] flex flex-col gap-7'>
         <div className='text-white text-center'>
