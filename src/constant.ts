@@ -43,37 +43,37 @@ export const footerData = [
   {
     head: 'Application Development',
     titles: [
-      { text: 'ERP Solutions', link: '/erp' },
-      { text: 'Full Stack Web Development', link: '/full-stack' },
-      { text: 'CRM', link: '/crm' },
-      { text: 'Mobile Development', link: '/mobile' },
+      { text: 'ERP Solutions', link: '/application-development/#tabs' },
+      { text: 'Full Stack Web Development', link: '/application-development/#tabs' },
+      { text: 'CRM', link: '/application-development/#tabs' },
+      { text: 'Mobile Development', link: '/application-development/#tabs' },
     ],
   },
   {
     head: 'Data Analytics',
     titles: [
-      { text: 'Cloud/DevOps', link: '/cloud-devops' },
-      { text: 'Big Data & Data Management', link: '/big-data' },
-      { text: 'Data Engineering & BI', link: '/data-engineering' },
-      { text: 'Data Science (AI/ML)', link: '/data-science' },
+      { text: 'Cloud/DevOps', link: '/data-services#tabs' },
+      { text: 'Big Data & Data Management', link: '/data-services#tabs' },
+      { text: 'Data Engineering & BI', link: '/data-services#tabs' },
+      { text: 'Data Science (AI/ML)', link: '/data-services#tabs' },
     ],
   },
   {
     head: 'Integration & Automation',
     titles: [
-      { text: 'Integrations', link: '/integrations' },
-      { text: 'Test Automation', link: '/test-automation' },
-      { text: 'Serverless Computing', link: '/serverless' },
-      { text: 'IoT', link: '/iot' },
+      { text: 'Integrations', link: '/integration-automation#tabs' },
+      { text: 'Test Automation', link: '/integration-automation#tabs' },
+      { text: 'Serverless Computing', link: '/integration-automation#tabs' },
+      { text: 'IoT', link: '/integration-automation#tabs' },
     ],
   },
   {
     head: 'Digital Innovation',
     titles: [
-      { text: 'eCommerce Platforms', link: '/ecommerce' },
-      { text: 'Virtual Reality', link: '/virtual-reality' },
-      { text: 'Robotics', link: '/robotics' },
-      { text: 'Blockchain', link: '/blockchain' },
+      { text: 'eCommerce Platforms', link: '/digital-innovation#tabs' },
+      { text: 'Virtual Reality', link: '/digital-innovation#tabs' },
+      { text: 'Robotics', link: '/digital-innovation#tabs' },
+      { text: 'Blockchain', link: '/digital-innovation#tabs' },
     ],
   },
 ];
