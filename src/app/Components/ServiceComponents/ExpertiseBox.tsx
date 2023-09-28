@@ -9,7 +9,7 @@ const ExpertiseBox = ({tabs, expertise}:{tabs: string[], expertise:any}) => {
   return (
     <div className='w-full flex flex-col items-center justify-center mt-28 mb-24 gap-8'>
       <TabView tabs={tabs} currentTab={currentTab} setCurrentTab={setCurrentTab}/> 
-      <div className='w-[80%] flex flex-col justify-center'>
+      <div className='w-[85%] flex flex-col justify-center'>
         <TechnologyContentBox currentTab={currentTab} expertise={expertise}/>
 
       </div>

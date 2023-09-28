@@ -1,17 +1,21 @@
 import React from "react";
 
-const TabView = ({ tabs, currentTab,setCurrentTab }: any) => {
+const TabView = ({ tabs, currentTab, setCurrentTab }: any) => {
   return (
-    <div className="flex gap-5 bg-[#f2f2f2] font-[600] text-[18px] capitalize text-[#444444] items-center justify-between cursor-pointer  leading-[1.6] w-[80%]">
-      {tabs?.map((tab:string)=> {
-        return ( 
-            <div className={`pt-[20px] pb-[20px] pr-[40px] pl-[40px] ${currentTab===tab?'bg-[#1e85bd] text-[#fff]':'text-black'}`}
-                onClick={()=>setCurrentTab(tab)}
-            >
-                {tab}
-            </div>
-      )})}
-    </div>
+    <div className="flex flex-col justify-start items-start  md:flex-row gap-2 md:gap-5 bg-[#f2f2f2] font-[600] text-[18px] capitalize text-[#444444] md:items-center md:justify-between cursor-pointer leading-[1.6] w-[85%]">
+      {tabs?.map((tab: string) => {
+        return (
+          <div
+            className={`pt-[20px] pb-[20px] pr-[20px] pl-[20px] md:pr-[40px] md:pl-[40px] ${
+              currentTab === tab ? "bg-[#1e85bd] text-[#fff]" : "text-black"
+            } w-full md:w-fit`}
+            onClick={() => setCurrentTab(tab)}
+            key={tab} // Ensure each tab has a unique key
+          >
+            {tab}
+          </div>
+        );
+      })}
     </div>
   );
 };

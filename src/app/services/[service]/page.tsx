@@ -1,6 +1,7 @@
 import MoveToTop from '@/app/Components/MoveToUp';
 import Navbar from '@/app/Components/Navbar';
 import ExpertiseBox from '@/app/Components/ServiceComponents/ExpertiseBox';
+import ServiceAboutContentBox from '@/app/Components/ServiceComponents/ServiceAboutContentBox';
 import TopBreadCrum from '@/app/Components/TopBreadCrum';
 import Footer from '@/app/Footer/Footer';
 import { serviceData } from '@/constant';
@@ -26,7 +27,7 @@ const Service = ({ params }: any) => {
             <div className='mt-24'>
                 <TopBreadCrum title={top?.title} image={top?.image} navigations={top?.navigations} />
             </div>
-            {/* <ServiceAboutContentBox image={about?.image} heading={about?.heading} para={about?.para} /> */}
+            <ServiceAboutContentBox title={about?.title} heading={about?.heading} para={about?.para} />
             <ExpertiseBox tabs={tabs} expertise={expertise}/>
 
             <Footer />
