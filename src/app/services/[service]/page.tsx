@@ -5,8 +5,14 @@ import ServiceAboutContentBox from '@/app/Components/ServiceComponents/ServiceAb
 import TopBreadCrum from '@/app/Components/TopBreadCrum';
 import Footer from '@/app/Footer/Footer';
 import { serviceData } from '@/constant';
+import { Metadata } from 'next';
 import React from 'react'
 
+
+export const metadata: Metadata = {
+    title: 'Service',
+    description: 'VITHI IT SOLUTIONS',
+  }
 
 const Service = ({ params }: any) => {
     const serviceSlug = params.service;
