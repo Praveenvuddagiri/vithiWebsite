@@ -12,9 +12,9 @@ const TechnologyContentBox = ({ currentTab, expertise }: { currentTab: string, e
         <h2 className='text-[#1e85bd] font-[700] mb-[20px] text-[32px]'>{currentTechData?.title}</h2>
         {currentTechData?.description?.map((desc: string, index: number) => {
           return (
-            <div key={index}>
+            <p className='leading-[21px] font-[14px] text-[#595a5b] text-[600] mt-6' key={index}>
               {desc}
-            </div>
+            </p>
           )
         })}
         {currentTechData?.workList &&

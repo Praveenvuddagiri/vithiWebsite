@@ -12,6 +12,7 @@ const TabView = ({ tabs, currentTab,setCurrentTab }: any) => {
             </div>
       )})}
     </div>
+    </div>
   );
 };
 
