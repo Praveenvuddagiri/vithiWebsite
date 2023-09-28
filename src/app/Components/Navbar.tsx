@@ -72,7 +72,7 @@ const Navbar = ({active}:{active:string}) => {
                   Services
                 </button>
                 {servicesDropdownOpen && (
-                  <ul className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-72 p-2"
+                  <ul className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-72 p-2 text-[#000] leading-[22px] font-[400]"
                     onMouseEnter={toggleServicesDropdown}
                     onMouseLeave={closeServicesDropdown}>
                     <Link href='/services/application-development'>
@@ -91,9 +91,9 @@ const Navbar = ({active}:{active:string}) => {
                         <a href="#">Integration & Automation</a>
                       </li><hr />
                     </Link>
-                    <Link href='/services/data-Innovation'>
+                    <Link href='/services/digital-innovation'>
                       <li className="px-3 py-2 hover:bg-gray-100">
-                        <a href="#">Data Innovation</a>
+                        <a href="#">Digital Innovation</a>
                       </li>
                     </Link>
                     {/* Add more services as needed */}
@@ -147,9 +147,9 @@ const Navbar = ({active}:{active:string}) => {
                         <a href="#">Integration & Automation</a>
                       </li>
                     </Link>
-                    <Link href='/services/data-Innovation'>
+                    <Link href='/services/digital-innovation'>
                       <li className="px-3 py-2 hover:bg-gray-100">
-                        <a href="#">Data Innovation</a>
+                        <a href="#">Digital-Innovation</a>
                       </li>
                     </Link>
                     {/* Add more services as needed */}

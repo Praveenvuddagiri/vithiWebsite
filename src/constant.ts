@@ -455,7 +455,7 @@ export const serviceData = [
     ],
   },
   {
-    slug: "Digital Innovation ",
+    slug: "digital-innovation",
     top: {
       image:
         "https://www.vithiitsolutions.com/images/f0536a80a325c0fc96ad7f25a1a84443.png",
