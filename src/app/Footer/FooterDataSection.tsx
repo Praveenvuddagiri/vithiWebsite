@@ -7,7 +7,7 @@ const FooterDataSection = ({ sectionData }: any) => {
             <ul className="list-none list-inside mt-10">
                 {sectionData.titles.map((item: any, titleIndex: number) => (
                     <li key={titleIndex} className="text-[#444444] my-2 font-[700] text-[13px] leading-[20px]">
-                        <a href={item.link} className="hover:text-blue-600">
+                        <a href={`/services/${item.link}`} className="hover:text-blue-600">
                             {item.text}
                         </a>
                     </li>
