@@ -72,7 +72,7 @@ const Navbar = ({active}:{active:string}) => {
                   Services
                 </button>
                 {servicesDropdownOpen && (
-                  <ul className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-64 p-2"
+                  <ul className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-72 p-2"
                     onMouseEnter={toggleServicesDropdown}
                     onMouseLeave={closeServicesDropdown}>
                     <Link href='/services/application-development'>

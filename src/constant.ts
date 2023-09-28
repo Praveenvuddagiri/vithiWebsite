@@ -57,37 +57,40 @@ export const footerData = [
   {
     head: "Application Development",
     titles: [
-      { text: 'ERP Solutions', link: '/application-development/#tabs' },
-      { text: 'Full Stack Web Development', link: '/application-development/#tabs' },
-      { text: 'CRM', link: '/application-development/#tabs' },
-      { text: 'Mobile Development', link: '/application-development/#tabs' },
+      { text: "ERP Solutions", link: "/application-development/#tabs" },
+      {
+        text: "Full Stack Web Development",
+        link: "/application-development/#tabs",
+      },
+      { text: "CRM", link: "/application-development/#tabs" },
+      { text: "Mobile Development", link: "/application-development/#tabs" },
     ],
   },
   {
     head: "Data Analytics",
     titles: [
-      { text: 'Cloud/DevOps', link: '/data-services#tabs' },
-      { text: 'Big Data & Data Management', link: '/data-services#tabs' },
-      { text: 'Data Engineering & BI', link: '/data-services#tabs' },
-      { text: 'Data Science (AI/ML)', link: '/data-services#tabs' },
+      { text: "Cloud/DevOps", link: "/data-services#tabs" },
+      { text: "Big Data & Data Management", link: "/data-services#tabs" },
+      { text: "Data Engineering & BI", link: "/data-services#tabs" },
+      { text: "Data Science (AI/ML)", link: "/data-services#tabs" },
     ],
   },
   {
     head: "Integration & Automation",
     titles: [
-      { text: 'Integrations', link: '/integration-automation#tabs' },
-      { text: 'Test Automation', link: '/integration-automation#tabs' },
-      { text: 'Serverless Computing', link: '/integration-automation#tabs' },
-      { text: 'IoT', link: '/integration-automation#tabs' },
+      { text: "Integrations", link: "/integration-automation#tabs" },
+      { text: "Test Automation", link: "/integration-automation#tabs" },
+      { text: "Serverless Computing", link: "/integration-automation#tabs" },
+      { text: "IoT", link: "/integration-automation#tabs" },
     ],
   },
   {
     head: "Digital Innovation",
     titles: [
-      { text: 'eCommerce Platforms', link: '/digital-innovation#tabs' },
-      { text: 'Virtual Reality', link: '/digital-innovation#tabs' },
-      { text: 'Robotics', link: '/digital-innovation#tabs' },
-      { text: 'Blockchain', link: '/digital-innovation#tabs' },
+      { text: "eCommerce Platforms", link: "/digital-innovation#tabs" },
+      { text: "Virtual Reality", link: "/digital-innovation#tabs" },
+      { text: "Robotics", link: "/digital-innovation#tabs" },
+      { text: "Blockchain", link: "/digital-innovation#tabs" },
     ],
   },
 ];
@@ -447,6 +450,104 @@ export const serviceData = [
             "Vithi IT Solutions end-to-end Internet of Things services help you gain a sustainable competitive advantage by tackling the challenges of integrating wearables, sensors, networks, cloud and applications without compromising on security. ",
             "With our industry-specific knowledge and IoT technology expertise covering Firmware Development, Mobility, Cloud computing and Data Analytics, we help you transform your business through informed decisions based on powerful data analytics.",
           ],
+        },
+      },
+    ],
+  },
+  {
+    slug: "Digital Innovation ",
+    top: {
+      image:
+        "https://www.vithiitsolutions.com/images/f0536a80a325c0fc96ad7f25a1a84443.png",
+      title: "Technologies that can change the way you look at the world",
+      navigations: ["services", "Digital Innovation"],
+    },
+    about: {
+      title: "Digital Innovation",
+      heading:
+        "Change is the only constant and technology is the forerunner driving this constant change. At Vithi IT Solutions, we leverage new-age technologies to shape digitally robust enterprises.",
+      para: "Our constantly evolving and refined expertise with technologies such as Blockchain, VR, IOT and Robotic Process Automation is creating support for businesses to create distinct digital-first solutions that promise superior returns on investment and delight customers across channels and platforms.",
+    },
+    expertise: [
+      {
+        technology: "eCommerce Platforms",
+        data: {
+          image:
+            "https://www.vithiitsolutions.com/images/7b570e65ec1f9b68c74d9d92f487d3bc.jpg",
+          title: "eCommerce Platforms",
+          description: [
+            "In today’s competitive market whether you have a small, mid-size, or large business, you are required to market your services or products on the web effectively to boost online sales and drive revenue. With Vithi IT  best e-commerce solutions, you can get your business to reach new heights. We offer end-to-end e-commerce platform services that are best in the market.",
+          ],
+          workList: {
+            title: "Ecommerce Platforms We Work On:",
+            list: ["Bigcommerce", "Magento", "Shopify", "Woocommerce"],
+          },
+        },
+      },
+      {
+        technology: "Augmented and Virtual Reality",
+        data: {
+          image:
+            "https://www.vithiitsolutions.com/images/5c2840efec11623600490a9d6ef2ac9e.jpg",
+          title: "Augmented and Virtual Reality",
+          description: [
+            "AR /VR is all about generating an Artificial experience in a simulated environment using computer programming and props. It has majorly captured markets like Gaming Apps , Movies, Automobiles, Online training software & Education-focused experiences, Real-time athlete performance visualization, Real Estate platforms.",
+            "Several technologies are being used for augmented and virtual application development, which include: ARToolKit, OpenCV, ARKit, EasyAR, Vuforia, Wikitude, etc. Vithi IT Solutions team of competent professionals can custom develop a framework that suits your business needs. Our expertise includes:",
+          ],
+          workList: {
+            list: [
+              "Object tracking ",
+              "Object and pattern recognition ",
+              "Face detection, tracking, and recognition",
+              "Style transfer in photos and video, 3D modeling, 3D image visualization",
+              "Custom AR app",
+              "AR games and apps",
+            ],
+          },
+        },
+      },
+      {
+        technology: "Robotics",
+        data: {
+          image:
+            "https://www.vithiitsolutions.com/images/45e7151ef5ab5175ee1e3a2cdf756155.jpg",
+          title: "Robotics",
+          description: [
+            "RPA ensures speed, accuracy, cost-effectiveness, time-saving, and efficiency in bridging the business processes' automation gaps. Vithi IT Solutions RPA solution takes off monotonous manual tasks from the human workforce and automates them. The RPA technology saves a lot of human-efforts, time, reduces errors leading you to save business TCO.",
+            "Our expert RPA developers assist in implementing the software in accordance with Cognitive automation while utilising the two technologies- Artificial Intelligence and Machine learning. We ensure that the implementation of the bots is synced smoothly within your business process. Properly designed, tested, and deployed solution,  ",
+            "Vithi IT Solutions follows best industry practices to ensure the right outcome for your business.",
+          ],
+          workList: {
+            list: [
+              "Developing RPA business processes",
+              "Implementing RPA business processes",
+              "Integrating with supporting applications and tools",
+              "Optical Character Recognition (OCR), AI, BPM, Web interfaces and more",
+            ],
+          },
+        },
+      },
+      {
+        technology: "Blockchain",
+        data: {
+          image:
+            "https://www.vithiitsolutions.com/images/3893a3e5439fba531f10db692031313f.jpg",
+          title: "Blockchain",
+          description: [
+            "Right from decentralized applications to NFTs, smart contracts to metaverses and others, we have expertise in establishing a secure application that is highly encrypted from different security threats.",
+            "Our experienced developers utilize modern tools and frameworks in blockchain technology for creating engaging and responsive web & mobile applications. With the utilization of advanced technologies and tools, we offer world-class blockchain app solutions for different business verticals. Vithi IT Solutions Blockchain technology services includes Customization and Development of:",
+          ],
+          workList: {
+            list: [
+              "Enterprise grade solutions",
+              "Blockchain Smart Contracts",
+              "Tokens, Wallets and Crypto Exchange Applications ",
+              "Banking Solutions",
+              "Decentralized Blockchain Apps (Dapps) ",
+              "Security audits Distributed",
+              "Ecommerce Solutions ",
+            ],
+          },
         },
       },
     ],
