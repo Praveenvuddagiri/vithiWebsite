@@ -29,7 +29,6 @@ const Service = ({ params }: any) => {
             </div>
             <ServiceAboutContentBox title={about?.title} heading={about?.heading} para={about?.para} />
             <ExpertiseBox tabs={tabs} expertise={expertise}/>
-
             <Footer />
             <MoveToTop />
         </div>

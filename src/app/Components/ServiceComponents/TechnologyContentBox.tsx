@@ -5,10 +5,10 @@ const TechnologyContentBox = ({ currentTab, expertise }: { currentTab: string, e
   const currentTechData = expertise?.filter((exp: any) => exp.technology === currentTab)[0]?.data;
   return (
     <div className='flex flex-col md:flex-row gap-[70px]'>
-      <div className='w-full md:w-1/3'>
+      <div className='w-full md:w-1/2'>
         <img src={currentTechData?.image} alt={currentTechData?.title} className='md:p-[40px] border-[1px] border-[#707070]' />
       </div>
-      <div className='md:w-1/2'>
+      <div className='md:w-full'>
         <h2 className='text-[#1e85bd] font-[700] mb-[20px] text-[32px]'>{currentTechData?.title}</h2>
         {currentTechData?.description?.map((desc: string, index: number) => {
           return (
