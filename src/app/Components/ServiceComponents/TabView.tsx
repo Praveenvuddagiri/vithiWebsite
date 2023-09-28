@@ -2,6 +2,7 @@ import React from "react";
 
 const TabView = ({ tabs, currentTab,setCurrentTab }: any) => {
   return (
+    <div className="">
     <div className="flex gap-5 bg-[#f2f2f2] font-[600] text-[18px] capitalize text-[#444444] items-center justify-between cursor-pointer  leading-[1.6] ">
       {tabs?.map((tab:string)=> {
         return ( 
@@ -11,6 +12,7 @@ const TabView = ({ tabs, currentTab,setCurrentTab }: any) => {
                 {tab}
             </div>
       )})}
+    </div>
     </div>
   );
 };
