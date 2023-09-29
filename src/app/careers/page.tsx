@@ -4,6 +4,7 @@ import Navbar from "../Components/Navbar";
 import TopBreadCrum from "../Components/TopBreadCrum";
 import { Metadata } from "next";
 import JobsSection from "../Components/CareerComponents/JobsSection";
+import Footer from "../Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Careers",
@@ -26,6 +27,8 @@ const page = () => {
       <CareerBox />
 
       <JobsSection />
+
+      <Footer />
     </div>
   );
 };
