@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsFacebook } from 'react-icons/bs';
 import { TiSocialLinkedinCircular } from 'react-icons/ti';
-import { footerData } from '@/constant';
+import { footerData } from '@/utilities/constant';
 import FooterDataSection from './FooterDataSection';
 
 

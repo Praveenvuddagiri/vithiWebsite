@@ -1,5 +1,5 @@
 import React from 'react';
-import { careersdata } from '@/constant';
+import { careersdata } from '@/utilities/constant';
 import CareersBoxBenefit from './CareersBoxBenefit';
 
 const CareerBox = () => {

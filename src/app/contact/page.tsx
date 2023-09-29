@@ -1,7 +1,7 @@
 import React from 'react'
-import ContactDetails from '../Components/ContactComponent/ContactDetails'
-import Navbar from '../Components/Navbar'
-import TopBreadCrum from '../Components/TopBreadCrum'
+import ContactDetails from '@/Components/ContactComponent/ContactDetails'
+import Navbar from '@/Components/Navbar'
+import TopBreadCrum from '@/Components/TopBreadCrum'
 import { Metadata } from 'next'
 
 

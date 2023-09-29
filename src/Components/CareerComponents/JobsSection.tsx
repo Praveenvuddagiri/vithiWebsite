@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import PostAccordion from './PostAccordion'
-import { jobs } from '@/constant'
+import { jobs } from '@/utilities/constant'
 
 const JobsSection = () => {
     const [isOpen, setIsOpen] = useState(true);

@@ -1,6 +1,6 @@
 import React from 'react';
 import CoreValues from './CoreValues';
-import { coreValuesData } from '@/constant'
+import { coreValuesData } from '@/utilities/constant'
 
 const CoreValuesList = () => {
   return (

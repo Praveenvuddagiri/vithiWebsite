@@ -1,5 +1,5 @@
 import React from 'react';
-import {ContactDet} from '@/constant'
+import {ContactDet} from '@/utilities/constant'
 
 
 const ContactDetails = () => {

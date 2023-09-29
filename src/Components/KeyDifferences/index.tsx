@@ -1,5 +1,5 @@
 import React from 'react';
-import {Keydifference} from '@/constant'
+import {Keydifference} from '@/utilities/constant'
 
 
 const About = () => {

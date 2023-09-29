@@ -2,7 +2,9 @@
 import Link from "next/link";
 import React, { useState } from "react";
 
-const Navbar = ({active}:{active:string}) => {
+const Navbar =({ active}: { active:string}) => {
+
+
   const [isOpen, setIsOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const [activeItem,setActiveItem]=useState(active);

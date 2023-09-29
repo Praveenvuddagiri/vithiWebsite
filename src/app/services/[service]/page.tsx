@@ -1,10 +1,10 @@
-import MoveToTop from '@/app/Components/MoveToUp';
-import Navbar from '@/app/Components/Navbar';
-import ExpertiseBox from '@/app/Components/ServiceComponents/ExpertiseBox';
-import ServiceAboutContentBox from '@/app/Components/ServiceComponents/ServiceAboutContentBox';
-import TopBreadCrum from '@/app/Components/TopBreadCrum';
-import Footer from '@/app/Footer/Footer';
-import { serviceData } from '@/constant';
+import MoveToTop from '@/Components/MoveToUp';
+import Navbar from '@/Components/Navbar';
+import ExpertiseBox from '@/Components/ServiceComponents/ExpertiseBox';
+import ServiceAboutContentBox from '@/Components/ServiceComponents/ServiceAboutContentBox';
+import TopBreadCrum from '@/Components/TopBreadCrum';
+import Footer from '@/Components/Footer/Footer';
+import { serviceData } from '@/utilities/constant';
 import { Metadata } from 'next';
 import React from 'react'
 
