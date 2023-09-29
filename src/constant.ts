@@ -554,22 +554,40 @@ export const serviceData = [
   },
 ];
 
-
-
-export const careersdata=[
+export const careersdata = [
   {
-    image:"https://www.vithiitsolutions.com/images/e758da0c156983bcfdbc907e8a7bd74e.png",
-    title:"Learn and grow",
-    content:"Vithi IT Solution leadership team is dedicated to the personal growth of each employee. Whether it's learning new skills, striving to innovate, or becoming a better leader, our employees are encouraged to do their best."
+    image:
+      "https://www.vithiitsolutions.com/images/e758da0c156983bcfdbc907e8a7bd74e.png",
+    title: "Learn and grow",
+    content:
+      "Vithi IT Solution leadership team is dedicated to the personal growth of each employee. Whether it's learning new skills, striving to innovate, or becoming a better leader, our employees are encouraged to do their best.",
   },
   {
-    image:"https://www.vithiitsolutions.com/images/e4098b0c7b77ebf2a1a5151a7a0a3fe9.png",
-    title:"Deliver excellence",
-    content:"We believe in doing our best as a team. Our organizational structure is flat. We believe that every team member contributes to our success."
+    image:
+      "https://www.vithiitsolutions.com/images/e4098b0c7b77ebf2a1a5151a7a0a3fe9.png",
+    title: "Deliver excellence",
+    content:
+      "We believe in doing our best as a team. Our organizational structure is flat. We believe that every team member contributes to our success.",
   },
   {
-    image:"https://www.vithiitsolutions.com/images/54561b7aa2b8c544ccfade61fb2e093c.png",
-    title:"Transparency",
-    content:"To function as a truly successful team, we foster a culture of transparency. Want to know what's going on? You can ask your manager and they'll tell you, or you can wait until the next company launch."
-  }
-]
+    image:
+      "https://www.vithiitsolutions.com/images/54561b7aa2b8c544ccfade61fb2e093c.png",
+    title: "Transparency",
+    content:
+      "To function as a truly successful team, we foster a culture of transparency. Want to know what's going on? You can ask your manager and they'll tell you, or you can wait until the next company launch.",
+  },
+];
+
+export const ContactDet = {
+  content:
+    "This could be the beginning of a collaboration that will create something of value. Something that both you and us can feel proud about having been a part of.",
+  phonenumber: "+(91) 8977767382",
+  address: {
+    addressOffice:
+      "203, Cyber Crown, Sec-II Village, HUDA Techno Enclave, Madhapur, Telangana 500081",
+
+    addressWorkingLocation:
+      "P. NO. 227, Street No. 7, Patrika Nagar,Madhapur, Hyderabad, Telangana 500081",
+    mailus: "hr@vithiit.com",
+  },
+};
