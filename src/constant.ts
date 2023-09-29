@@ -556,20 +556,144 @@ export const serviceData = [
 
 
 
-export const careersdata=[
+export const careersdata = [
   {
-    image:"https://www.vithiitsolutions.com/images/e758da0c156983bcfdbc907e8a7bd74e.png",
-    title:"Learn and grow",
-    content:"Vithi IT Solution leadership team is dedicated to the personal growth of each employee. Whether it's learning new skills, striving to innovate, or becoming a better leader, our employees are encouraged to do their best."
+    image: "https://www.vithiitsolutions.com/images/e758da0c156983bcfdbc907e8a7bd74e.png",
+    title: "Learn and grow",
+    content: "Vithi IT Solution leadership team is dedicated to the personal growth of each employee. Whether it's learning new skills, striving to innovate, or becoming a better leader, our employees are encouraged to do their best."
   },
   {
-    image:"https://www.vithiitsolutions.com/images/e4098b0c7b77ebf2a1a5151a7a0a3fe9.png",
-    title:"Deliver excellence",
-    content:"We believe in doing our best as a team. Our organizational structure is flat. We believe that every team member contributes to our success."
+    image: "https://www.vithiitsolutions.com/images/e4098b0c7b77ebf2a1a5151a7a0a3fe9.png",
+    title: "Deliver excellence",
+    content: "We believe in doing our best as a team. Our organizational structure is flat. We believe that every team member contributes to our success."
   },
   {
-    image:"https://www.vithiitsolutions.com/images/54561b7aa2b8c544ccfade61fb2e093c.png",
-    title:"Transparency",
-    content:"To function as a truly successful team, we foster a culture of transparency. Want to know what's going on? You can ask your manager and they'll tell you, or you can wait until the next company launch."
+    image: "https://www.vithiitsolutions.com/images/54561b7aa2b8c544ccfade61fb2e093c.png",
+    title: "Transparency",
+    content: "To function as a truly successful team, we foster a culture of transparency. Want to know what's going on? You can ask your manager and they'll tell you, or you can wait until the next company launch."
   }
 ]
+
+export const jobs = [
+  {
+    location: "Hyderabad",
+    position: "Senior Frontend Developer",
+    experience: "10+ Years",
+    employmentType: "Full-Time",
+    jobDescription: "We are looking for a skilled professional who has a focus on end-user ease of use and functionality of the application. The candidate will work with designers and trend analysts to develop applications that reach as many users as possible. To be successful, you must have expert skills in back-end development as well as a good knowledge of new tools and trends in the industry.",
+    responsibilities: [
+      "Create user-friendly applications.",
+      "Work with designers and engineers to brainstorm application ideas.",
+      "Reflect on data to analyze trends.",
+      "Create test models to gauge user enjoyment."
+    ],
+    requirements: [
+      "A bachelor of science degree in computer science or engineering.",
+      "Proficiency with CSS, HTML, and JavaScript.",
+      "Proficiency with design software like UX Pin.",
+      "Excellent communication skills.",
+      "The ability to interpret analytics and implement changes to applications as needed."
+    ]
+  },
+  {
+    position: "UI Developer (React And Angular)",
+    location: "Hyderabad",
+    experience: "5+ Years",
+    employmentType: "Full-Time",
+    jobDescription: "We are seeking an experienced UI Developer to join our team. The ideal candidate will have a strong background in developing web applications using both React and Angular frameworks. The successful candidate will be responsible for designing and developing user interfaces that are intuitive, responsive, and aesthetically pleasing.",
+    responsibilities: [
+      "Design, develop, and maintain web applications using React and Angular.",
+      "Collaborate with UX designers, product owners, and other stakeholders to ensure a high-quality user experience.",
+      "Write high-quality, maintainable, and scalable code.",
+      "Develop and maintain unit tests and automated functional tests.",
+      "Participate in code reviews and provide feedback to other developers to ensure code quality and maintainability.",
+      "Work with DevOps teams to automate build and deployment processes.",
+      "Stay up-to-date with the latest trends and technologies in web development.",
+      "Contribute to the technical direction of the team."
+    ],
+    requirements: [
+      "Bachelor's degree in Computer Science or a related field.",
+      "At least 5 years of experience developing web applications using both React and Angular frameworks.",
+      "Strong understanding of web development principles and best practices, including responsive design, accessibility, and performance optimization.",
+      "Experience with CSS pre-processors, such as SASS or LESS.",
+      "Experience with front-end build tools, such as Webpack, Babel, or Gulp.",
+      "Strong understanding of RESTful API design and development.",
+      "Strong problem-solving skills and the ability to work independently or as part of a team.",
+      "Excellent communication skills and the ability to work effectively with other developers, product owners, and stakeholders."
+    ],
+    additionalInformation: "If you have a passion for developing innovative web applications and enjoy working in a fast-paced, collaborative team environment, we encourage you to apply for this exciting opportunity."
+  },
+  {
+    position: "NodeJS Fullstack Developer",
+    location: "Hyderabad",
+    experience: "5+ Years",
+    employmentType: "Full-Time",
+    jobDescription: "We are seeking an experienced NodeJS Fullstack Developer to join our team. The ideal candidate will have a strong background in developing web applications using NodeJS, React, and other modern front-end technologies. The successful candidate will be responsible for designing, developing, and maintaining complex web applications, as well as contributing to the technical direction of the team.",
+    responsibilities: [
+      "Design, develop, and maintain web applications using NodeJS and React.",
+      "Collaborate with UX designers, product owners, and other stakeholders to emulate a high-quality user experience.",
+      "Write high-quality, maintainable, and scalable code.",
+      "Develop and maintain RESTful APIs and integrate with external systems.",
+      "Develop and maintain unit tests and automated functional tests.",
+      "Participate in code reviews and provide feedback to other developers to ensure code quality and maintainability.",
+      "Work with DevOps teams to automate build and deployment processes.",
+      "Stay up-to-date with the latest trends and technologies in web development.",
+      "Contribute to the technical direction of the team."
+    ],
+    requirements: [
+      "Bachelor's degree in Computer Science or a related field.",
+      "At least 5 years of experience developing web applications using NodeJS and React.",
+      "Strong understanding of web development principles and best practices, including responsive design, accessibility, and performance optimization.",
+      "Experience with CSS pre-processors, such as SASS or LESS.",
+      "Experience with front-end build tools, such as Webpack, Babel, or Gulp.",
+      "Experience with back-end frameworks, such as Express, Koa, or Hapi.",
+      "Experience with database technologies, such as MySQL, PostgreSQL, or MongoDB.",
+      "Strong understanding of RESTful API design and development.",
+      "Strong problem-solving skills and the ability to work independently or as part of a team.",
+      "Excellent communication skills and the ability to work effectively with other developers, product owners, and stakeholders."
+    ],
+    additionalInformation: "If you have a passion for developing innovative web applications and enjoy working in a fast-paced, collaborative team environment, we encourage you to apply for this exciting opportunity."
+  },
+  {
+    position: "Salesforce Developer",
+    location: "Hyderabad",
+    experience: "3+ Years",
+    employmentType: "Full-Time",
+    jobDescription: "We are seeking a highly skilled and experienced Salesforce Developer to join our dynamic team. As a Salesforce Developer, you will play a crucial role in customizing, developing, and maintaining our Salesforce applications to meet the evolving needs of our organization.",
+    responsibilities: [
+      "Customize and develop Salesforce solutions to streamline business processes and improve overall efficiency.",
+      "Collaborate with cross-functional teams to gather and analyze requirements, and translate them into technical solutions.",
+      "Design, develop, and implement custom Apex code, triggers, Visualforce pages, and Lightning components.",
+      "Integrate Salesforce with other systems and applications, ensuring seamless data flow.",
+      "Create and maintain reports, dashboards, and workflows to support business operations.",
+      "Perform data migration and data quality activities as needed.",
+      "Stay up-to-date with the latest Salesforce features and functionalities.",
+      "Troubleshoot and resolve issues related to Salesforce applications."
+    ],
+    requirements: [
+      "Bachelor's degree in Computer Science, Information Technology, or a related field.",
+      "Minimum of 3 years of hands-on experience as a Salesforce Developer.",
+      "Proficiency in Salesforce customization and configuration using Apex, Visualforce, Lightning components, and declarative tools.",
+      "Strong understanding of Salesforce data model, security, and integration capabilities.",
+      "Experience with Salesforce Lightning Experience is a plus.",
+      "Salesforce certifications (e.g., Salesforce Certified Platform Developer) are highly desirable.",
+      "Excellent problem-solving skills and the ability to work independently.",
+      "Strong communication skills and the ability to collaborate effectively with team members and stakeholders."
+    ],
+    additionalInformation: "If you are a Salesforce Developer with a passion for creating innovative solutions and have a proven track record of success, we encourage you to apply. Join our team and be part of our mission to leverage Salesforce technology to drive business growth and customer satisfaction.\n\nTo apply, please submit your resume and a cover letter outlining your relevant experience and qualifications.\n\n[Company Name] is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees."
+  }
+];
+
+export const ContactDet = {
+  content:
+    "This could be the beginning of a collaboration that will create something of value. Something that both you and us can feel proud about having been a part of.",
+  phonenumber: "+(91) 8977767382",
+  address: {
+    addressOffice:
+      "203, Cyber Crown, Sec-II Village, HUDA Techno Enclave, Madhapur, Telangana 500081",
+
+    addressWorkingLocation:
+      "P. NO. 227, Street No. 7, Patrika Nagar,Madhapur, Hyderabad, Telangana 500081",
+    mailus: "hr@vithiit.com",
+  },
+};
