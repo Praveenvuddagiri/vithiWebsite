@@ -3,7 +3,7 @@ import Navbar from '@/Components/CommonComponents/Navbar';
 import ExpertiseBox from '@/Components/ServiceComponents/ExpertiseBox';
 import ServiceAboutContentBox from '@/Components/ServiceComponents/ServiceAboutContentBox';
 import TopBreadCrum from '@/Components/CommonComponents/TopBreadCrum';
-import Footer from '@/Components/CommonComponents/Footer/Footer';
+import Footer from '@/Components/CommonComponents/Footer';
 import { serviceData } from '@/utilities/constant';
 import { Metadata } from 'next';
 import React from 'react'

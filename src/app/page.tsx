@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 // import VideoBackgroundComponent from '../Components/HomeComponents/VideoBackgroundComponent';
 import FullContactForm from '../Components/HomeComponents/FullContactForm';
 import { data } from '@/utilities/constant';
-import Footer from '../Components/CommonComponents/Footer/Footer';
+import Footer from '../Components/CommonComponents/Footer';
 import Navbar from '../Components/CommonComponents/Navbar';
 import ObjReact from '@/utilities/DynamicComponent';
 import MoveToTop from '../Components/CommonComponents/MoveToUp';
