@@ -1,7 +1,7 @@
 import React from 'react'
 import ContactDetails from '@/Components/ContactComponent/ContactDetails'
-import Navbar from '@/Components/Navbar'
-import TopBreadCrum from '@/Components/TopBreadCrum'
+import Navbar from '@/Components/CommonComponents/Navbar'
+import TopBreadCrum from '@/Components/CommonComponents/TopBreadCrum'
 import { Metadata } from 'next'
 
 
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div>
-      <Navbar active='aboutus'/> 
+      <Navbar active='contact'/> 
       <div className='mt-24'>
         <TopBreadCrum title={aboutUsTopData.title} image={aboutUsTopData.image} navigations={aboutUsTopData.navigations}/>
       </div>

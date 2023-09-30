@@ -1,10 +1,10 @@
 import React from "react";
 import CareerBox from "../../Components/CareerComponents/CareerBox";
-import Navbar from "@/Components/Navbar";
-import TopBreadCrum from "@/Components/TopBreadCrum";
+import Navbar from "@/Components/CommonComponents/Navbar";
+import TopBreadCrum from "@/Components/CommonComponents/TopBreadCrum";
 import { Metadata } from "next";
 import JobsSection from "@/Components/CareerComponents/JobsSection";
-import Footer from "@/Components/Footer/Footer";
+import Footer from "@/Components/CommonComponents/Footer/Footer";
 import CareerContactForm from "@/Components/CareerComponents/CareerContactForm";
 import CareerAboutBox from "@/Components/CareerComponents/CareerAboutBox";
 

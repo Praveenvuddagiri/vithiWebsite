@@ -1,13 +1,13 @@
 import React from 'react'
-import TopBreadCrum from '@/Components/TopBreadCrum'
-import Navbar from '@/Components/Navbar'
-import AboutContentBox from '@/Components/AboutContentBox'
-import About from '@/Components/KeyDifferences'
-import Footer from '@/Components/Footer/Footer'
-import CoreValuesList from '@/Components/CoreValues/CoreValuesData'
-import AboutVisionBox from '@/Components/AboutVisionBox'
+import TopBreadCrum from '@/Components/CommonComponents/TopBreadCrum'
+import Navbar from '@/Components/CommonComponents/Navbar'
+import AboutContentBox from '@/Components/AboutComponents/AboutContentBox'
+import About from '@/Components/AboutComponents/KeyDifferences'
+import Footer from '@/Components/CommonComponents/Footer/Footer'
+import CoreValuesList from '@/Components/AboutComponents/CoreValues/CoreValuesData'
+import AboutVisionBox from '@/Components/AboutComponents/AboutVisionBox'
 import { Metadata } from 'next'
-import MoveToTop from '@/Components/MoveToUp'
+import MoveToTop from '@/Components/CommonComponents/MoveToUp'
 
 const aboutUsTopData = {
   title: ' All Your Technology and Data Management Needs. One Group of Technology Experts. ',

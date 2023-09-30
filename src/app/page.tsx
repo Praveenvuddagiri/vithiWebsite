@@ -1,17 +1,17 @@
-import ContentBox from '../Components/ContentBox';
-import ImageComponent from '../Components/ImageComponent';
+import ContentBox from '../Components/HomeComponents/ContentBox';
+import ImageComponent from '../Components/HomeComponents/ImageComponent';
 import React from 'react';
-import Hero from '../Components/HeroSection';
-import HomeServicesBox from '../Components/HomeServicesBox';
+import Hero from '../Components/HomeComponents/HeroSection';
+import HomeServicesBox from '../Components/HomeComponents/HomeServicesBox';
 import { Metadata } from 'next';
-import VideoBackgroundComponent from '../Components/VideoBackgroundComponent';
-// import MoveToTop from './Components/MoveToUp';
-import FullContactForm from '../Components/FullContactForm';
+// import VideoBackgroundComponent from '../Components/HomeComponents/VideoBackgroundComponent';
+import FullContactForm from '../Components/HomeComponents/FullContactForm';
 import { data } from '@/utilities/constant';
-import Footer from '../Components/Footer/Footer';
-import Navbar from '../Components/Navbar';
+import Footer from '../Components/CommonComponents/Footer/Footer';
+import Navbar from '../Components/CommonComponents/Navbar';
 import ObjReact from '@/utilities/DynamicComponent';
-import MoveToTop from '../Components/MoveToUp';
+import MoveToTop from '../Components/CommonComponents/MoveToUp';
+import * as Components from '@/Components';
 
 
 export const metadata: Metadata = {
@@ -68,7 +68,7 @@ export default function Home() {
         />
       </div>
 
-      <VideoBackgroundComponent />
+      <Components.VideoBackgroundComponent />
       <FullContactForm />
 
       {/* <MoveToTop /> */}
