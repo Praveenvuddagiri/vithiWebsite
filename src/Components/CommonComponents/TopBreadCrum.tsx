@@ -4,7 +4,8 @@ import { BiHomeAlt } from 'react-icons/bi';
 
 const TopBreadCrum = ({ title, image, navigations }: { title: string, image: string, navigations: string[] }) => {
     return (
-        <div className='flex flex-col-reverse md:flex-row justify-center items-start bg-[#f5faff]'>
+        
+        <div className='flex flex-col-reverse md:flex-row justify-center items-start bg-[#f5faff] mt-24'>
             <div className='flex flex-col items-start flex-1 p-12'>
 
                 <div className='text-xl flex justify-start items-center mb-10'>

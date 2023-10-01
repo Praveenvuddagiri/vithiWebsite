@@ -4,7 +4,6 @@ import React from 'react';
 import Hero from '../Components/HomeComponents/HeroSection';
 import HomeServicesBox from '../Components/HomeComponents/HomeServicesBox';
 import { Metadata } from 'next';
-// import VideoBackgroundComponent from '../Components/HomeComponents/VideoBackgroundComponent';
 import FullContactForm from '../Components/HomeComponents/FullContactForm';
 import { data } from '@/utilities/constant';
 import Footer from '../Components/CommonComponents/Footer';
@@ -12,6 +11,8 @@ import Navbar from '../Components/CommonComponents/Navbar';
 import ObjReact from '@/utilities/DynamicComponent';
 import MoveToTop from '../Components/CommonComponents/MoveToUp';
 import * as Components from '@/Components';
+import { generateCompoLib, generateComponentList } from '@/utilities/methods';
+import jsonData from '@/utilities/vithiApp.json'
 
 
 export const metadata: Metadata = {
@@ -19,11 +20,18 @@ export const metadata: Metadata = {
   description: 'VITHI IT SOLUTIONS',
 }
 
-const props = { active: 'home' };
+const props = {
+  header: data[3].headLine,
+  para: data[3].ParaGraph,
+  link: data[3].link
+};
 
 
 
 export default function Home() {
+  const coml = generateCompoLib(Components, jsonData[0].Components)
+  const compList = generateComponentList(jsonData[0].Components)
+
   return (
     <>
       <Navbar active='home' />
@@ -83,15 +91,18 @@ export default function Home() {
         },
         {
           component: "Footer",
+          props: {},
           children: null
         },
         {
           component: "ContentBox",
           props: {
-            header: "Data.3.headLine",
-            para: data[3].ParaGraph,
-            link: data[3].link
+            ...props
           },
+          children: null
+        },
+        {
+          component: "VideoBackgroundComponent",
           children: null
         }
         ],
@@ -99,7 +110,9 @@ export default function Home() {
         compoLib: {
           "MoveToTop": MoveToTop,
           "Footer": Footer,
-          "ContentBox": ContentBox
+          "ContentBox": ContentBox,
+          "VideoBackgroundComponent": Components.VideoBackgroundComponent,
+          // ...coml
         }
       }} />
     </>

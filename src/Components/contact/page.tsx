@@ -3,6 +3,7 @@ import ContactDetails from '@/Components/ContactComponent/ContactDetails'
 import Navbar from '@/Components/CommonComponents/Navbar'
 import TopBreadCrum from '@/Components/CommonComponents/TopBreadCrum'
 import { Metadata } from 'next'
+import { contactDetails } from '@/utilities/constant'
 
 
 const aboutUsTopData = {
@@ -25,7 +26,7 @@ const page = () => {
       <div className='mt-24'>
         <TopBreadCrum title={aboutUsTopData.title} image={aboutUsTopData.image} navigations={aboutUsTopData.navigations}/>
       </div>
-      <ContactDetails  />
+      <ContactDetails  content={contactDetails.content} phonenumber={contactDetails.phonenumber} address={contactDetails.address} />
     </div>
   )
 }

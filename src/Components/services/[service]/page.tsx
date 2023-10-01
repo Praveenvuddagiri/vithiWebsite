@@ -22,9 +22,7 @@ const Service = ({ params }: any) => {
     const top = pageData?.top;
     const about = pageData?.about;
     const expertise = pageData?.expertise;
-    const tabs=expertise?.map((e:any)=>{
-      return e.technology;
-    })
+    
 
     return (
         <div>
@@ -34,7 +32,7 @@ const Service = ({ params }: any) => {
                 <TopBreadCrum title={top?.title} image={top?.image} navigations={top?.navigations} />
             </div>
             <ServiceAboutContentBox title={about?.title} heading={about?.heading} para={about?.para} />
-            <ExpertiseBox tabs={tabs} expertise={expertise}/>
+            <ExpertiseBox expertise={expertise}/>
             <Footer />
             <MoveToTop />
         </div>

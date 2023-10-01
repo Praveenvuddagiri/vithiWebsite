@@ -88,7 +88,7 @@ const Navbar =({ active}: { active:string}) => {
                         <a href="#">Data Services</a>
                       </li><hr />
                     </Link>
-                    <Link href='/services/data-services'>
+                    <Link href='/services/integration-automation'>
                       <li className="px-3 py-2 hover:bg-gray-100">
                         <a href="#">Integration & Automation</a>
                       </li><hr />
@@ -144,7 +144,7 @@ const Navbar =({ active}: { active:string}) => {
                         <a href="#">Data Services</a>
                       </li>
                     </Link>
-                    <Link href='/services/data-services'>
+                    <Link href='/services/integration-automation'>
                       <li className="px-3 py-2 hover:bg-gray-100">
                         <a href="#">Integration & Automation</a>
                       </li>
