@@ -118,8 +118,9 @@ const Navbar =({ active}: { active:string}) => {
       {isOpen && (
         <div className="md:hidden mt-3 p-4">
           <ul className="flex flex-col space-y-4 text-lg   text-blue-500">
-            <li>Home</li><hr />
-            <li>About Us</li><hr />
+          <Link href="/"><li>Home</li></Link>
+            <hr />
+            <Link href="/aboutus"><li>About Us</li></Link><hr />
             <li
                 className="relative"
                 onMouseEnter={toggleServicesDropdown}
@@ -159,8 +160,10 @@ const Navbar =({ active}: { active:string}) => {
                 )}
               </li><hr />
               <Link href="/"></Link>
-            <li>Careers</li><hr />
-            <li>Contact</li><hr />
+              <Link href="/careers"><li>Careers</li></Link>
+            <hr />
+            <Link href="/contact"><li>Contact</li></Link>
+            <hr />
             <li>Schedule A Call</li>
           </ul>
         </div>
