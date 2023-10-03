@@ -1581,18 +1581,16 @@
             {
                 "componentName": "CareerAboutBox",
                 "props": {
-                    "header": "Accelerating Innovation. Empowering People.",
-                    "para": [
-                        "We sincerely welcome you to be part of our culture of technology and performance. Vithi IT Solution practices agile development that requires enthusiasm and passion to integrate opportunities rather than focusing on limitations. We welcome anyone who knows technology, regardless of age or experience. The ideal candidate is self-motivated, open-minded, always striving to improve, and not shying away from supporting their peers.",
-                        "Please send your resume to careers@vithiitsolutions.com"
-                    ]
+                    "title": "Accelerating Innovation. Empowering People.",
+                    "content": "We sincerely welcome you to be part of our culture of technology and performance. Vithi IT Solution practices agile development that requires enthusiasm and passion to integrate opportunities rather than focusing on limitations. We welcome anyone who knows technology, regardless of age or experience. The ideal candidate is self-motivated, open-minded, always striving to improve, and not shying away from supporting their peers.",
+                    "contact": "Please send your resume to careers@vithiitsolutions.com"
                 }
             },
             {
                 "componentName": "CareerBox",
                 "props": {
                     "bgimage": "https://www.vithiitsolutions.com/images/9fda3ccbc09fd6b1db76410e59c325d0.png",
-                    "careerData": [
+                    "careersData": [
                         {
                             "image": "https://www.vithiitsolutions.com/images/e758da0c156983bcfdbc907e8a7bd74e.png",
                             "title": "Learn and grow",
@@ -1720,7 +1718,7 @@
                                 "Excellent problem-solving skills and the ability to work independently.",
                                 "Strong communication skills and the ability to collaborate effectively with team members and stakeholders."
                             ],
-                            "additionalInformation": "If you are a Salesforce Developer with a passion for creating innovative solutions and have a proven track record of success, we encourage you to apply. Join our team and be part of our mission to leverage Salesforce technology to drive business growth and customer satisfaction.\n\nTo apply, please submit your resume and a cover letter outlining your relevant experience and qualifications.\n\n[Company Name] is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees."
+                            "additionalInformation": "If you are a Salesforce Developer with a passion for creating innovative solutions and have a proven track record of success, we encourage you to apply. Join our team and be part of our mission to leverage Salesforce technology to drive business growth and customer satisfaction.\n\nTo apply, please submit your resume and a cover letter outlining your relevant experience and qualifications.\n\nVithi It Solutions is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees."
                         }
                     ]
                 }
@@ -1730,7 +1728,7 @@
                 "props": {
                     "title": "Submit Your Resume",
                     "description": "If you want to be part of our existing team, kindly fill in the form below and we will reach out to you as soon as possible.",
-                    "imageSrc": "http://www.vithiitsolutions.com/images/portrait-business-executive-us.jpg"
+                    "image": "http://www.vithiitsolutions.com/images/portrait-business-executive-us.jpg"
                 }
             }
         ]

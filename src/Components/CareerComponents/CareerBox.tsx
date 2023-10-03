@@ -2,11 +2,11 @@ import React from 'react';
 import { careersdata } from '@/utilities/constant';
 import CareersBoxBenefit from './CareersBoxBenefit';
 
-const CareerBox = () => {
+const CareerBox = ({bgimage, careersData}: {bgimage: string, careersData: any[]}) => {
   return (
     <div className='bg-gradient-to-r from-[#3F51B5] to-[#269cca] p-4 md:p-14 relative'>
       <img
-        src="https://www.vithiitsolutions.com/images/9fda3ccbc09fd6b1db76410e59c325d0.png"
+        src={bgimage}
         alt="background image"
         className='w-full h-full absolute inset-0 object-cover opacity-10'
       />
@@ -16,7 +16,7 @@ const CareerBox = () => {
         </h2>
       </div>
       <div className='grid gap-7 sm:grid-cols-12'>
-        {careersdata?.map((e, index) => {
+        {careersData?.map((e, index) => {
           return (
             <div className='col-span-4 md:col-span-4' key={index}>
               <CareersBoxBenefit image={e.image} title={e.title} content={e.content} />
