@@ -57,24 +57,27 @@ const Navbar = ({
             </button>
           </div>
           <div
-            className={`${isOpen ? "block" : "hidden"
-              } mt-4 md:flex md:items-center md:space-x-8 hidden`}
+            className={`${
+              isOpen ? "block" : "hidden"
+            } mt-4 md:flex md:items-center md:space-x-8 hidden`}
           >
             <ul className="md:flex space-x-8 text-lg  text-[#595a5b] font-[500] text-[15px] capitalize items-center cursor-pointer">
               {navItems.map((item: any) =>
-                (item?.serviceTypes) ?
+                item?.serviceTypes ? (
                   <li
-                    className={`relative ${activeItem === "services"
-                      ? "text-blue-500 border-b-2 border-b-blue-400"
-                      : "text-black"
-                      } hover:border-b-2 hover:border-b-blue-400`}
+                    className={`relative ${
+                      activeItem === "services"
+                        ? "text-blue-500 border-b-2 border-b-blue-400"
+                        : "text-black"
+                    } hover:border-b-2 hover:border-b-blue-400`}
                     onMouseEnter={toggleServicesDropdown}
                     onMouseLeave={closeServicesDropdown}
                     onClick={() => setActiveItem("services")}
                   >
                     <button
-                      className={`text-gray-600 dark:text-white hover:text-blue-500 focus:outline-none focus:text-blue-500 ${servicesDropdownOpen ? "text-blue-500" : ""
-                        }`}
+                      className={`text-gray-600 dark:text-white hover:text-blue-500 focus:outline-none focus:text-blue-500 ${
+                        servicesDropdownOpen ? "text-blue-500" : ""
+                      }`}
                     >
                       Services
                     </button>
@@ -84,34 +87,32 @@ const Navbar = ({
                         onMouseEnter={toggleServicesDropdown}
                         onMouseLeave={closeServicesDropdown}
                       >
-
-                        {
-                          item.serviceTypes.map((ser: any) =>
-                            <Link href={ser.link}>
-                              <li className="px-3 py-2 hover:bg-gray-100">
-                                <a href="#">{ser.name}</a>
-                              </li>
-                              <hr />
-                            </Link>
-                          )}
+                        {item.serviceTypes.map((ser: any) => (
+                          <Link href={ser.link}>
+                            <li className="px-3 py-2 hover:bg-gray-100">
+                              <a href="#">{ser.name}</a>
+                            </li>
+                            <hr />
+                          </Link>
+                        ))}
                       </ul>
                     )}
-
                   </li>
-                  :
+                ) : (
                   <Link href={item.link}>
                     <li
                       onClick={() => setActiveItem(item.activeName)}
-                      className={`${activeItem === item.activeName
-                        ? "text-blue-500 border-b-2 border-b-blue-400"
-                        : "text-black"
-                        } hover:border-b-2 hover:border-b-blue-400`}
+                      className={`${
+                        activeItem === item.activeName
+                          ? "text-blue-500 border-b-2 border-b-blue-400"
+                          : "text-black"
+                      } hover:border-b-2 hover:border-b-blue-400`}
                     >
                       {item.name}
                     </li>
                   </Link>
-              )
-              }
+                )
+              )}
 
               <button className="bg-[#1e85bd] rounded-full px-4 py-2 text-white hover:bg-[#28a745] items-start">
                 Schedule A Call
@@ -123,95 +124,48 @@ const Navbar = ({
       {isOpen && (
         <div className="md:hidden mt-3 p-4">
           <ul className="flex flex-col space-y-4 text-lg   text-blue-500">
-            {navItems.map((item: any) => (item?.serviceTypes) ?
-              <>
-                <li
-                  className="relative"
-                  onMouseEnter={toggleServicesDropdown}
-                  onMouseLeave={closeServicesDropdown}
-                >
-                  <button
-                    className={` dark:text-white hover:text-blue-500 focus:outline-none focus:text-blue-500 ${servicesDropdownOpen ? "text-blue-500" : ""
-                      }`}
+            {navItems.map((item: any) =>
+              item?.serviceTypes ? (
+                <>
+                  <li
+                    className="relative"
+                    onMouseEnter={toggleServicesDropdown}
+                    onMouseLeave={closeServicesDropdown}
                   >
-                    Services
-                  </button>
-                  {servicesDropdownOpen && (
-                    <ul
-                      className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-64 text-gray-600 p-2"
-                      onMouseEnter={toggleServicesDropdown}
-                      onMouseLeave={closeServicesDropdown}
+                    <button
+                      className={` dark:text-white hover:text-blue-500 focus:outline-none focus:text-blue-500 ${
+                        servicesDropdownOpen ? "text-blue-500" : ""
+                      }`}
                     >
-
-                      {
-                        item.serviceTypes.map((ser: any) =>
-                          <Link href="/services/data-services">
-                            <li className="px-3 py-2 hover:bg-gray-100">
-                              <a href="#">Data Services</a>
+                      Services
+                    </button>
+                    {servicesDropdownOpen && (
+                      <ul
+                        className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-64 text-gray-600 p-2"
+                        onMouseEnter={toggleServicesDropdown}
+                        onMouseLeave={closeServicesDropdown}
+                      >
+                        {item.serviceTypes.map((ser: any) => (
+                          <Link href={ser.link}>
+                            <li className="px-3 py-2 hover:bg-gray-100 w-60">
+                              <a>{ser.name}</a>
                             </li>
                           </Link>
-                        )
-                      }
-                    </ul>
-                  )}
-                </li>
-                <hr />
-              </>
-              :
-              <>
-                <li>Home</li>
-                <hr />
-              </>
-
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                  <hr />
+                </>
+              ) : (
+                <Link href={item.link}>
+                  <li >{item.name}</li>
+                  <hr />
+                </Link>
+              )
             )}
 
-            <li>About Us</li>
-            <hr />
-            <li
-              className="relative"
-              onMouseEnter={toggleServicesDropdown}
-              onMouseLeave={closeServicesDropdown}
-            >
-              <button
-                className={` dark:text-white hover:text-blue-500 focus:outline-none focus:text-blue-500 ${servicesDropdownOpen ? "text-blue-500" : ""
-                  }`}
-              >
-                Services
-              </button>
-              {servicesDropdownOpen && (
-                <ul
-                  className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-64 text-gray-600 p-2"
-                  onMouseEnter={toggleServicesDropdown}
-                  onMouseLeave={closeServicesDropdown}
-                >
-
-
-
-                  <Link href="/services/data-services">
-                    <li className="px-3 py-2 hover:bg-gray-100">
-                      <a href="#">Data Services</a>
-                    </li>
-                  </Link>
-                  <Link href="/services/integration-automation">
-                    <li className="px-3 py-2 hover:bg-gray-100">
-                      <a href="#">Integration & Automation</a>
-                    </li>
-                  </Link>
-                  <Link href="/services/digital-innovation">
-                    <li className="px-3 py-2 hover:bg-gray-100">
-                      <a href="#">Digital-Innovation</a>
-                    </li>
-                  </Link>
-                  {/* Add more services as needed */}
-                </ul>
-              )}
-            </li>
-            <hr />
-            <Link href="/"></Link>
-            <li>Careers</li>
-            <hr />
-            <li>Contact</li>
-            <hr />
+            
             <li>Schedule A Call</li>
           </ul>
         </div>
