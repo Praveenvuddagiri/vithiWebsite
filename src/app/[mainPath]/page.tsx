@@ -6,7 +6,6 @@ import { generateCompoLib, generateComponentList } from '@/utilities/methods';
 
 const page = ({ params }: any) => {
 
-  const subPath = params.subPath;
   const mainPath = params.mainPath;
 
   const slugMapping = jsonData.filter((subData:any)=> subData.slug === `${mainPath}`)[0];
@@ -15,7 +14,7 @@ const page = ({ params }: any) => {
   return (
     <div>
       <ObjReact objReact={{
-        path: `${mainPath}/${subPath}`,
+        path: `${mainPath}`,
         component: generateComponentList(slugMapping?.Components),
         compoLib: generateCompoLib(Components, slugMapping?.Components)
       }} />

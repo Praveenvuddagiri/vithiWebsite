@@ -1,5 +1,5 @@
 import React from "react";
-import CareerBox from "../../Components/CareerComponents/CareerBox";
+import CareerBox from "../CareerComponents/CareerBox";
 import Navbar from "@/Components/CommonComponents/Navbar";
 import TopBreadCrum from "@/Components/CommonComponents/TopBreadCrum";
 import { Metadata } from "next";

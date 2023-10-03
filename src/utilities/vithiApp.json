@@ -1032,7 +1032,9 @@
                 "props": {
                     "title": " We are just an email, call or inquiry form away.",
                     "image": "http://www.vithiitsolutions.com/images/e2161c861f0bf481f33750f909300ac8.png",
-                    "navigations": ["Contact Us"]
+                    "navigations": [
+                        "Contact Us"
+                    ]
                 }
             },
             {
@@ -1149,6 +1151,587 @@
                     ]
                 },
                 "copyRightContent": "COPYRIGHT © 2023, VITHI IT SOLUTIONS. ALL RIGHTS RESERVED."
+            }
+        ]
+    },
+    {
+        "slug": "home",
+        "title": "home",
+        "description": "VITHI IT SOLUTIONS",
+        "Components": [
+            {
+                "componentName": "Navbar",
+                "props": {
+                    "logo": "vithi",
+                    "navItems": [
+                        {
+                            "name": "Home",
+                            "link": "/home"
+                        },
+                        {
+                            "name": "aboutUs",
+                            "link": "/aboutUs"
+                        },
+                        {
+                            "name": "services",
+                            "link": "/services",
+                            "types": [
+                                {
+                                    "name": "application-devlopment",
+                                    "link": "/services/application-devlepment"
+                                },
+                                {
+                                    "name": "data-services",
+                                    "link": "services/data-services"
+                                },
+                                {
+                                    "name": "Integration & Automation",
+                                    "link": "/services/integration & automation"
+                                },
+                                {
+                                    "name": "Digital Innovation",
+                                    "link": "services/Digital Innovation"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "careers",
+                            "link": "/careers"
+                        },
+                        {
+                            "name": "contact",
+                            "link": "/contact"
+                        }
+                    ],
+                    "callButtons": {
+                        "title": "schedule call",
+                        "link": ""
+                    }
+                }
+            },
+            {
+                "componentName": "Hero",
+                "props": {
+                    "carouselData": [
+                        {
+                            "title1": "Strong Industry Focus &",
+                            "title2": "Technology Expertise",
+                            "description": "We provide industry-specific solutions to help enterprises and fast-growing organizations succeed in today’s digital-first world.",
+                            "imageUrl": "https://www.vithiitsolutions.com/images/d27bc72948fd2f081233745fa4031f1e.png"
+                        },
+                        {
+                            "title1": "One Team, One Vision,",
+                            "title2": "One Love - Innovation",
+                            "description": "We are a team of passionate people driven by one relentless pursuit- to craft innovative solutions and deliver unparalleled results.",
+                            "imageUrl": "https://www.vithiitsolutions.com/images/0f17e499f8b1972e05165b1b5dcd86b9.jpg"
+                        },
+                        {
+                            "title1": "Digital, Business,",
+                            "title2": "Technology Partners For Success",
+                            "description": "We simplify the digital transformation journeys of businesses through smart and innovative software solutions.",
+                            "imageUrl": "https://www.vithiitsolutions.com/images/6db973c6f2bdf9fccad7f5f635aa6028.png"
+                        }
+                    ]
+                }
+            },
+            {
+                "componentName": "ImageComponent",
+                "props": {
+                    "image1": "http://www.vithiitsolutions.com/images/4b12216502d3566707e37c109ec622c8.png",
+                    "image2": "http://www.vithiitsolutions.com/images/cd2dd0d095bb3ba0958482abbb3d4baa.png",
+                    "right": true
+                }
+            },
+            {
+                "componentName": "ContentBox",
+                "props": {
+                    "header": "Transforming Businesses With Innovation",
+                    "para": "We are a full-stack software development and analytics company that is committed to building world-class digital products. At Vithi IT Solutions, we place immense value on trust, collaboration and going the extra mile to ensure excellence. We believe our responsibility doesn't end with just delivering a solution. We constantly strive to help you navigate all the complexity of digital transformation to scale your business.",
+                    "link": [
+                        "Know More About Us"
+                    ]
+                }
+            },
+            {
+                "componentName": "HomeServicesBox",
+                "props": {
+                    "title1": "Tailored business",
+                    "title2": "IT solutions",
+                    "image": "https://www.vithiitsolutions.com/images/d1396c00380f0c0388ef46391f3d973c.png",
+                    "servicesData": [
+                        "ERP Solutions",
+                        "Full Stack Web Development",
+                        "ERP",
+                        "Mobile Development"
+                    ],
+                    "description": {
+                        "title": "Application Development",
+                        "content": "Vithi IT Solutions builds custom applications using existing and emerging technologies that work well with any software portfolio to meet specific business requirements. We can create solutions for meeting the most challenging IT problems.",
+                        "knowMoreUrl": "http://www.vithiitsolutions.com/service/application-development"
+                    }
+                }
+            },
+            {
+                "componentName": "ContentBox",
+                "props": {
+                    "header": "Data Analytics",
+                    "para": "Vithi IT Solutions has an expert knowledge of big data analytics solutions and their implementation and also in-depth domain knowledge, data management skills, machine learning and Al excellence which have helped us in creating amazing big data solution.",
+                    "link": [
+                        "Cloud/DevOps",
+                        "Big Data and Data Management",
+                        "Data Engineering & BI ",
+                        "Data Science & AI"
+                    ]
+                }
+            },
+            {
+                "componentName": "ImageComponent",
+                "props": {
+                    "image1": "http://www.vithiitsolutions.com/images/2334724dc4b543d6e455ce24c6a1ff2a.png",
+                    "image2": "http://www.vithiitsolutions.com/images/1675696465l1.png",
+                    "right": false
+                }
+            },
+            {
+                "componentName": "ImageComponent",
+                "props": {
+                    "image1": "http://www.vithiitsolutions.com/images/4b12216502d3566707e37c109ec622c8.png",
+                    "image2": "http://www.vithiitsolutions.com/images/b80e23377cbc966bc2e6b43fb62f8afe.png",
+                    "right": true
+                }
+            },
+            {
+                "componentName": "ContentBox",
+                "props": {
+                    "header": "Integration & Automation",
+                    "para": "Whether you already have a strong IT team, want to expand on your IT talent or bring on a partner to address all of your integration and/or automation needs, Vithi IT Solutions can provide a service offering that's the right fit for you.",
+                    "link": [
+                        "Integration",
+                        "Test Automation",
+                        "Serverless Computing",
+                        "IoT"
+                    ]
+                }
+            },
+            {
+                "componentName": "ContentBox",
+                "props": {
+                    "header": "Digital Innovation",
+                    "para": "Our constantly evolving and refined expertise with technologies such as Blockchain, VR and Robotic Process Automation is creating support for businesses to create distinct digital-first solutions that promise superior returns on investment and delight customers across channels and platforms.",
+                    "link": [
+                        "eCommerce Platforms",
+                        "Virtual Reality",
+                        "Robotics",
+                        "Blockchain"
+                    ]
+                }
+            },
+            {
+                "componentName": "ImageComponent",
+                "props": {
+                    "image1": "http://www.vithiitsolutions.com/images/af28c0ae4774be04663165fc918bf0d6.png",
+                    "image2": "http://www.vithiitsolutions.com/images/d0d733ed7e7f955405d833b56e055d6d.png",
+                    "right": false
+                }
+            },
+            {
+                "componentName": "VideoBackgroundComponent",
+                "props": {
+                    "videoUrl": "https://www.vithiitsolutions.com/images/video.mp4",
+                    "title": "World Class Full Stack Product Team",
+                    "content": " Our teams can design, build, ship, and scale your idea and make it a reality in the most efficient way."
+                }
+            },
+            {
+                "componentName": "FullContactForm",
+                "props": {
+                    "image": "http://www.vithiitsolutions.com/images/f1.png"
+                }
+            },
+            {
+                "componentName": "Footer",
+                "props": {
+                    "logo": "",
+                    "content": "",
+                    "readMoreLink": "",
+                    "icons": [
+                        {
+                            "iconName": "",
+                            "iconUrl": ""
+                        },
+                        {},
+                        {}
+                    ],
+                    "FooterData": [
+                        {
+                            "head": "Application Development",
+                            "titles": [
+                                {
+                                    "text": "ERP Solutions",
+                                    "link": "/application-development/#tabs"
+                                },
+                                {
+                                    "text": "Full Stack Web Development",
+                                    "link": "/application-development/#tabs"
+                                },
+                                {
+                                    "text": "CRM",
+                                    "link": "/application-development/#tabs"
+                                },
+                                {
+                                    "text": "Mobile Development",
+                                    "link": "/application-development/#tabs"
+                                }
+                            ]
+                        },
+                        {
+                            "head": "Data Analytics",
+                            "titles": [
+                                {
+                                    "text": "Cloud/DevOps",
+                                    "link": "/data-services#tabs"
+                                },
+                                {
+                                    "text": "Big Data & Data Management",
+                                    "link": "/data-services#tabs"
+                                },
+                                {
+                                    "text": "Data Engineering & BI",
+                                    "link": "/data-services#tabs"
+                                },
+                                {
+                                    "text": "Data Science (AI/ML)",
+                                    "link": "/data-services#tabs"
+                                }
+                            ]
+                        },
+                        {
+                            "head": "Integration & Automation",
+                            "titles": [
+                                {
+                                    "text": "Integrations",
+                                    "link": "/integration-automation#tabs"
+                                },
+                                {
+                                    "text": "Test Automation",
+                                    "link": "/integration-automation#tabs"
+                                },
+                                {
+                                    "text": "Serverless Computing",
+                                    "link": "/integration-automation#tabs"
+                                },
+                                {
+                                    "text": "IoT",
+                                    "link": "/integration-automation#tabs"
+                                }
+                            ]
+                        },
+                        {
+                            "head": "Digital Innovation",
+                            "titles": [
+                                {
+                                    "text": "eCommerce Platforms",
+                                    "link": "/digital-innovation#tabs"
+                                },
+                                {
+                                    "text": "Virtual Reality",
+                                    "link": "/digital-innovation#tabs"
+                                },
+                                {
+                                    "text": "Robotics",
+                                    "link": "/digital-innovation#tabs"
+                                },
+                                {
+                                    "text": "Blockchain",
+                                    "link": "/digital-innovation#tabs"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "copyRightContent": "COPYRIGHT © 2023, VITHI IT SOLUTIONS. ALL RIGHTS RESERVED."
+            }
+        ]
+    },
+    {
+        "slug": "aboutus",
+        "title": "aboutus",
+        "description": "",
+        "Components": [
+            {
+                "componentName": "TopBreadCrum",
+                "props": {
+                    "title": "All Your Technology and Data Management Needs. One Group of Technology Experts.",
+                    "image": "https://www.vithiitsolutions.com/images/0a3116c138ebf8b4636c0eb67914c2be.png",
+                    "navigations": [
+                        "About Us"
+                    ]
+                }
+            },
+            {
+                "componentName": "AboutContentBox",
+                "props": {
+                    "title": "ABOUT VITHI IT SOLUTIONS",
+                    "heading": "We are data, technology, Integration and digital Innovation experts who provide services and support to help you get the most out of your organizational data.",
+                    "content": "Vithi IT Solutions is a global IT services provider and a digital transformation partner focused upon providing great value to clients worldwide with cost-effective, integrated, responsive and trustworthy IT solutions. We offer a wide bouquet of services and solutions in operations, consulting, digital, and technology and enable enterprises to overcome critical business challenges."
+                }
+            },
+            {
+                "componentName": "AboutVisionBox",
+                "props": {
+                    "image": "https://www.vithiitsolutions.com/images/25290e5e13bb2803eaccb15365bbca98.jpg",
+                    "content": "At Vithi IT Solutions, we’re driven by the purpose of 'Building your Business'",
+                    "visionPoints": [
+                        "Supporting our customers in getting their breakthrough products to milestones and market faster.",
+                        "To continuously create new opportunities for growth in your strategic business.",
+                        "Passionately helping business through innovative technologies to reach the business dreams.",
+                        "To develop lasting client relationships by providing exceptional stakeholder value in an environment of trust and respect."
+                    ]
+                }
+            },
+            {
+                "componentName": "About",
+                "props": {
+                    "bgimage": "http://www.vithiitsolutions.com/images/team-business-people-stacking-.jpg",
+                    "content": "Vithi has an excellent track record of Managing, Designing, Implementing & Deploying numerous projects which are mission critical to our customers focused mainly on on-time delivery with quality driven by SMEs across technologies.",
+                    "differences": [
+                        {
+                            "id": 1,
+                            "img": "http://www.vithiitsolutions.com/images/1da9f03f9bd1d5bb39ec4ed26a01b700.png",
+                            "heading": "Innovative",
+                            "content": "We offer innovative and creative thinking, delivering “real” cost effective solutions to our customers"
+                        },
+                        {
+                            "id": 2,
+                            "img": "http://www.vithiitsolutions.com/images/dea17b68ebfe5a4572e1004c411d1a78.png",
+                            "heading": "Quality",
+                            "content": "Quality is the key that enables us to provide exceptional services to our customers which contributes to increasing the customer base"
+                        },
+                        {
+                            "id": 3,
+                            "img": "http://www.vithiitsolutions.com/images/116806aa906de0e09aa6a71ccb9fa283.png",
+                            "heading": "Long-Term Partnerships",
+                            "content": "Building trusted, long-term partnerships with our customers by blending with your culture."
+                        },
+                        {
+                            "id": 4,
+                            "img": "http://www.vithiitsolutions.com/images/97088490eab7918d4fd83def7f1ad742.png",
+                            "heading": "Industry Best Practices",
+                            "content": "Applying industry best practices and Frameworks to manage risk, deliver services & optimize costs."
+                        },
+                        {
+                            "id": 5,
+                            "img": "http://www.vithiitsolutions.com/images/78cb815df215bcbd613436faadf85e0a.png",
+                            "heading": "Digital Transformation",
+                            "content": "Helping our clients to transform their business needs through innovation and Digital Transformation."
+                        },
+                        {
+                            "id": 6,
+                            "img": "http://www.vithiitsolutions.com/images/a1ac29e0e404485bedf825eab3f9371b.png",
+                            "heading": "Continuous Training",
+                            "content": "Continuous training and managing the best teams by employing & nurturing our resources"
+                        }
+                    ]
+                }
+            },
+            {
+                "componentName": "CoreValuesList",
+                "props": {
+                    "valuesList": [
+                        {
+                            "imgUrl": "https://www.vithiitsolutions.com/images/6d5a2612bbb49f560346ce931c21ad35.png",
+                            "title": "Value-Based Delivery & Quality",
+                            "paraGraph": "We take pride in providing high-value products and services that we stand behind, which ensures customer satisfaction, profitability and the future of our employees and our growth."
+                        },
+                        {
+                            "imgUrl": "https://www.vithiitsolutions.com/images/a1ad8243dc5226f19c0679559ac5127b.png",
+                            "title": "Process Improvements",
+                            "paraGraph": "We relentlessly pursue continuous improvement and excellence in projects, products, processes, and services, to define success as getting the right things done well."
+                        },
+                        {
+                            "imgUrl": "https://www.vithiitsolutions.com/images/93a18e572dca797e80a37feb96f74f56.png",
+                            "title": "Teamwork & People",
+                            "paraGraph": "We foster a work environment where creative thinking is encouraged and rewarded in order to create opportunities for process improvement and more cost-effective solutions and services."
+                        },
+                        {
+                            "imgUrl": "https://www.vithiitsolutions.com/images/d9726237c8338f2ccf395ec5cffda5aa.png",
+                            "title": "Customer Focused",
+                            "paraGraph": "We recognize that our customers are the reason for our success in business, and we are committed to listen and respond positively to their needs. We enthusiastically give our best service in all that we do."
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "slug": "careers",
+        "title": "career",
+        "description": "VITHI IT SOLUTIONS",
+        "Components": [
+            {
+                "componentName": "TopBreadCrum",
+                "props": {
+                    "title": "We're always looking for talented people",
+                    "image": "http://www.vithiitsolutions.com/images/9fda3ccbc09fd6b1db76410e59c325d0.png",
+                    "navigations": [
+                        "Careers"
+                    ]
+                }
+            },
+            {
+                "componentName": "CareerAboutBox",
+                "props": {
+                    "header": "Accelerating Innovation. Empowering People.",
+                    "para": [
+                        "We sincerely welcome you to be part of our culture of technology and performance. Vithi IT Solution practices agile development that requires enthusiasm and passion to integrate opportunities rather than focusing on limitations. We welcome anyone who knows technology, regardless of age or experience. The ideal candidate is self-motivated, open-minded, always striving to improve, and not shying away from supporting their peers.",
+                        "Please send your resume to careers@vithiitsolutions.com"
+                    ]
+                }
+            },
+            {
+                "componentName": "CareerBox",
+                "props": {
+                    "bgimage": "https://www.vithiitsolutions.com/images/9fda3ccbc09fd6b1db76410e59c325d0.png",
+                    "careerData": [
+                        {
+                            "image": "https://www.vithiitsolutions.com/images/e758da0c156983bcfdbc907e8a7bd74e.png",
+                            "title": "Learn and grow",
+                            "content": "Vithi IT Solution leadership team is dedicated to the personal growth of each employee. Whether it's learning new skills, striving to innovate, or becoming a better leader, our employees are encouraged to do their best."
+                        },
+                        {
+                            "image": "https://www.vithiitsolutions.com/images/e4098b0c7b77ebf2a1a5151a7a0a3fe9.png",
+                            "title": "Deliver excellence",
+                            "content": "We believe in doing our best as a team. Our organizational structure is flat. We believe that every team member contributes to our success."
+                        },
+                        {
+                            "image": "https://www.vithiitsolutions.com/images/54561b7aa2b8c544ccfade61fb2e093c.png",
+                            "title": "Transparency",
+                            "content": "To function as a truly successful team, we foster a culture of transparency. Want to know what's going on? You can ask your manager and they'll tell you, or you can wait until the next company launch."
+                        }
+                    ]
+                }
+            },
+            {
+                "componentName": "JobsSection",
+                "props": {
+                    "jobPosts": [
+                        {
+                            "location": "Hyderabad",
+                            "position": "Senior Frontend Developer",
+                            "experience": "10+ Years",
+                            "employmentType": "Full-Time",
+                            "jobDescription": "We are looking for a skilled professional who has a focus on end-user ease of use and functionality of the application. The candidate will work with designers and trend analysts to develop applications that reach as many users as possible. To be successful, you must have expert skills in back-end development as well as a good knowledge of new tools and trends in the industry.",
+                            "responsibilities": [
+                                "Create user-friendly applications.",
+                                "Work with designers and engineers to brainstorm application ideas.",
+                                "Reflect on data to analyze trends.",
+                                "Create test models to gauge user enjoyment."
+                            ],
+                            "requirements": [
+                                "A bachelor of science degree in computer science or engineering.",
+                                "Proficiency with CSS, HTML, and JavaScript.",
+                                "Proficiency with design software like UX Pin.",
+                                "Excellent communication skills.",
+                                "The ability to interpret analytics and implement changes to applications as needed."
+                            ]
+                        },
+                        {
+                            "position": "UI Developer (React And Angular)",
+                            "location": "Hyderabad",
+                            "experience": "5+ Years",
+                            "employmentType": "Full-Time",
+                            "jobDescription": "We are seeking an experienced UI Developer to join our team. The ideal candidate will have a strong background in developing web applications using both React and Angular frameworks. The successful candidate will be responsible for designing and developing user interfaces that are intuitive, responsive, and aesthetically pleasing.",
+                            "responsibilities": [
+                                "Design, develop, and maintain web applications using React and Angular.",
+                                "Collaborate with UX designers, product owners, and other stakeholders to ensure a high-quality user experience.",
+                                "Write high-quality, maintainable, and scalable code.",
+                                "Develop and maintain unit tests and automated functional tests.",
+                                "Participate in code reviews and provide feedback to other developers to ensure code quality and maintainability.",
+                                "Work with DevOps teams to automate build and deployment processes.",
+                                "Stay up-to-date with the latest trends and technologies in web development.",
+                                "Contribute to the technical direction of the team."
+                            ],
+                            "requirements": [
+                                "Bachelor's degree in Computer Science or a related field.",
+                                "At least 5 years of experience developing web applications using both React and Angular frameworks.",
+                                "Strong understanding of web development principles and best practices, including responsive design, accessibility, and performance optimization.",
+                                "Experience with CSS pre-processors, such as SASS or LESS.",
+                                "Experience with front-end build tools, such as Webpack, Babel, or Gulp.",
+                                "Strong understanding of RESTful API design and development.",
+                                "Strong problem-solving skills and the ability to work independently or as part of a team.",
+                                "Excellent communication skills and the ability to work effectively with other developers, product owners, and stakeholders."
+                            ],
+                            "additionalInformation": "If you have a passion for developing innovative web applications and enjoy working in a fast-paced, collaborative team environment, we encourage you to apply for this exciting opportunity."
+                        },
+                        {
+                            "position": "NodeJS Fullstack Developer",
+                            "location": "Hyderabad",
+                            "experience": "5+ Years",
+                            "employmentType": "Full-Time",
+                            "jobDescription": "We are seeking an experienced NodeJS Fullstack Developer to join our team. The ideal candidate will have a strong background in developing web applications using NodeJS, React, and other modern front-end technologies. The successful candidate will be responsible for designing, developing, and maintaining complex web applications, as well as contributing to the technical direction of the team.",
+                            "responsibilities": [
+                                "Design, develop, and maintain web applications using NodeJS and React.",
+                                "Collaborate with UX designers, product owners, and other stakeholders to emulate a high-quality user experience.",
+                                "Write high-quality, maintainable, and scalable code.",
+                                "Develop and maintain RESTful APIs and integrate with external systems.",
+                                "Develop and maintain unit tests and automated functional tests.",
+                                "Participate in code reviews and provide feedback to other developers to ensure code quality and maintainability.",
+                                "Work with DevOps teams to automate build and deployment processes.",
+                                "Stay up-to-date with the latest trends and technologies in web development.",
+                                "Contribute to the technical direction of the team."
+                            ],
+                            "requirements": [
+                                "Bachelor's degree in Computer Science or a related field.",
+                                "At least 5 years of experience developing web applications using NodeJS and React.",
+                                "Strong understanding of web development principles and best practices, including responsive design, accessibility, and performance optimization.",
+                                "Experience with CSS pre-processors, such as SASS or LESS.",
+                                "Experience with front-end build tools, such as Webpack, Babel, or Gulp.",
+                                "Experience with back-end frameworks, such as Express, Koa, or Hapi.",
+                                "Experience with database technologies, such as MySQL, PostgreSQL, or MongoDB.",
+                                "Strong understanding of RESTful API design and development.",
+                                "Strong problem-solving skills and the ability to work independently or as part of a team.",
+                                "Excellent communication skills and the ability to work effectively with other developers, product owners, and stakeholders."
+                            ],
+                            "additionalInformation": "If you have a passion for developing innovative web applications and enjoy working in a fast-paced, collaborative team environment, we encourage you to apply for this exciting opportunity."
+                        },
+                        {
+                            "position": "Salesforce Developer",
+                            "location": "Hyderabad",
+                            "experience": "3+ Years",
+                            "employmentType": "Full-Time",
+                            "jobDescription": "We are seeking a highly skilled and experienced Salesforce Developer to join our dynamic team. As a Salesforce Developer, you will play a crucial role in customizing, developing, and maintaining our Salesforce applications to meet the evolving needs of our organization.",
+                            "responsibilities": [
+                                "Customize and develop Salesforce solutions to streamline business processes and improve overall efficiency.",
+                                "Collaborate with cross-functional teams to gather and analyze requirements, and translate them into technical solutions.",
+                                "Design, develop, and implement custom Apex code, triggers, Visualforce pages, and Lightning components.",
+                                "Integrate Salesforce with other systems and applications, ensuring seamless data flow.",
+                                "Create and maintain reports, dashboards, and workflows to support business operations.",
+                                "Perform data migration and data quality activities as needed.",
+                                "Stay up-to-date with the latest Salesforce features and functionalities.",
+                                "Troubleshoot and resolve issues related to Salesforce applications."
+                            ],
+                            "requirements": [
+                                "Bachelor's degree in Computer Science, Information Technology, or a related field.",
+                                "Minimum of 3 years of hands-on experience as a Salesforce Developer.",
+                                "Proficiency in Salesforce customization and configuration using Apex, Visualforce, Lightning components, and declarative tools.",
+                                "Strong understanding of Salesforce data model, security, and integration capabilities.",
+                                "Experience with Salesforce Lightning Experience is a plus.",
+                                "Salesforce certifications (e.g., Salesforce Certified Platform Developer) are highly desirable.",
+                                "Excellent problem-solving skills and the ability to work independently.",
+                                "Strong communication skills and the ability to collaborate effectively with team members and stakeholders."
+                            ],
+                            "additionalInformation": "If you are a Salesforce Developer with a passion for creating innovative solutions and have a proven track record of success, we encourage you to apply. Join our team and be part of our mission to leverage Salesforce technology to drive business growth and customer satisfaction.\n\nTo apply, please submit your resume and a cover letter outlining your relevant experience and qualifications.\n\n[Company Name] is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees."
+                        }
+                    ]
+                }
+            },
+            {
+                "componentName": "CareerContactForm",
+                "props": {
+                    "title": "Submit Your Resume",
+                    "description": "If you want to be part of our existing team, kindly fill in the form below and we will reach out to you as soon as possible.",
+                    "imageSrc": "http://www.vithiitsolutions.com/images/portrait-business-executive-us.jpg"
+                }
             }
         ]
     }

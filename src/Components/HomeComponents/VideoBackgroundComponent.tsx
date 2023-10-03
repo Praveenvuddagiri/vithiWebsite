@@ -1,10 +1,10 @@
 import React from 'react';
 
-const VideoBackgroundComponent = () => {
+const VideoBackgroundComponent = ({videoUrl, title, content}: {videoUrl:string, title: string, content: string}) => {
   return (
     <div className="relative w-full h-96 bg-gradient-to-t from-blue-900 via-blue-900 to-blue-400">
       <video
-        src="https://www.vithiitsolutions.com/images/video.mp4"
+        src={videoUrl}
         autoPlay
         loop
         muted
@@ -17,11 +17,11 @@ const VideoBackgroundComponent = () => {
         </svg>
         <div className="p-10 relative z-10">
           <h2 className="text-4xl md:text-7xl text-white font-bold mb-4">
-            World Class Full Stack Product Team
+            {title}
           </h2>
           <div className="flex flex-col md:flex-row md:justify-between">
             <p className="text-white text-sm md:text-xl mb-6">
-              Our teams can design, build, ship, and scale your idea and make it a reality in the most efficient way.
+             {content}
             </p>
             <button className="bg-green-500 hover:bg-green-400 text-white rounded-full py-2 px-6 text-lg">
               Contact Us

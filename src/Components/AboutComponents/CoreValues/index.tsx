@@ -2,14 +2,14 @@ import React from 'react';
 import CoreValues from './CoreValues';
 import { coreValuesData } from '@/utilities/constant'
 
-const CoreValuesList = () => {
+const CoreValuesList = ({valuesList}: {valuesList:any[]}) => {
   return (
     <div className='p-12 bg-[#f3f6ff]'>
       <div className='text-center text-3xl font-bold mb-8'>
       <h1>CORE VALUES</h1>
       </div>
     <div className="grid gap-6 md:grid-cols-4">
-      {coreValuesData.map((data, index) => (
+      {valuesList.map((data, index) => (
         <CoreValues
           key={index}
           imgUrl={data.imgUrl}
