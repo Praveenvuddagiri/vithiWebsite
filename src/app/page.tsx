@@ -76,35 +76,16 @@ export default function Home() {
       {/* <MoveToTop /> */}
 
       {/* <Footer /> */}
+      <Footer
+    logoSrc="https://www.vithiitsolutions.com/images/logo.png"
+    logoAlt="Vithi IT Solutions Logo"
+    h6Content="Vithi IT Solutions is a Strategic Technology Partner helping companies achieve operational excellence..."
+    h2Content="Get Social With Us"
+    facebookLink="https://www.facebook.com"
+    linkedinLink="https://www.linkedin.com/company/vithi-it-"
+/>
 
-      <ObjReact objReact={{
-        path: "/aboutus",
-        component: [{
-          component: "MoveToTop",
-          children: null
-        },
-        {
-          component: "Footer",
-          children: null
-        },
-        {
-          component: "ContentBox",
-          props: {
-            header: "Data.3.headLine",
-            para: data[3].ParaGraph,
-            link: data[3].link
-          },
-          children: null
-        }
-        ],
-        data: { data },
-        compoLib: {
-          "MoveToTop": MoveToTop,
-          "Footer": Footer,
-          "ContentBox": ContentBox
-        }
-      }} />
-    </>
 
+      
   );
 }
