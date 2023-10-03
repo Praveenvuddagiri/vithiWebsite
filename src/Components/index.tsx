@@ -11,6 +11,7 @@ export {default as HomeServicesBox} from '@/Components/HomeComponents/HomeServic
 export {default as ImageComponent} from '@/Components/HomeComponents/ImageComponent';
 export {default as ContentBox} from '@/Components/HomeComponents/ContentBox';
 export {default as Hero} from '@/Components/HomeComponents/HeroSection';
+export {default as CombinedComponent} from '@/Components/HomeComponents/CombinedComponent';
 
 //About Components here
 export {default as AboutContentBox} from '@/Components/AboutComponents/AboutContentBox';
