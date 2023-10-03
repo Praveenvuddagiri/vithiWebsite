@@ -12,6 +12,7 @@ import Navbar from '../Components/CommonComponents/Navbar';
 import ObjReact from '@/utilities/DynamicComponent';
 import MoveToTop from '../Components/CommonComponents/MoveToUp';
 import * as Components from '@/Components';
+import CombinedComponent from '@/Components/HomeComponents/CombinedComponent';
 
 
 export const metadata: Metadata = {
@@ -70,6 +71,7 @@ export default function Home() {
 
       <Components.VideoBackgroundComponent />
       <FullContactForm />
+     < CombinedComponent header={data[3].headLine} para={data[3].ParaGraph} link={data[3].link} image1={data[3].imageUrls.image1} image2={data[3].imageUrls.image2} right ={true}/>
 
       {/* <MoveToTop /> */}
 
