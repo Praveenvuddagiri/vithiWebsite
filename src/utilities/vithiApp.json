@@ -1032,7 +1032,9 @@
                 "props": {
                     "title": " We are just an email, call or inquiry form away.",
                     "image": "http://www.vithiitsolutions.com/images/e2161c861f0bf481f33750f909300ac8.png",
-                    "navigations": ["Contact Us"]
+                    "navigations": [
+                        "Contact Us"
+                    ]
                 }
             },
             {
@@ -1050,17 +1052,12 @@
             {
                 "componentName": "Footer",
                 "props": {
-                    "logo": "",
-                    "content": "",
-                    "readMoreLink": "",
-                    "icons": [
-                        {
-                            "iconName": "",
-                            "iconUrl": ""
-                        },
-                        {},
-                        {}
-                    ],
+                    "logoSrc": "https://www.vithiitsolutions.com/images/logo.png",
+                    "logoAlt": "Vithi IT Solutions Logo",
+                    "h6Content": "Vithi IT Solutions is a Strategic Technology Partner helping companies achieve operational excellence...",
+                    "h2Content": "Get Social With Us",
+                    "facebookLink": "https://www.facebook.com",
+                    "linkedinLink": "https://www.linkedin.com/company/vithi-it-solutions",
                     "FooterData": [
                         {
                             "head": "Application Development",
