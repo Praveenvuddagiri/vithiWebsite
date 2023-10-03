@@ -4,7 +4,9 @@ import { TiSocialLinkedinCircular } from 'react-icons/ti';
 import { footerData } from '@/utilities/constant';
 import FooterDataSection from './FooterDataSection';
 
-const Footer = ({ logoSrc, logoAlt, h6Content, h2Content, facebookLink, linkedinLink }:any) => {
+const fastLinks= footerData;
+
+const Footer = ({ logo, content, readMoreUrl, facebookLink, linkedinLink, fastLinks}:{logo:string, content:string, readMoreUrl:string, facebookLink:string, linkedinLink:string, fastLinks:any[]}) => {
     return (
         <div className="flex flex-col items-center justify-center mt-10">
             <div className="max-w-full">
@@ -12,16 +14,16 @@ const Footer = ({ logoSrc, logoAlt, h6Content, h2Content, facebookLink, linkedin
                     <div className='m-2 w-96 md:col-span-2 leading-[24px] font-[400] text-[13px]'>
                         <img
                             className="w-60 h-auto mb-2 md:mb-4"
-                            src={logoSrc}
-                            alt={logoAlt}
+                            src={logo}
+                            alt="Vithi Logo"
                         />
 
                         <h6>
-                            {h6Content}
+                            {content}
                         </h6>
-                        <a href="#" className='border-b-2 border-b-gray-600 text-gray-700 font-[600] uppercase'>Read More</a>
+                        <a href={readMoreUrl} className='border-b-2 border-b-gray-600 text-gray-700 font-[600] uppercase'>Read More</a>
                         <div className="mt-4 md:mt-2 flex items-center gap-4">
-                            <h2 className="text-[#1e85bd] text-sm font-[700] mt-1">{h2Content}</h2>
+                            <h2 className="text-[#1e85bd] text-sm font-[700] mt-1">Get Social With Us</h2>
                             <ul className="flex items-center mt-2 text-center mb-4">
                                 <li>
                                     <a href={facebookLink}>
@@ -36,7 +38,7 @@ const Footer = ({ logoSrc, logoAlt, h6Content, h2Content, facebookLink, linkedin
                             </ul>
                         </div>
                     </div>
-                    {footerData?.map((section, index) => (
+                    {fastLinks?.map((section, index) => (
                         <FooterDataSection key={index} sectionData={section} />
                     ))}
                 </div>

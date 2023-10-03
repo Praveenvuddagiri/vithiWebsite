@@ -3,6 +3,8 @@ import * as Components from '@/Components';
 import ObjReact from '@/utilities/DynamicComponent';
 import jsonData from '@/utilities/vithiApp.json'
 import { generateCompoLib, generateComponentList } from '@/utilities/methods';
+import componentJson from '@/utilities/ComponentData.json';
+
 
 const page = ({ params }: any) => {
 
@@ -13,8 +15,27 @@ const page = ({ params }: any) => {
     <div>
       <ObjReact objReact={{
         path: `/`,
-        component: generateComponentList(slugMapping?.Components),
-        compoLib: generateCompoLib(Components, slugMapping?.Components)
+        component: [
+          {
+            component: "Navbar",
+            props: {
+              ...componentJson[0].props,
+              active: "home"
+            },
+            children: null
+          },
+          ...generateComponentList(slugMapping?.Components),
+          {
+            component: "Footer",
+            children: null,
+            props: componentJson[1].props
+          }
+        ],
+        compoLib: {
+          ...generateCompoLib(Components, slugMapping?.Components),
+          "Navbar": Components.Navbar,
+          "Footer": Components.Footer
+        }
       }} />
     </div>
   )

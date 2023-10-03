@@ -13,6 +13,7 @@ export const generateCompoLib = (parentComponent: any, pageComponents: any) => {
 
 export const generateComponentList = (pageComponents: any) => {
     let componetsList: ComponentType[] = [];
+    
     pageComponents.map((com: any) => {
         let tempComp = {
             component: com.componentName,

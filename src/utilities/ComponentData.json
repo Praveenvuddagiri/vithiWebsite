@@ -1,0 +1,62 @@
+[
+    {
+        "componentName": "Navbar",
+        "props": {
+            "logo": "http://www.vithiitsolutions.com/images/logo.png",
+            "active": "",
+            "navItems": [
+                {
+                    "name": "Home",
+                    "link": "/home",
+                    "activeName":"home"
+                },
+                {
+                    "name": "aboutUs",
+                    "link": "/aboutus",
+                    "activeName":"aboutus"
+                },
+                {
+                    "name": "services",
+                    "link": "#",
+                    "activeName":"services",
+                    "serviceTypes": [
+                        {
+                            "name": "Application Devlopment",
+                            "link": "/services/application-development"
+                        },
+                        {
+                            "name": "Data Services",
+                            "link": "/services/data-services"
+                        },
+                        {
+                            "name": "Integration & Automation",
+                            "link": "/services/integration-automation"
+                        },
+                        {
+                            "name": "Digital Innovation",
+                            "link": "/services/digital-innovation"
+                        }
+                    ]
+                },
+                {
+                    "name": "careers",
+                    "link": "/careers",
+                    "activeName":"careers"
+                },
+                {
+                    "name": "contact",
+                    "link": "/contact",
+                    "activeName":"contact"
+                }
+            ],
+            "callButtons": {
+                "title": "schedule call",
+                "link": ""
+            }
+        }
+    },
+    {
+
+    }
+    
+]
