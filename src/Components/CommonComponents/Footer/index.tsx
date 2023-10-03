@@ -51,3 +51,4 @@ const Footer = ({ logo, content, readMoreUrl, facebookLink, linkedinLink, fastLi
     );
 };
 
+export default Footer;

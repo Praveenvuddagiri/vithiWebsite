@@ -7,7 +7,7 @@
             "navItems": [
                 {
                     "name": "Home",
-                    "link": "/home",
+                    "link": "/",
                     "activeName":"home"
                 },
                 {
@@ -49,14 +49,61 @@
                     "activeName":"contact"
                 }
             ],
-            "callButtons": {
+            "callButton": {
                 "title": "schedule call",
                 "link": ""
             }
         }
     },
     {
-
+        "componentName": "Footer",
+        "props": {
+            "logo": "http://www.vithiitsolutions.com/images/logo.png",
+             "content":"Vithi IT Solutions is a Strategic Technology Partner helping companies achieve operational excellence by providing the best solutions in the form of End-to-End software solutions after analyzing the user’s needs and problems",
+              "readMoreUrl":"/aboutus",
+               "facebookLink":"https://www.facebook.com/",
+                "linkedinLink":"https://www.linkedin.com/company/vithi-it-solutions", 
+                "fastLinks":[
+                    {
+                      "head": "Application Development",
+                      "titles": [
+                        { "text": "ERP Solutions", "link": "/application-development/#tabs" },
+                        { "text": "Full Stack Web Development", "link": "/application-development/#tabs" },
+                        { "text": "CRM", "link": "/application-development/#tabs" },
+                        { "text": "Mobile Development", "link": "/application-development/#tabs" }
+                      ]
+                    },
+                    {
+                      "head": "Data Analytics",
+                      "titles": [
+                        { "text": "Cloud/DevOps", "link": "/data-services#tabs" },
+                        { "text": "Big Data & Data Management", "link": "/data-services#tabs" },
+                        { "text": "Data Engineering & BI", "link": "/data-services#tabs" },
+                        { "text": "Data Science (AI/ML)", "link": "/data-services#tabs" }
+                      ]
+                    },
+                    {
+                      "head": "Integration & Automation",
+                      "titles": [
+                        { "text": "Integrations", "link": "/integration-automation#tabs" },
+                        { "text": "Test Automation", "link": "/integration-automation#tabs" },
+                        { "text": "Serverless Computing", "link": "/integration-automation#tabs" },
+                        { "text": "IoT", "link": "/integration-automation#tabs" }
+                      ]
+                    },
+                    {
+                      "head": "Digital Innovation",
+                      "titles": [
+                        { "text": "eCommerce Platforms", "link": "/digital-innovation#tabs" },
+                        { "text": "Virtual Reality", "link": "/digital-innovation#tabs" },
+                        { "text": "Robotics", "link": "/digital-innovation#tabs" },
+                        { "text": "Blockchain", "link": "/digital-innovation#tabs" }
+                      ]
+                    }
+                  ]
+                  
+        
+        }
     }
     
 ]

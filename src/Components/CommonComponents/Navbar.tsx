@@ -6,10 +6,12 @@ const Navbar = ({
   active,
   logo,
   navItems,
+  callButton
 }: {
   active: string;
   logo: string;
   navItems: any[];
+  callButton:any;
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
@@ -115,7 +117,7 @@ const Navbar = ({
               )}
 
               <button className="bg-[#1e85bd] rounded-full px-4 py-2 text-white hover:bg-[#28a745] items-start">
-                Schedule A Call
+                {callButton.title}
               </button>
             </ul>
           </div>
@@ -166,7 +168,7 @@ const Navbar = ({
             )}
 
             
-            <li>Schedule A Call</li>
+            <li>{callButton.title}</li>
           </ul>
         </div>
       )}
