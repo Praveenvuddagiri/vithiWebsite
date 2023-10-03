@@ -246,19 +246,22 @@
             {
                 "componentName": "Navbar",
                 "props": {
-                    "logo": "vithi",
+                    "logo": "http://www.vithiitsolutions.com/images/logo.png",
                     "navItems": [
                         {
                             "name": "Home",
-                            "link": "/home"
+                            "link": "/home",
+                            "activeName":"home"
                         },
                         {
                             "name": "aboutUs",
-                            "link": "/aboutUs"
+                            "link": "/aboutUs",
+                            "activeName":"aboutus"
                         },
                         {
                             "name": "services",
                             "link": "/services",
+                            "activeName":"services",
                             "types": [
                                 {
                                     "name": "application-devlopment",
@@ -280,11 +283,13 @@
                         },
                         {
                             "name": "careers",
-                            "link": "/careers"
+                            "link": "/careers",
+                            "activeName":"careers"
                         },
                         {
                             "name": "contact",
-                            "link": "/contact"
+                            "link": "/contact",
+                            "activeName":"contact"
                         }
                     ],
                     "callButtons": {
@@ -1162,20 +1167,23 @@
             {
                 "componentName": "Navbar",
                 "props": {
-                    "logo": "vithi",
+                    "logo": "http://www.vithiitsolutions.com/images/logo.png",
                     "navItems": [
                         {
                             "name": "Home",
-                            "link": "/home"
+                            "link": "/home",
+                            "activeName":"home"
                         },
                         {
                             "name": "aboutUs",
-                            "link": "/aboutUs"
+                            "link": "/aboutus",
+                            "activeName":"aboutus"
                         },
                         {
                             "name": "services",
                             "link": "/services",
-                            "types": [
+                            "activeName":"services",
+                            "serviceTypes": [
                                 {
                                     "name": "application-devlopment",
                                     "link": "/services/application-devlepment"
@@ -1196,11 +1204,13 @@
                         },
                         {
                             "name": "careers",
-                            "link": "/careers"
+                            "link": "/careers",
+                            "activeName":"careers"
                         },
                         {
                             "name": "contact",
-                            "link": "/contact"
+                            "link": "/contact",
+                            "activeName":"contact"
                         }
                     ],
                     "callButtons": {
