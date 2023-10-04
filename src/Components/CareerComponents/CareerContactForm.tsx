@@ -1,25 +1,26 @@
 import React from 'react';
+import { BsArrowRight } from 'react-icons/bs';
 
-const CareerContactForm = ({ title, description,image }:{title:string, description:string,image:string}) => {
+const CareerContactForm = ({ title, description, image }: { title: string, description: string, image: string }) => {
 
   return (
-    <div className="relative w-[100%] h-full">
+    <div className="relative w-full h-full mt-10">
       <img
         src={image}
-        alt="imageCarrer"
+        alt="imageCareer"
         className="w-full h-full inset-0 object-cover"
       />
 
-      <div className="absolute top-0 right-0 xl:w-3/5 xl:h-[100%] h-fit bg-[#003b63] opacity-95 text-white font-bold text-left px-24">
+      <div className="md:absolute md:h-full top-0 right-0 w-full xl:w-3/5 bg-[#003b63] opacity-95 text-white font-bold text-left px-4 sm:px-8 md:px-24 lg:px-32">
         <h2 className="text-[#fff] text-3xl mb-5 mt-8 capitalize font-[700] leading-10">
           {title}
         </h2>
-        <p className="text-base sm:text-lg md:text-xl leading-6 sm:leading-8 text-[#fff] opacity-[0.5] font-light mx-auto pb-4">
+        <p className="text-base sm:text-lg md:text-xl leading-6 sm:leading-8 text-[#fff] opacity-[0.5] font-light pb-4">
           {description}
         </p>
-        <div className="">
+        <div className="w-full">
           <form>
-            <div className="text-left">
+            <div className="mb-4">
               <label htmlFor="name" className="block text-white font-extralight">
                 Full Name
               </label>
@@ -27,11 +28,11 @@ const CareerContactForm = ({ title, description,image }:{title:string, descripti
                 type="text"
                 id="name"
                 name="name"
-                className="bg-transparent h-[60px] sm:w-80 md:w-96 border-b-2 mb-5 text-[#fff] font-[400] text-[16px] leading-[2px] shadow-none focus:border-b-2"
+                className="bg-transparent w-full sm:w-80 md:w-96 border-b-2 mb-5 text-[#fff] font-[400] text-[16px] leading-[2px] shadow-none focus:border-b-2"
               />
             </div>
 
-            <div className="mb-4 text-left">
+            <div className="mb-4">
               <label htmlFor="email" className="block text-white">
                 Email
               </label>
@@ -39,11 +40,11 @@ const CareerContactForm = ({ title, description,image }:{title:string, descripti
                 type="email"
                 id="email"
                 name="email"
-                className="bg-transparent h-[60px] sm:w-80 md:w-96 border-b-2 border-opacity-60 mb-5 text-[#fff] font-[400] text-[16px] leading-[2px] shadow-none"
+                className="bg-transparent w-full sm:w-80 md:w-96 border-b-2 border-opacity-60 mb-5 text-[#fff] font-[400] text-[16px] leading-[2px] shadow-none"
               />
             </div>
 
-            <div className="mb-4 text-left">
+            <div className="mb-4">
               <label htmlFor="number" className="block text-white">
                 Phone Number
               </label>
@@ -51,11 +52,11 @@ const CareerContactForm = ({ title, description,image }:{title:string, descripti
                 type="tel"
                 id="number"
                 name="number"
-                className="bg-transparent h-[60px] sm:w-80 md:w-96 border-b-2 border-opacity-60 mb-5 text-[#fff] font-[400] text-[16px] leading-[2px] shadow-none"
+                className="bg-transparent w-full sm:w-80 md:w-96 border-b-2 border-opacity-60 mb-5 text-[#fff] font-[400] text-[16px] leading-[2px] shadow-none"
               />
             </div>
 
-            <div className="mb-4 text-left">
+            <div className="mb-4">
               <label htmlFor="qualification" className="block text-white">
                 Qualification
               </label>
@@ -63,11 +64,11 @@ const CareerContactForm = ({ title, description,image }:{title:string, descripti
                 type="text"
                 id="qualification"
                 name="qualification"
-                className="bg-transparent h-[60px] sm:w-80 md:w-96 border-b-2 border-opacity-60 mb-5 text-[#fff] font-[400] text-[16px] leading-[2px] shadow-none"
+                className="bg-transparent w-full sm:w-80 md:w-96 border-b-2 border-opacity-60 mb-5 text-[#fff] font-[400] text-[16px] leading-[2px] shadow-none"
               />
             </div>
 
-            <div className="mb-4 text-left">
+            <div className="mb-4">
               <label htmlFor="upload" className="block text-white">
                 Resume (PDF)
               </label>
@@ -79,12 +80,15 @@ const CareerContactForm = ({ title, description,image }:{title:string, descripti
                 className="border rounded-md px-2 py-1"
               />
             </div>
-            <button
-              type="submit"
-              className="bg-transparent text-white font-bold py-2 px-4 rounded hover:text-lg"
-            >
-              Submit Resume
-            </button>
+            <div className="flex">
+              <button
+                type="submit"
+                className="bg-transparent text-white font-bold text-lg px-4 rounded hover:text-xl"
+              >
+                Submit Resume
+              </button>
+              < BsArrowRight size={40} />
+            </div>
           </form>
         </div>
       </div>

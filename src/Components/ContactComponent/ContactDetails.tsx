@@ -1,14 +1,13 @@
 import React from 'react';
 
-
-const ContactDetails = ({content, address, phonenumber}: {content: string, address: any, phonenumber: string }) => {
+const ContactDetails = ({ content, address, phonenumber }: { content: string, address: any, phonenumber: string }) => {
   return (
     <div className='border-solid border-2 border-[#6f42c1] m-7 bg-white md:p-8'>
       <div className='px-6 pt-6'>
         <h1 className='text-[21px] leading-[32px] font-[300] mb-[40px] text-[#0f467a] md:font-[300] md:text-[30px]'>{content}</h1>
       </div>
-      <div className='m-16 flex justify-between gap-5 sm:flex-col md:flex-row '>
-        <div className='mb-3'> 
+      <div className='m-16 flex flex-col justify-between md:flex-row gap-5'>
+        <div className='mb-3'>
           <h2 className='text-[16px] leading-[21px] uppercase text-[#1e85bd] tracking-[1] font-[700] mb-1'>CALL US</h2>
           <p className='text-[#444444] font-sans font-[600] text-[16px] md:font-[600] md:text-[20px]'>{phonenumber}</p>
         </div>
@@ -29,3 +28,4 @@ const ContactDetails = ({content, address, phonenumber}: {content: string, addre
 }
 
 export default ContactDetails
+
