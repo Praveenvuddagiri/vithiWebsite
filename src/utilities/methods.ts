@@ -2,7 +2,7 @@ import { ComponentType } from "./DynamicComponent";
 
 export const generateCompoLib = (parentComponent: any, pageComponents: any) => {
     const compLib: Record<string, any> = {};
-    pageComponents.map((com: any) => {
+    pageComponents?.map((com: any) => {
         const cname = com.componentName;
         compLib[cname] = parentComponent[cname];
     })
@@ -14,7 +14,7 @@ export const generateCompoLib = (parentComponent: any, pageComponents: any) => {
 export const generateComponentList = (pageComponents: any) => {
     let componetsList: ComponentType[] = [];
     
-    pageComponents.map((com: any) => {
+    pageComponents?.map((com: any) => {
         let tempComp = {
             component: com.componentName,
             props: com.props,

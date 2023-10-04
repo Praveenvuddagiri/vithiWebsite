@@ -2,7 +2,7 @@
     {
         "componentName": "Navbar",
         "props": {
-            "logo": "http://www.vithiitsolutions.com/images/logo.png",
+            "logo": "https://attachments.office.net/owa/Praveen.Vuddagiri%40vithiit.com/service.svc/s/GetAttachmentThumbnail?id=AAMkADNkNmI4MTI2LTk2OWItNGRkNC1iYmQzLTEyMzVhMmM4OGJlMABGAAAAAACaudInSgpwQ6WChMrNjsurBwCUIZ7w%2F11zQau6VbLHEy%2B6AAAAAAEMAACUIZ7w%2F11zQau6VbLHEy%2B6AAAMOaW6AAABEgAQAJCrrnQXLGZPphF5oRQNUi8%3D&thumbnailType=2&token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjczRkI5QkJFRjYzNjc4RDRGN0U4NEI0NDBCQUJCMTJBMzM5RDlGOTgiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJjX3VidnZZMmVOVDM2RXRFQzZ1eEtqT2RuNWcifQ.eyJvcmlnaW4iOiJodHRwczovL291dGxvb2sub2ZmaWNlLmNvbSIsInVjIjoiYTM1MmRlMGI2ZTMzNDFlZDk1NzE1OWJlMzQ1MTZjOWMiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwidmVyIjoiRXhjaGFuZ2UuQ2FsbGJhY2suVjEiLCJhcHBjdHhzZW5kZXIiOiJPd2FEb3dubG9hZEA5ZjFiMDlmOS0zZDIyLTQ4ZDktYjk2Yy04ZjE0NWMyMmRmNjEiLCJpc3NyaW5nIjoiV1ciLCJhcHBjdHgiOiJ7XCJtc2V4Y2hwcm90XCI6XCJvd2FcIixcInB1aWRcIjpcIjExNTM4MDExMjY1NjM4OTM2MjVcIixcInNjb3BlXCI6XCJPd2FEb3dubG9hZFwiLFwib2lkXCI6XCIyMGE1N2NkMy0wODVkLTRmNmUtYjczOS01OWMwODI5YjRjYjNcIixcInByaW1hcnlzaWRcIjpcIlMtMS01LTIxLTQxMTY0NzI3MTQtMzg5MjY4NDU0Mi0zNjU1NTM0MjU2LTI0NDQwMTk3XCJ9IiwibmJmIjoxNjk2NDE5Nzg3LCJleHAiOjE2OTY0MjAzODcsImlzcyI6IjAwMDAwMDAyLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMEA5ZjFiMDlmOS0zZDIyLTQ4ZDktYjk2Yy04ZjE0NWMyMmRmNjEiLCJhdWQiOiIwMDAwMDAwMi0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvYXR0YWNobWVudHMub2ZmaWNlLm5ldEA5ZjFiMDlmOS0zZDIyLTQ4ZDktYjk2Yy04ZjE0NWMyMmRmNjEiLCJoYXBwIjoib3dhIn0.SWMktX3DHDNikGCXI1mUvr50nhPx-UaJZlhRBFbsc7ftfp5H900WyCiYJ1-81AGmxBXDfYzDue-M2velESWiOVnMbO2ZNN7VoV_XXgCk0Ba1T7UIfw31p1_cD1J-texLoWgmWGPHlx8hxfgZyLpuoRml0j6f0w8pGg3mx5P5ajo3ey5TXcH4EDNFzl_1RQYH_6zaBCtjAGYWOxom2e2R6afyXjrMl7dyS4JirIQb8Qcvt2GG-5ow3Jafa1_9JLCVMSD8Q0nqxtBgBcfJ-OK09e64k91YdL7QHe_01LoL6CCjXhs7npX-lMA_qSuFSS8fJEYibWiHnritC5_LITPIDA&X-OWA-CANARY=89rrPeZemE66FkYS45lhz2C7mSXPxNsYiQwnZsnAtPLoJv3agb3nac_OrxPEIc436mQu32d8LGs.&owa=outlook.office.com&scriptVer=20230922005.16&animation=true",
             "active": "",
             "navItems": [
                 {
@@ -11,12 +11,12 @@
                     "activeName":"home"
                 },
                 {
-                    "name": "aboutUs",
+                    "name": "About Us",
                     "link": "/aboutus",
                     "activeName":"aboutus"
                 },
                 {
-                    "name": "services",
+                    "name": "Services",
                     "link": "#",
                     "activeName":"services",
                     "serviceTypes": [
@@ -44,13 +44,13 @@
                     "activeName":"careers"
                 },
                 {
-                    "name": "contact",
+                    "name": "Contact",
                     "link": "/contact",
                     "activeName":"contact"
                 }
             ],
             "callButton": {
-                "title": "schedule call",
+                "title": "Schedule Call",
                 "link": ""
             }
         }

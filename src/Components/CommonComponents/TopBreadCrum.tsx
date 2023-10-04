@@ -6,7 +6,7 @@ const TopBreadCrum = ({ title, image, navigations }: { title: string, image: str
     return (
         
         <div className='flex flex-col-reverse md:flex-row justify-center items-start bg-[#f5faff] mt-24'>
-            <div className='flex flex-col items-start flex-1 p-12'>
+            <div className='flex flex-col items-start flex-1 py-12 pl-12 flex-wrap'>
 
                 <div className='text-xl flex justify-start items-center mb-10'>
                     <Link href='/'>
@@ -24,8 +24,8 @@ const TopBreadCrum = ({ title, image, navigations }: { title: string, image: str
                 </div>
                     <h1 className='text-lg md:text-4xl font-bold'>{title}</h1>
             </div>
-            <div className=''>
-                <img src={image} alt="top image" className='max-w-full' />
+            <div className='flex justify-end'>
+                <img src={image} alt="top image" className='max-w-[90%]' />
             </div>
         </div>
     )
