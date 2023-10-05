@@ -3,12 +3,12 @@ import React from 'react';
 const CoreValue = ({ imgUrl, title, paraGraph }:{imgUrl:string,title:string,paraGraph:string}) => {
   return (
     <div className='max-w-7xl '>
-      <div className='bg-primary rounded-md p-16 flex flex-col items-center h-full hover:transform hover:-translate-y-2 transition-transform duration-300'>
+      <div className='bg-white rounded-md p-16 flex flex-col items-center h-full hover:transform hover:-translate-y-2 transition-transform duration-300'>
         <div className='p-8 bg-gradient-to-t from-[#e9e9e9] rounded-full '>
           <img className='w-16' src={imgUrl} alt="image1" />
         </div>
-        <h1 className='text-base font-extrabold mt-4 text-[#2e3c54]'>{title}</h1>
-        <p className='text-sm mt-4'>{paraGraph}</p>
+        <h1 className='text-base font-extrabold mt-4 text-primary'>{title}</h1>
+        <p className='text-sm mt-4 text-light'>{paraGraph}</p>
       </div>
     </div>
   );

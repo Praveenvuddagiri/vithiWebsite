@@ -7,7 +7,7 @@ const MoveToTop = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-2">
+    <div className="fixed bottom-6 right-4">
       <button onClick={scrollToTop}>
         <img
           src="https://www.vithiitsolutions.com/images/icon_top.png"
