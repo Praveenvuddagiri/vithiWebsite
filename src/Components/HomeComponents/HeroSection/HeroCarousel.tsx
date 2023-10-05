@@ -1,5 +1,6 @@
 "use client"
 import React, { ReactNode, useEffect, useState } from 'react';
+import {LiaGreaterThanSolid, LiaLessThanSolid} from 'react-icons/lia'
 
 interface HeroCarouselProps {
   children: ReactNode;
@@ -33,19 +34,19 @@ const HeroCarousel = ({ children }: HeroCarouselProps) => {
 
   return (
     <div className="relative bg-white">
-      <div className="w-full">
+      <div className="w-full absolute bottom-36">
         <button
-          className="absolute z-10 left-2 md:left-36 top-3/4 transform -translate-y-1/2 p-1.5 bg-transparent text-slate-600 rounded-full border border-slate-600"
+          className="absolute z-10 left-2 md:left-36 top-3/4 transform -translate-y-1/2 p-1.5 bg-transparent text-primary rounded-full border border-primary"
           onClick={prevSlide}
         >
-          &lt;
+          <LiaLessThanSolid />
         </button>
 
         <button
-          className="absolute z-10 right-2 md:right-auto md:left-48 top-3/4 transform -translate-y-1/2 p-1.5 bg-transparent text-slate-600 rounded-full border border-slate-600"
+          className="absolute z-10 right-2 md:right-auto md:left-48 top-3/4 transform -translate-y-1/2 p-1.5 bg-transparent text-primary rounded-full border border-primary"
           onClick={nextSlide}
         >
-          &gt;
+          <LiaGreaterThanSolid />
         </button>
       </div>
       {React.Children.map(children, (child, index) => {
