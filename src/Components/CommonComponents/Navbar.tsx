@@ -71,7 +71,7 @@ const Navbar = ({
                       activeItem === "services"
                         ? "text-primary border-b-2 border-b-blue-400"
                         : "text-black"
-                    } hover:border-b-2 hover:border-b-blue-400`}
+                    } hover:border-b-2 hover:border-b-primary`}
                     onMouseEnter={toggleServicesDropdown}
                     onMouseLeave={closeServicesDropdown}
                     onClick={() => setActiveItem("services")}
@@ -85,13 +85,13 @@ const Navbar = ({
                     </button>
                     {servicesDropdownOpen && (
                       <ul
-                        className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-72 p-2 text-[#000] leading-[22px] font-[400]"
+                        className="absolute bg-primary border border-gray-300 rounded-lg shadow-lg w-72 p-2 text-primary leading-[22px] font-[400]"
                         onMouseEnter={toggleServicesDropdown}
                         onMouseLeave={closeServicesDropdown}
                       >
                         {item.serviceTypes.map((ser: any) => (
                           <Link href={ser.link}>
-                            <li className="px-3 py-2 hover:bg-gray-100">
+                            <li className="px-3 py-2 hover:bg-light text-white">
                               <a href="#">{ser.name}</a>
                             </li>
                             <hr />
@@ -106,9 +106,9 @@ const Navbar = ({
                       onClick={() => setActiveItem(item.activeName)}
                       className={`${
                         activeItem === item.activeName
-                          ? "text-primary border-b-2 border-b-blue-400"
+                          ? "text-primary border-b-2 border-b-primary"
                           : "text-black"
-                      } hover:border-b-2 hover:border-b-blue-400`}
+                      } hover:border-b-2 hover:border-b-primary`}
                     >
                       {item.name}
                     </li>
@@ -116,7 +116,7 @@ const Navbar = ({
                 )
               )}
 
-              <button className="bg-[#1e85bd] rounded-full px-4 py-2 text-white hover:bg-[#28a745] items-start">
+              <button className="bg-primary rounded-full px-6 py-2 text-white hover:bg-secondary items-start">
                 {callButton.title}
               </button>
             </ul>

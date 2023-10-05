@@ -23,16 +23,16 @@ const Footer = ({ logo, content, readMoreUrl, facebookLink, linkedinLink, fastLi
                         </h6>
                         <a href={readMoreUrl} className='border-b-2 border-b-gray-600 text-gray-700 font-[600] uppercase'>Read More</a>
                         <div className="mt-4 md:mt-2 flex items-center gap-4">
-                            <h2 className="text-[#1e85bd] text-sm font-[700] mt-1">Get Social With Us</h2>
+                            <h2 className="text-primary text-sm font-[700] mt-1">Get Social With Us</h2>
                             <ul className="flex items-center mt-2 text-center mb-4">
                                 <li>
                                     <a href={facebookLink}>
-                                        <BsFacebook size={30} className='hover:text-[#0f1941] text-[#31a2df]' />
+                                        <BsFacebook size={30} className='hover:text-[#0f1941] text-primary' />
                                     </a>
                                 </li>
                                 <li>
                                     <a href={linkedinLink}>
-                                        <TiSocialLinkedinCircular size={43} className='hover:text-[#0f1941] text-[#31a2df]' />
+                                        <TiSocialLinkedinCircular size={43} className='hover:text-[#0f1941] text-primary' />
                                     </a>
                                 </li>
                             </ul>

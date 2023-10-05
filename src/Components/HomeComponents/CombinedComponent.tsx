@@ -19,12 +19,12 @@ const CombinedComponent = ({ header, para, link, image1, image2, right }: any) =
             </div>
             <div className="h-fit font-serif flex flex-col p-4  sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 ">
                 <h2 className="text-[30px] font-[700] text-primary leading-[42px] mb-4">{header}</h2>
-                <div className='text-xl'>
+                <div className='text-xl text-light mb-6'>
                     <p>{para}</p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 gap-y-4">
                     {link?.map((item: string, index: number) => (
-                        <a href="#" key={index} className="text-green-400 text-lg flex items-center font-semibold hover:text-green-600">
+                        <a href="#" key={index} className="text-secondary text-lg flex items-center font-semibold hover:text-green-700">
                             {item}
                             <BsArrowUpRight size={15} className="ml-2" />
                         </a>
