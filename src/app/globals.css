@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100;400&family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}

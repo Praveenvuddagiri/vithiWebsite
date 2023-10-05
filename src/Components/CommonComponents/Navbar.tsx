@@ -69,9 +69,9 @@ const Navbar = ({
                   <li
                     className={`relative ${
                       activeItem === "services"
-                        ? "text-primary border-b-2 border-b-blue-400"
+                        ? "text-secondary border-b-2 border-b-secondary"
                         : "text-black"
-                    } hover:border-b-2 hover:border-b-primary`}
+                    } hover:border-b-2 hover:border-b-secondary`}
                     onMouseEnter={toggleServicesDropdown}
                     onMouseLeave={closeServicesDropdown}
                     onClick={() => setActiveItem("services")}
@@ -85,13 +85,13 @@ const Navbar = ({
                     </button>
                     {servicesDropdownOpen && (
                       <ul
-                        className="absolute bg-primary border border-gray-300 rounded-lg shadow-lg w-72 p-2 text-primary leading-[22px] font-[400]"
+                        className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-72 p-2 text-secondary leading-[22px] font-[400]"
                         onMouseEnter={toggleServicesDropdown}
                         onMouseLeave={closeServicesDropdown}
                       >
                         {item.serviceTypes.map((ser: any) => (
                           <Link href={ser.link}>
-                            <li className="px-3 py-2 hover:bg-light text-white">
+                            <li className="px-3 py-2 hover:bg-light hover:text-white text-primary">
                               <a href="#">{ser.name}</a>
                             </li>
                             <hr />
@@ -106,9 +106,9 @@ const Navbar = ({
                       onClick={() => setActiveItem(item.activeName)}
                       className={`${
                         activeItem === item.activeName
-                          ? "text-primary border-b-2 border-b-primary"
+                          ? "text-secondary border-b-2 border-b-secondary"
                           : "text-black"
-                      } hover:border-b-2 hover:border-b-primary`}
+                      } hover:border-b-2 hover:border-b-secondary`}
                     >
                       {item.name}
                     </li>
