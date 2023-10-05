@@ -35,14 +35,14 @@ const HeroCarousel = ({ children }: HeroCarouselProps) => {
     <div className="relative bg-white">
       <div className="w-full">
         <button
-          className="absolute left-2 md:left-36 top-3/4 transform -translate-y-1/2 p-1.5 bg-transparent text-slate-600 rounded-full border border-slate-600"
+          className="absolute z-10 left-2 md:left-36 top-3/4 transform -translate-y-1/2 p-1.5 bg-transparent text-slate-600 rounded-full border border-slate-600"
           onClick={prevSlide}
         >
           &lt;
         </button>
 
         <button
-          className="absolute right-2 md:right-auto md:left-48 top-3/4 transform -translate-y-1/2 p-1.5 bg-transparent text-slate-600 rounded-full border border-slate-600"
+          className="absolute z-10 right-2 md:right-auto md:left-48 top-3/4 transform -translate-y-1/2 p-1.5 bg-transparent text-slate-600 rounded-full border border-slate-600"
           onClick={nextSlide}
         >
           &gt;
