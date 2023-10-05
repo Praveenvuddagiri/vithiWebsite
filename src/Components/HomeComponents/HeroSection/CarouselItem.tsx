@@ -10,8 +10,8 @@ const CarouselItem = ({ title1, title2, description, imageUrl }: { title1: strin
         </div>
         <div className="px-4 md:px-4 lg:px-8 xl:px-16 2xl:px-24 z-10 w-full max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl">
           <div className="flex flex-col justify-center p-4 items-center">
-            <h2 className="text-3xl md:text-5xl font-extrabold leading-10 text-black">{title1}<br />{title2}</h2>
-            <p className="mt-5 text-lg text-gray-600 w-3/4 leading-7">{description}</p>
+            <h2 className="text-3xl md:text-5xl font-extrabold leading-10 text-primary">{title1}<br />{title2}</h2>
+            <p className="mt-5 text-lg text-light w-3/4 leading-7">{description}</p>
           </div>
         </div>
         <div className="z-10 md:pr-16 w-full max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
