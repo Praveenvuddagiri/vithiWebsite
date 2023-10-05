@@ -3,7 +3,7 @@ import Link from "next/link";
 const FooterDataSection = ({ sectionData }: any) => {
     return (
         <div className="mb-4 ml-8">
-            <h4 className="text-primary text-[18px] font-semibold">
+            <h4 className="text-secondary text-[18px] font-semibold">
                 {sectionData.head}
             </h4>
             <ul className="list-none list-inside mt-10">

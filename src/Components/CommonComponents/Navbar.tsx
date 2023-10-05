@@ -31,7 +31,7 @@ const Navbar = ({
 
   return (
     <nav className="bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed top-0 left-0 right-0 shadow-lg transition-all duration-300 transform translate-y-0 z-50">
-      <div className="max-w-screen-xl mx-auto p-4">
+      <div className="max-w-screen-xl mx-6 p-4">
         <div className="flex items-center justify-between">
           <div className="flex items-end">
             <img src={logo} alt="Vithi Logo" className="w-[100px] h-16" />
@@ -85,13 +85,13 @@ const Navbar = ({
                     </button>
                     {servicesDropdownOpen && (
                       <ul
-                        className="absolute bg-primary border border-gray-300 rounded-lg shadow-lg w-72 p-2 text-primary leading-[22px] font-[400]"
+                        className="absolute bg-secondary border border-gray-300 rounded-lg shadow-lg w-72 p-2 text-primary leading-[22px] font-[400]"
                         onMouseEnter={toggleServicesDropdown}
                         onMouseLeave={closeServicesDropdown}
                       >
                         {item.serviceTypes.map((ser: any) => (
                           <Link href={ser.link}>
-                            <li className="px-3 py-2 hover:bg-light text-white">
+                            <li className="px-3 py-2 hover:bg-white text-primary">
                               <a href="#">{ser.name}</a>
                             </li>
                             <hr />
@@ -106,9 +106,9 @@ const Navbar = ({
                       onClick={() => setActiveItem(item.activeName)}
                       className={`${
                         activeItem === item.activeName
-                          ? "text-primary border-b-2 border-b-primary"
+                          ? "text-primary border-b-2 border-b-secondary"
                           : "text-black"
-                      } hover:border-b-2 hover:border-b-primary`}
+                      } hover:border-b-2 hover:border-b-secondary`}
                     >
                       {item.name}
                     </li>
