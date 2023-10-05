@@ -39,7 +39,7 @@ const Navbar = ({
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-gray-600 dark:text-white hover:text-blue-500 focus:outline-none focus:text-blue-500"
+              className="text-gray-600 dark:text-white hover:text-primary focus:outline-none focus:text-primary"
             >
               <svg
                 className="w-6 h-6"
@@ -69,7 +69,7 @@ const Navbar = ({
                   <li
                     className={`relative ${
                       activeItem === "services"
-                        ? "text-blue-500 border-b-2 border-b-blue-400"
+                        ? "text-primary border-b-2 border-b-blue-400"
                         : "text-black"
                     } hover:border-b-2 hover:border-b-blue-400`}
                     onMouseEnter={toggleServicesDropdown}
@@ -77,8 +77,8 @@ const Navbar = ({
                     onClick={() => setActiveItem("services")}
                   >
                     <button
-                      className={`text-gray-600 dark:text-white hover:text-blue-500 focus:outline-none focus:text-blue-500 ${
-                        servicesDropdownOpen ? "text-blue-500" : ""
+                      className={`text-gray-600 dark:text-white hover:text-primary focus:outline-none focus:text-primary ${
+                        servicesDropdownOpen ? "text-primary" : ""
                       }`}
                     >
                       Services
@@ -106,7 +106,7 @@ const Navbar = ({
                       onClick={() => setActiveItem(item.activeName)}
                       className={`${
                         activeItem === item.activeName
-                          ? "text-blue-500 border-b-2 border-b-blue-400"
+                          ? "text-primary border-b-2 border-b-blue-400"
                           : "text-black"
                       } hover:border-b-2 hover:border-b-blue-400`}
                     >
@@ -125,7 +125,7 @@ const Navbar = ({
       </div>
       {isOpen && (
         <div className="md:hidden mt-3 p-4">
-          <ul className="flex flex-col space-y-4 text-lg   text-blue-500">
+          <ul className="flex flex-col space-y-4 text-lg   text-primary">
             {navItems.map((item: any) =>
               item?.serviceTypes ? (
                 <>
@@ -135,8 +135,8 @@ const Navbar = ({
                     onMouseLeave={closeServicesDropdown}
                   >
                     <button
-                      className={` dark:text-white hover:text-blue-500 focus:outline-none focus:text-blue-500 ${
-                        servicesDropdownOpen ? "text-blue-500" : ""
+                      className={` dark:text-white hover:text-primary focus:outline-none focus:text-primary ${
+                        servicesDropdownOpen ? "text-primary" : ""
                       }`}
                     >
                       Services

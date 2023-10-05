@@ -15,14 +15,14 @@ const AboutVisionBox = ({image, content, visionPoints}: {image: string, content:
           />
         </div>
         <div className="md:w-1/2 p-4 md:p-10 bg-white">
-          <div className="text-blue-500 font-semibold text-lg mb-5">Our Vision</div>
+          <div className="text-primary font-semibold text-lg mb-5">Our Vision</div>
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
             {content}
           </h1>
           <ul className="list-outside list-none pl-6">
             {visionPoints.map((vision, index) => (
               <li key={index} className="mb-4 flex items-start">
-                <BiSolidRightArrow className="mr-3 w-5 h-10 font-bold text-blue-500" />
+                <BiSolidRightArrow className="mr-3 w-5 h-10 font-bold text-primary" />
                 {vision}
               </li>
             ))}
