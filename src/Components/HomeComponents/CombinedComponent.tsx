@@ -3,7 +3,7 @@ import { BsArrowUpRight } from 'react-icons/bs';
 
 const CombinedComponent = ({ header, para, links, image1, image2, right }: {header:string, para:string, links:any[], image1:string, image2:string, right:boolean}) => {
     return (
-        <div className={`flex ${right?"flex-col md:flex-row": "flex-col-reverse md:flex-row-reverse"} items-center mb-20`}>
+        <div className={`flex ${right?"flex-col md:flex-row": "flex-col-reverse md:flex-row-reverse"} items-center mb-24`}>
             <div className={`relative sm:justify-center flex ${!right ? 'justify-end' : ''}`}>
                 <img
                     src={image1}

@@ -34,7 +34,7 @@ const Navbar = ({
       <div className="max-w-screen-2xl mx-6 p-4">
         <div className="flex items-end justify-between">
           <div className="flex md:ml-20">
-            <img src={logo} alt="Vithi Logo" className="w-full h-16" />
+            <img src={logo} alt="Vithi Logo" className="w-full h-12" />
           </div>
           <div className="md:hidden">
             <button
@@ -116,7 +116,7 @@ const Navbar = ({
                 )
               )}
 
-              <button className="bg-primary rounded-full px-6 py-2 text-white hover:bg-secondary items-start">
+              <button className="bg-secondary rounded-full px-6 py-2 text-white items-start hover:text-secondary hover:bg-transparent hover:border-solid hover:border-2 hover:border-secondary">
                 {callButton.title}
               </button>
             </ul>

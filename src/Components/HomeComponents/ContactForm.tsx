@@ -31,7 +31,7 @@ const ContactForm = () => {
             size="normal" // Choose the size: "normal", "compact", or "invisible"
         />
         </div>
-        <button className="p-3 bg-secondary w-32  rounded-full text-white hover:bg-primary">SUBMIT</button>
+        <button className="p-3 bg-secondary w-36  rounded-full text-white hover:text-secondary hover:bg-transparent hover:border-solid hover:border-2 hover:border-secondary">SUBMIT</button>
       </div>
     </div>
   );
