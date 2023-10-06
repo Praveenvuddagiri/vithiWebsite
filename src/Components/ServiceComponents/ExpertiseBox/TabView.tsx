@@ -7,7 +7,7 @@ const TabView = ({ tabs, currentTab, setCurrentTab }: any) => {
         return (
           <div
             className={`pt-[20px] pb-[20px] pr-[20px] pl-[20px] md:pr-[40px] md:pl-[40px] ${
-              currentTab === tab ? "bg-[#1e85bd] text-[#fff]" : "text-black"
+              currentTab === tab ? "bg-secondary text-[#fff]" : "text-black"
             } w-full md:w-fit`}
             onClick={() => setCurrentTab(tab)}
             key={tab} // Ensure each tab has a unique key

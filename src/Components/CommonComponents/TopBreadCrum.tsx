@@ -17,12 +17,12 @@ const TopBreadCrum = ({ title, image, navigations }: { title: string, image: str
                     {navigations?.map((navigation, index) => (
                         <span key={index}>
                                 <span className='mx-4'>&gt;</span>
-                                <span className='text-base  text-primary hover:text-blue-700'>{navigation}</span>
+                                <span className='text-base  text-secondary hover:text-primary cursor-text'>{navigation}</span>
                         </span>
                     ))    
                     }
                 </div>
-                    <h1 className='text-lg md:text-4xl font-bold'>{title}</h1>
+                    <h1 className='text-lg md:text-4xl font-bold text-primary'>{title}</h1>
             </div>
             <div className='flex justify-end'>
                 <img src={image} alt="top image" className='max-w-[90%]' />

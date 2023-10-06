@@ -8,23 +8,23 @@ const JobPostData = ({ postData }: any) => {
             <div className="mt-4 w-full md:w-[93%]">
                 <div className='flex flex-col md:flex-row md:justify-start gap-5 text-[16px] md:mb-5'>
                     <div className='flex items-center'>
-                        <FaBriefcase className='mr-3 text-[#17adc3] text-xl' /> {postData.experience}
+                        <FaBriefcase className='mr-3 text-secondary  text-xl' /> {postData.experience}
                     </div>
 
                     <div className='flex items-center '>
-                        <FaLaptopCode className='mr-3 text-[#17adc3] text-xl' /> {postData.employmentType}
+                        <FaLaptopCode className='mr-3 text-secondary text-xl' /> {postData.employmentType}
                     </div>
                 </div>
-                <div className='py-2 text-[#697c86] bg-[#f9f9f9] pr-2 md:leading-[36px] text-[16px] md:text-[18px] md:mb-7 pl-1'>
+                <div className='py-2 text-light bg-[#f9f9f9] pr-2 md:leading-[36px] text-[16px] md:text-[18px] md:mb-7 pl-1'>
                     {postData.jobDescription}
                 </div>
                 <div >
-                    <h1 className='text-[#4bba68] text-[24px] md:text-[28px] font-[500]'>Responsibilities:</h1>
+                    <h1 className='text-secondary text-[24px] md:text-[28px] font-[500]'>Responsibilities:</h1>
                     <ul className='mb-5 text-[16px] md:text-[18px] md:leading-9'>
                         {
                             postData.responsibilities?.map((respson: string, index: number) =>
-                                <li className='text-[#1895c2] flex justify-start items-center ml-3' key={index}>
-                                    <BsFillCaretRightFill className='mr-3 ' />
+                                <li className='text-primary flex justify-start items-center ml-3' key={index}>
+                                    <BsFillCaretRightFill className='mr-3 text-secondary ' />
                                     {respson}
                                 </li>
                             )
@@ -32,12 +32,12 @@ const JobPostData = ({ postData }: any) => {
                     </ul>
                 </div>
                 <div >
-                    <h1 className='text-[#4bba68] text-[24px] md:text-[28px] font-[500]'>Requirements:</h1>
+                    <h1 className='text-secondary text-[24px] md:text-[28px] font-[500]'>Requirements:</h1>
                     <ul className='mb-5 text-[16px] md:text-[18px] md:leading-9'>
                         {
                             postData.requirements?.map((respson: string, index: number) =>
-                                <li className='text-[#1895c2] flex justify-start items-center ml-3' key={index}>
-                                    <BsFillCaretRightFill className='mr-3 ' />
+                                <li className='text-primary flex justify-start items-center ml-3' key={index}>
+                                    <BsFillCaretRightFill className='mr-3 text-secondary ' />
                                     {respson}
                                 </li>
                             )
@@ -49,7 +49,7 @@ const JobPostData = ({ postData }: any) => {
                        { postData.additionalInformation}
                     </div>
                 }
-                <button className='bg-[#4bba68] rounded-full py-3 px-8 text-white font-bold text-[14px] hover:bg-black mb-5'>APPLY NOW</button>
+                <button className='bg-primary rounded-full py-3 px-8 text-white font-bold text-[14px] hover:bg-secondary mb-5'>APPLY NOW</button>
             </div>
         </div>
     );

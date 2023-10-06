@@ -9,7 +9,7 @@ const TechnologyContentBox = ({ currentTab, expertise }: { currentTab: string, e
         <img src={currentTechData?.image} alt={currentTechData?.title} className='md:p-[40px] border-[1px] border-[#707070]' />
       </div>
       <div className='md:w-full'>
-        <h2 className='text-[#1e85bd] font-[700] mb-[20px] text-[32px]'>{currentTechData?.title}</h2>
+        <h2 className='text-secondary font-[700] mb-[20px] text-[32px]'>{currentTechData?.title}</h2>
         {currentTechData?.description?.map((desc: string, index: number) => {
           return (
             <p className='leading-[1.6] text-[18px] text-[#595a5b] font-[600] mt-6' key={index}>
@@ -19,13 +19,13 @@ const TechnologyContentBox = ({ currentTab, expertise }: { currentTab: string, e
         })}
         {currentTechData?.workList && (
           <div>
-            <h3 className='text-[#0f467a] font-[700] mt-5'>{currentTechData.workList.title}</h3>
+            <h3 className='text-primary font-[700] mt-5'>{currentTechData.workList.title}</h3>
             <ul>
               {currentTechData.workList.list?.map((l: string, index: number) => {
                 return (
                   <div className='pl-5' key={index}>
-                    <ImCheckmark className='text-[#4bba68] absolute mt-1' />
-                    <li className='text-[#0f467a] font-[700] ml-6 m-3'>{l}</li>
+                    <ImCheckmark className='text-secondary absolute mt-1' />
+                    <li className='text-primary font-[700] ml-6 m-3'>{l}</li>
                   </div>
                 );
               })}

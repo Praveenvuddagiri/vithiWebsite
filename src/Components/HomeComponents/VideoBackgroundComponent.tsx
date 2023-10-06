@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const VideoBackgroundComponent = ({videoUrl, title, content}: {videoUrl:string, title: string, content: string}) => {
@@ -23,9 +24,11 @@ const VideoBackgroundComponent = ({videoUrl, title, content}: {videoUrl:string, 
             <p className="text-white text-sm md:text-xl mb-6">
              {content}
             </p>
-            <button className="bg-green-500 hover:bg-green-400 text-white rounded-full py-2 px-6 text-lg">
+            <Link href='/contact'>
+            <button className="bg-secondary hover:bg-primary text-white rounded-full py-2 px-6 text-lg">
               Contact Us
             </button>
+            </Link>
           </div>
         </div>
       </div>

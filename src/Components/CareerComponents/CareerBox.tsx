@@ -4,7 +4,7 @@ import CareersBoxBenefit from './CareersBoxBenefit';
 
 const CareerBox = ({bgimage, careersData}: {bgimage: string, careersData: any[]}) => {
   return (
-    <div className='bg-gradient-to-r from-[#3F51B5] to-[#269cca] p-4 md:p-14 relative'>
+    <div className='bg-gradient-to-bl from-secondary to-primary p-4 md:p-14 relative'>
       <img
         src={bgimage}
         alt="background image"
