@@ -8,7 +8,7 @@ const JobsSection = ({jobPosts}:{jobPosts:any[]}) => {
     const [currentAccordion, setCurrentAccordion] = useState(0);
 
     return (
-        <div className="flex flex-col justify-center items-center mt-12">
+        <div className="flex flex-col justify-center items-center mt-20">
             <h1 className="text-primary md:text-[36px] font-bold text-[20px]">OPEN POSITIONS</h1>
             <div className="w-[85%] mt-4">
 

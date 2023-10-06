@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 
 const FullContactForm = ({image}:{image:string}) => {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center md:justify-start bg-blue-950">
+    <div className="flex flex-col-reverse md:flex-row items-center md:justify-start bg-blue-950 mb-10">
       <div className="md:w-1/2">
         <ContactForm />
       </div>

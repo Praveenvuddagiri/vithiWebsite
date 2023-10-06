@@ -4,8 +4,8 @@ import React from 'react';
 
 const HomeServicesBox = ({ servicesData, image, title1, title2, description }: { servicesData: string[], image: string, title1: string, title2: string, description: any }) => {
     return (
-        <div className="min-h-full mt-10 mb-20 flex items-center justify-center">
-            <div className="w-11/12 md:w-10/12 lg:w-4/5 bg-gradient-to-tl from-primary to-secondary pt-7 pr-7 pb-7 pl-7 md:pb-0 md:pl-0 rounded-lg shadow-xl">
+        <div className="min-h-full mt-16 mb-28 flex items-center justify-center ">
+            <div className="w-11/12 md:w-10/12 lg:w-4/5 bg-blue-800 pt-7 pr-7 pb-7 pl-7 md:pb-0 md:pl-0 rounded-lg shadow-xl">
                 <div className="flex flex-col md:flex-row gap-4">
                     <div className="w-full md:w-1/3 flex flex-col justify-center items-center">
                         <h2 className="text-white text-4xl font-bold mb-4 leading-10">

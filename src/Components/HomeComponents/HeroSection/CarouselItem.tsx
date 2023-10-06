@@ -15,7 +15,7 @@ const CarouselItem = ({ title1, title2, description, imageUrl, discussButton }: 
             <p className="mt-5 text-lg text-light leading-7 text-justify">{description}</p>
           </div>
           <Link href={discussButton.link}>
-            <button className="bg-secondary rounded-full px-6 py-2 text-white hover:bg-primary items-start">
+            <button className="bg-secondary rounded-full px-6 py-2 text-white hover:text-secondary hover:bg-transparent hover:border-solid hover:border-2 hover:border-secondary items-start">
               {discussButton.title}
             </button>
           </Link>

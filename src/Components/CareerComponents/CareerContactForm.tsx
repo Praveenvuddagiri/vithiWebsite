@@ -4,72 +4,72 @@ import { BsArrowRight } from 'react-icons/bs';
 const CareerContactForm = ({ title, description, image }: { title: string, description: string, image: string }) => {
 
   return (
-    <div className="relative w-full h-full mt-10">
+    <div className="relative w-full h-full mt-28">
       <img
         src={image}
         alt="imageCareer"
         className="w-full h-full inset-0 object-cover"
       />
 
-      <div className="md:absolute md:h-full top-0 right-0 w-full xl:w-3/5 bg-[#003b63] opacity-95 text-white font-bold text-left px-4 sm:px-8 md:px-24 lg:px-32">
-        <h2 className="text-[#fff] text-3xl mb-5 mt-8 capitalize font-[700] leading-10">
+      <div className="md:absolute md:h-full top-0 right-0 w-full xl:w-3/5 bg-[#84b85dcc] opacity-95 text-white font-bold text-left px-4 sm:px-8 md:px-24 lg:px-32">
+        <h2 className="text-[#fff] text-4xl mb-5 mt-8 capitalize font-[700] leading-10">
           {title}
         </h2>
-        <p className="text-base sm:text-lg md:text-xl leading-6 sm:leading-8 text-[#fff] opacity-[0.5] font-light pb-4">
+        <p className="text-base sm:text-lg md:text-xl leading-6 sm:leading-8 text-[#fff] font-light pb-4">
           {description}
         </p>
-        <div className="w-full">
+        <div className="w-full mt-12 h-fit">
           <form>
             <div className="mb-4">
-              <label htmlFor="name" className="block text-white font-extralight">
+              <label htmlFor="name" className="block text-white font-extralight mb-4">
                 Full Name
               </label>
               <input
                 type="text"
                 id="name"
                 name="name"
-                className="bg-transparent w-full sm:w-80 md:w-96 border-b-2 mb-5 text-[#fff] font-[400] text-[16px] leading-[2px] shadow-none focus:border-b-2"
+                className="bg-transparent md:w-full w-full border-b-2 mb-5 text-[#fff] font-[400] text-[16px] leading-[2px]  focus:border-b-2 focus:p-4 focus:border-none"
               />
             </div>
 
             <div className="mb-4">
-              <label htmlFor="email" className="block text-white">
+              <label htmlFor="email" className="block text-white font-extralight mb-4">
                 Email
               </label>
               <input
                 type="email"
                 id="email"
                 name="email"
-                className="bg-transparent w-full sm:w-80 md:w-96 border-b-2 border-opacity-60 mb-5 text-[#fff] font-[400] text-[16px] leading-[2px] shadow-none"
+                className="bg-transparent w-full md:w-full border-b-2 border-opacity-60 mb-5 text-[#fff] font-[400] text-[16px] leading-[2px] shadow-none"
               />
             </div>
 
             <div className="mb-4">
-              <label htmlFor="number" className="block text-white">
+              <label htmlFor="number" className="block text-white font-extralight mb-4">
                 Phone Number
               </label>
               <input
                 type="tel"
                 id="number"
                 name="number"
-                className="bg-transparent w-full sm:w-80 md:w-96 border-b-2 border-opacity-60 mb-5 text-[#fff] font-[400] text-[16px] leading-[2px] shadow-none"
+                className="bg-transparent w-full md:w-full border-b-2 border-opacity-60 mb-5 text-[#fff] font-[400] text-[16px] leading-[2px] shadow-none"
               />
             </div>
 
             <div className="mb-4">
-              <label htmlFor="qualification" className="block text-white">
+              <label htmlFor="qualification" className="block text-white font-extralight mb-4">
                 Qualification
               </label>
               <input
                 type="text"
                 id="qualification"
                 name="qualification"
-                className="bg-transparent w-full sm:w-80 md:w-96 border-b-2 border-opacity-60 mb-5 text-[#fff] font-[400] text-[16px] leading-[2px] shadow-none"
+                className="bg-transparent w-full md:w-full border-b-2 border-opacity-60 mb-5 text-[#fff] font-[400] text-[16px] leading-[2px] shadow-none"
               />
             </div>
 
             <div className="mb-4">
-              <label htmlFor="upload" className="block text-white">
+              <label htmlFor="upload" className="block text-white font-extralight mb-4">
                 Resume (PDF)
               </label>
               <input
@@ -82,12 +82,12 @@ const CareerContactForm = ({ title, description, image }: { title: string, descr
             </div>
             <div className="flex">
               <button
-                type="submit"
-                className="bg-transparent text-white font-bold text-lg px-4 rounded hover:text-xl"
+                
+                className="bg-transparent text-white font-bold text-xl px-4 rounded hover:text-2xl hover:text-primary"
               >
                 Submit Resume
               </button>
-              < BsArrowRight size={40} />
+              < BsArrowRight className="text-primary" size={30} />
             </div>
           </form>
         </div>
