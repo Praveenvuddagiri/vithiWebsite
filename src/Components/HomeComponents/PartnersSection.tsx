@@ -4,7 +4,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-const PartnersSection = ({partners}: {partners:string[]}) => {
+const PartnersSection = ({ partners }: { partners: string[] }) => {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
 
   const slideLeft = () => {
@@ -55,8 +55,8 @@ const PartnersSection = ({partners}: {partners:string[]}) => {
                     <img
                       src={partner}
                       alt={`Partner ${index + 1}`}
-                      className="mx-auto max-w-[180px] h-auto border-double border-2 border-light rounded-full "
-                      style={{boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px"}}
+                      className="mx-auto max-w-[200px] h-auto border-double border-2 border-light rounded-xl "
+                      style={{ boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px" }}
                     />
 
 
