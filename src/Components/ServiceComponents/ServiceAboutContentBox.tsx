@@ -7,10 +7,10 @@ const ServiceAboutContentBox = ({ title, heading, para }: { title: any, heading:
                 <h1 className='text-secondary font-bold text-2xl'>
                     {title}
                 </h1>
-                <p className='text-xl font-bold text-white'>
+                <p className='text-xl font-bold text-white text-justify'>
                     {heading}
                 </p>
-                <p className='text-lg text-white'>
+                <p className='text-lg text-white text-justify'>
                     {para}
                 </p>
             </div>

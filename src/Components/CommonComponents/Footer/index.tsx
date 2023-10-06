@@ -18,7 +18,7 @@ const Footer = ({ logo, content, readMoreUrl, facebookLink, linkedinLink, fastLi
                             alt="Vithi Logo"
                         />
 
-                        <h6>
+                        <h6 className='text-justify'>
                             {content}
                         </h6>
                         <a href={readMoreUrl} className='border-b-2 border-b-gray-600 text-gray-700 font-[600] uppercase'>Read More</a>
