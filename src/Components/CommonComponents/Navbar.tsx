@@ -31,10 +31,10 @@ const Navbar = ({
 
   return (
     <nav className="bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed top-0 left-0 right-0 shadow-lg transition-all duration-300 transform translate-y-0 z-50">
-      <div className="max-w-screen-xl mx-6 p-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-end">
-            <img src={logo} alt="Vithi Logo" className="w-[100px] h-16" />
+      <div className="max-w-screen-2xl mx-6 p-4">
+        <div className="flex items-end justify-between">
+          <div className="flex md:ml-20">
+            <img src={logo} alt="Vithi Logo" className="w-full h-16" />
           </div>
           <div className="md:hidden">
             <button

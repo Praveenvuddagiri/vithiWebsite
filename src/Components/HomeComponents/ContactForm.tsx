@@ -7,8 +7,8 @@ const ContactForm = () => {
     <div className="h-fit w-fit ">
       <div className=" flex justify-center flex-col p-14 gap-3 ">
         <div>
-          <h1 className="text-blue-400 font-bold text-2xl">Get Started?</h1>
-          <p className="text-gray-500">Fill the Form below and we will get back to you soon..</p>
+          <h1 className="text-secondary font-bold text-2xl">Get Started?</h1>
+          <p className="text-white">Fill the Form below and we will get back to you soon..</p>
         </div>
         <div className="flex flex-col gap-4 ">
           <input type="text" placeholder="Full Name" className="p-2 focus:outline-none" />
@@ -31,7 +31,7 @@ const ContactForm = () => {
             size="normal" // Choose the size: "normal", "compact", or "invisible"
         />
         </div>
-        <button className="p-3 bg-green-500 w-24 rounded-full text-white">SUBMIT</button>
+        <button className="p-3 bg-secondary w-32  rounded-full text-white hover:bg-primary">SUBMIT</button>
       </div>
     </div>
   );
