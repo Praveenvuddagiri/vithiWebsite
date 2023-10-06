@@ -55,7 +55,7 @@ const PartnersSection = ({ partners }: { partners: string[] }) => {
                     <img
                       src={partner}
                       alt={`Partner ${index + 1}`}
-                      className="mx-auto max-w-[200px] h-auto border-double border-2 border-light rounded-xl "
+                      className="mx-auto max-w-[180px] h-auto border-double border-2 border-light rounded-full "
                       style={{ boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px" }}
                     />
 
