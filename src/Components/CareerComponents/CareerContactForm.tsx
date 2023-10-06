@@ -11,7 +11,7 @@ const CareerContactForm = ({ title, description, image }: { title: string, descr
         className="w-full h-full inset-0 object-cover"
       />
 
-      <div className="md:absolute md:h-full top-0 right-0 w-full xl:w-3/5 bg-[#84b85dcc] opacity-95 text-white font-bold text-left px-4 sm:px-8 md:px-24 lg:px-32">
+      <div className="md:absolute md:h-full top-0 right-0 w-full xl:w-3/5 bg-[#84b85dcc] opacity-95 text-white font-bold text-left px-4 sm:px-8 md:px-24 lg:px-32 sm:mt-6">
         <h2 className="text-[#fff] text-4xl mb-5 mt-8 capitalize font-[700] leading-10">
           {title}
         </h2>
