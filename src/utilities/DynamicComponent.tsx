@@ -47,7 +47,7 @@ export declare interface ViewTypeArray {
   };
 }
 
-const reactSkipLoader = ({ objReact }: { objReact: ViewType }) => {
+const reactSkipLoader:any = ({ objReact }: { objReact: ViewType }) => {
   const replaceMe = (foundVal: string) => {
     if (
       objReact.templates &&
@@ -102,11 +102,13 @@ const reactSkipLoader = ({ objReact }: { objReact: ViewType }) => {
       })
     : [baseComponent.children];
   const elemtArr = _.concat([BaseComponent, baseComponent.props], childList);
+  //@ts-ignore
   return React.createElement.apply(this, elemtArr);
 };
 
 const ObjReactComponent = ({ objReact }: { objReact: ViewType }) => {
   const baseComponent = reactSkipLoader({ objReact });
+  //@ts-ignore
   return React.createElement.apply(this, ["div", "", baseComponent]);
 };
 
@@ -120,7 +122,9 @@ const ObjReact = ({ objReact }: { objReact: ViewTypeArray }) => {
           objReact: { ...objReact, component: objReact.component },
         }),
       ];
+      //@ts-ignore
   const elemtArr = _.concat(["div", ""], objReactComponent);
+  //@ts-ignore
   return React.createElement.apply(this, elemtArr);
 };
 
