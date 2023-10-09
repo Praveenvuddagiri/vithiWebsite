@@ -4,15 +4,15 @@ import { BsArrowRight } from 'react-icons/bs';
 const CareerContactForm = ({ title, description, image }: { title: string, description: string, image: string }) => {
 
   return (
-    <div className="relative w-full h-full mt-28">
+    <div className="relative w-full h-full mt-20">
       <img
         src={image}
         alt="imageCareer"
         className="w-full h-full inset-0 object-cover"
       />
 
-      <div className="md:absolute md:h-full top-0 right-0 w-full xl:w-3/5 bg-[#84b85dcc] opacity-95 text-white font-bold text-left px-4 sm:px-8 md:px-24 lg:px-32 sm:mt-6">
-        <h2 className="text-[#fff] text-4xl mb-5 mt-8 capitalize font-[700] leading-10">
+      <div className="md:absolute md:h-full top-0 right-0 w-full xl:w-3/5 bg-[#84b85dcc] opacity-95 text-white font-bold text-left px-4 sm:px-8 md:px-24 lg:px-32 sm:mt-6 md:m-0">
+        <h2 className="text-[#fff] text-2xl md:text-4xl mb-5 mt-8 capitalize font-[700] leading-10">
           {title}
         </h2>
         <p className="text-base sm:text-lg md:text-xl leading-6 sm:leading-8 text-[#fff] font-light pb-4">

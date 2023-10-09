@@ -49,7 +49,7 @@ const JobPostData = ({ postData }: any) => {
                        { postData.additionalInformation}
                     </div>
                 }
-                <button className='bg-primary rounded-full py-3 px-8 text-white font-bold text-[14px] hover:bg-secondary mb-5'>APPLY NOW</button>
+                <button className='bg-secondary rounded-full py-3 px-8 text-white font-bold text-[14px] hover:bg-transparent hover:text-secondary hover:border-secondary hover:border-2 mb-5'>APPLY NOW</button>
             </div>
         </div>
     );
