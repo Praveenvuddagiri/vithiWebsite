@@ -6,6 +6,7 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './.next/static/**/*.{html,js}',
+    './.next/**/*.{html,js}',
     './public/**/*.{html,js}',
     './static/**/*.{html,js}',
   ],
