@@ -5,9 +5,9 @@ const config: Config = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './public/**/*.html',
-    './static/**/*.html', 
-    './.next/static/**/*.html',
+    './.next/static/**/*.{html,js}',
+    './public/**/*.{html,js}',
+    './static/**/*.{html,js}',
   ],
   theme: {
     extend: {
