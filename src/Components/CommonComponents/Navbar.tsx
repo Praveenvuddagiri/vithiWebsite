@@ -33,7 +33,7 @@ const Navbar = ({
     <nav className="bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed top-0 left-0 right-0 shadow-lg transition-all duration-300 transform translate-y-0 z-50">
       <div className="max-w-screen-2xl mx-6 p-4">
         <div className="flex items-end justify-between">
-          <div className="flex md:ml-20">
+          <div className="flex md:ml-5">
             <img src={logo} alt="Vithi Logo" className="w-full h-12" />
           </div>
           <div className="md:hidden">
@@ -63,7 +63,7 @@ const Navbar = ({
               isOpen ? "block" : "hidden"
             } mt-4 md:flex md:items-center md:space-x-8 hidden`}
           >
-            <ul className="md:flex space-x-8 text-lg  text-[#595a5b] font-[500] text-[15px] capitalize items-center cursor-pointer">
+            <ul className="md:flex space-x-8 text-lg text-[#595a5b] font-[500] text-[15px] capitalize items-end cursor-pointer">
               {navItems.map((item: any) =>
                 item?.serviceTypes ? (
                   <li
