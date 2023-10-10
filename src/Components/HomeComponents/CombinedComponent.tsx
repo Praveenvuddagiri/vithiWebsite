@@ -10,7 +10,7 @@ const CombinedComponent = ({ header, para, links, image1, image2, right }: { hea
                     <img
                         src={image1}
                         alt="Image 1"
-                        className="w-[70%] h-auto animate-bounce animate-twice animate-duration-1000 animate-delay-100 animate-ease-out"
+                        className="w-[70%] h-auto object-cover  animate-jump-in animate-duration-[1500ms] animate-delay-300 animate-ease-in animate-normal"
                     />
 
                     <img
