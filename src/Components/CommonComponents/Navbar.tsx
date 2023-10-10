@@ -11,7 +11,7 @@ const Navbar = ({
   active: string;
   logo: string;
   navItems: any[];
-  callButton:any;
+  callButton: any;
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
@@ -31,10 +31,10 @@ const Navbar = ({
 
   return (
     <nav className="bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed top-0 left-0 right-0 shadow-lg transition-all duration-300 transform translate-y-0 z-50">
-      <div className="max-w-screen-2xl mx-6 p-4">
+      <div className="max-w-screen-5xl mx-6 p-4">
         <div className="flex items-end justify-between">
-          <div className="flex md:ml-5">
-            <img src={logo} alt="Vithi Logo" className="w-full h-12" />
+          <div className="flex-shrink-0 xl:ml-14">
+            <img src={logo} alt="Vithi Logo" className="w-32 md:w-24 3xl:w-32" />
           </div>
           <div className="md:hidden">
             <button
@@ -59,27 +59,24 @@ const Navbar = ({
             </button>
           </div>
           <div
-            className={`${
-              isOpen ? "block" : "hidden"
-            } mt-4 md:flex md:items-center md:space-x-8 hidden`}
+            className={`${isOpen ? "block" : "hidden"
+              } mt-4 md:flex md:items-center md:space-x-8 hidden`}
           >
-            <ul className="md:flex space-x-8 text-lg text-[#595a5b] font-[500] text-[15px] capitalize items-end cursor-pointer">
+            <ul className="md:flex 2xl:space-x-8 md:space-x-5 text-lg text-[#595a5b] font-[500] text-[15px] capitalize items-center cursor-pointer">
               {navItems.map((item: any) =>
                 item?.serviceTypes ? (
                   <li
-                    className={`relative ${
-                      activeItem === "services"
-                        ? "text-secondary border-b-2 border-b-secondary"
-                        : "text-black"
-                    } hover:border-b-2 hover:border-b-secondary`}
+                    className={`relative ${activeItem === "services"
+                      ? "text-secondary border-b-2 border-b-secondary"
+                      : "text-black"
+                      } hover:border-b-2 hover:border-b-secondary`}
                     onMouseEnter={toggleServicesDropdown}
                     onMouseLeave={closeServicesDropdown}
                     onClick={() => setActiveItem("services")}
                   >
                     <button
-                      className={`text-gray-600 dark:text-white hover:text-primary focus:outline-none focus:text-primary ${
-                        servicesDropdownOpen ? "text-primary" : ""
-                      }`}
+                      className={`text-gray-600 dark:text-white hover:text-primary focus:outline-none focus:text-primary ${servicesDropdownOpen ? "text-primary" : ""
+                        }`}
                     >
                       Services
                     </button>
@@ -104,11 +101,10 @@ const Navbar = ({
                   <Link href={item.link}>
                     <li
                       onClick={() => setActiveItem(item.activeName)}
-                      className={`${
-                        activeItem === item.activeName
-                          ? "text-secondary border-b-2 border-b-secondary"
-                          : "text-black"
-                      } hover:border-b-2 hover:border-b-secondary`}
+                      className={`${activeItem === item.activeName
+                        ? "text-secondary border-b-2 border-b-secondary"
+                        : "text-black"
+                        } hover:border-b-2 hover:border-b-secondary`}
                     >
                       {item.name}
                     </li>
@@ -135,9 +131,8 @@ const Navbar = ({
                     onMouseLeave={closeServicesDropdown}
                   >
                     <button
-                      className={` dark:text-white hover:text-primary focus:outline-none focus:text-primary ${
-                        servicesDropdownOpen ? "text-primary" : ""
-                      }`}
+                      className={` dark:text-white hover:text-primary focus:outline-none focus:text-primary ${servicesDropdownOpen ? "text-primary" : ""
+                        }`}
                     >
                       Services
                     </button>
@@ -167,7 +162,7 @@ const Navbar = ({
               )
             )}
 
-            
+
             <li>{callButton.title}</li>
           </ul>
         </div>

@@ -10,16 +10,16 @@ const CombinedComponent = ({ header, para, links, image1, image2, right }: { hea
                     <img
                         src={image1}
                         alt="Image 1"
-                        className="w-[70%] h-auto object-cover  animate-jump-in animate-duration-[1500ms] animate-delay-300 animate-ease-in animate-normal"
+                        className="w-[80%] h-auto object-cover  animate-jump-in animate-duration-[1500ms] animate-delay-300 animate-ease-in animate-normal"
                     />
 
                     <img
                         src={image2}
                         alt="Image 2"
-                        className={`absolute top-10 w-[70%] h-auto z-10 ${right ? 'right-0' : 'left-0'}}`}
+                        className={`absolute top-10 w-[80%] h-auto z-10 ${right ? 'right-0' : 'left-0'}}`}
                     />
                 </div>
-                <div className="h-fit flex flex-col p-4  sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 text-center flex-grow">
+                <div className="h-fit flex flex-col p-4  sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 flex-grow">
                     <h2 className="text-[30px] font-[700] text-primary leading-[38px] mb-4">{header}</h2>
                     <div className='text-lg text-light mb-6 text-justify'>
                         <p>{para}</p>
