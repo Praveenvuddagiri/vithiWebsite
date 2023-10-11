@@ -10,7 +10,7 @@ const Footer = ({ logo, content, readMoreUrl, facebookLink, linkedinLink, fastLi
     return (
         <div className="flex flex-col items-center justify-center mt-10">
             <div className="max-w-[90%]">
-                <div className="grid grid-cols-1 md:grid-cols-6">
+                <div className="grid grid-cols-1 xl:grid-cols-6">
                     <div className='w-[90%] md:col-span-2 leading-[24px] font-[400] text-[13px] ml-8'>
                         <img
                             className="w-32 h-auto mb-2 md:mb-4"

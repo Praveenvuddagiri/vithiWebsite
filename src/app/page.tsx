@@ -41,8 +41,7 @@ const page = ({ params }: any) => {
           ...generateCompoLib(Components, slugMapping?.Components),
           "Navbar": Components.Navbar,
           "Footer": Components.Footer,
-          "MoveToUp": Components.MoveToUp,
-          "Box1": Components.Box1
+          "MoveToUp": Components.MoveToUp
         }
       }} />
     </div>

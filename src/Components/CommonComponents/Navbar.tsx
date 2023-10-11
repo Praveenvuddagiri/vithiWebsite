@@ -62,7 +62,7 @@ const Navbar = ({
             className={`${isOpen ? "block" : "hidden"
               } mt-4 md:flex md:items-center md:space-x-8 hidden`}
           >
-            <ul className="md:flex 2xl:space-x-8 md:space-x-5 text-lg text-[#595a5b] font-[500] text-[15px] capitalize items-center cursor-pointer">
+            <ul className="md:flex 2xl:space-x-8 md:space-x-4 text-lg text-[#595a5b] font-[500] text-[15px] capitalize items-center cursor-pointer">
               {navItems.map((item: any) =>
                 item?.serviceTypes ? (
                   <li

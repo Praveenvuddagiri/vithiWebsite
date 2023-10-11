@@ -8,7 +8,7 @@ const CoreValuesList = ({valuesList}: {valuesList:any[]}) => {
       <div className='text-center text-3xl font-bold mb-8'>
       <h1>CORE VALUES</h1>
       </div>
-    <div className="grid gap-6 md:grid-cols-4">
+    <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
       {valuesList.map((data, index) => (
         <CoreValues
           key={index}

@@ -16,7 +16,7 @@ const TopBreadCrum = ({ title, image, navigations }: { title: string, image: str
                     
                     {navigations?.map((navigation, index) => (
                         <span key={index}>
-                                <span className='md:mx-4'>&gt;</span>
+                                <span className='mx-2 md:mx-4'>&gt;</span>
                                 <span className='text-base  text-secondary hover:text-primary cursor-text'>{navigation}</span>
                         </span>
                     ))    
