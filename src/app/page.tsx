@@ -12,7 +12,6 @@ const page = ({ params }: any) => {
 
   const slugMapping = jsonData.filter((subData:any)=> subData.slug === `home`)[0];
   
-  console.log(generateCompoLib(Components, slugMapping?.Components))
   return (
     <div>
       <ObjReact objReact={{
