@@ -11,14 +11,14 @@ const CareerContactForm = ({ title, description, image }: { title: string, descr
         className="w-full h-full inset-0 object-cover"
       />
 
-      <div className="md:absolute md:h-full top-0 right-0 w-full xl:w-3/5 bg-[#84b85dcc] opacity-95 text-white font-bold text-left px-4 sm:px-8 md:px-24 lg:px-32 sm:mt-6 md:m-0">
-        <h2 className="text-[#fff] text-2xl md:text-4xl mb-5 mt-8 capitalize font-[700] leading-10">
+      <div className="md:absolute md:h-full top-0 right-0 w-full xl:w-3/5 bg-[#84b85dcc] opacity-95 text-white font-bold text-left px-4 sm:px-8 md:px-24 lg:px-32 mt-6 md:m-0">
+        <h2 className="text-[#fff] text-3xl md:text-4xl mb-5 mt-8 lg:mt-8 capitalize font-[700] leading-10 p-4">
           {title}
         </h2>
         <p className="text-base sm:text-lg md:text-xl leading-6 sm:leading-8 text-[#fff] font-light pb-4">
           {description}
         </p>
-        <div className="w-full mt-12 h-fit">
+        <div className="w-full mt-12 h-fit p-4">
           <form>
             <div className="mb-4">
               <label htmlFor="name" className="block text-white font-extralight mb-4">
@@ -83,7 +83,7 @@ const CareerContactForm = ({ title, description, image }: { title: string, descr
             <div className="flex">
               <button
                 
-                className="bg-transparent text-white font-bold text-xl px-4 rounded hover:text-2xl hover:text-primary"
+                className="bg-transparent text-white font-bold text-xl lg:text-2xl px-4 rounded hover:text-2xl hover:text-primary"
               >
                 Submit Resume
               </button>

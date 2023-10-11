@@ -5,7 +5,7 @@ import { BiHomeAlt } from 'react-icons/bi';
 const TopBreadCrum = ({ title, image, navigations }: { title: string, image: string, navigations: string[] }) => {
     return (
         
-        <div className='flex flex-col-reverse md:flex-row justify-center items-start bg-[#f5faff] mt-24'>
+        <div className='flex flex-col-reverse lg:flex-row justify-center items-start bg-[#f5faff] mt-24'>
             <div className='flex flex-col items-start flex-1 py-12 pl-12 flex-wrap'>
 
                 <div className='text-xl flex justify-start items-center mb-10'>
@@ -16,7 +16,7 @@ const TopBreadCrum = ({ title, image, navigations }: { title: string, image: str
                     
                     {navigations?.map((navigation, index) => (
                         <span key={index}>
-                                <span className='mx-4'>&gt;</span>
+                                <span className='md:mx-4'>&gt;</span>
                                 <span className='text-base  text-secondary hover:text-primary cursor-text'>{navigation}</span>
                         </span>
                     ))    

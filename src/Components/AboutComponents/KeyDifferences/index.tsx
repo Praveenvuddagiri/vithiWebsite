@@ -15,9 +15,9 @@ const About = ({bgImage, content, differences}: {bgImage: string, content: strin
                 {
                     differences.map((userData)=>{
                         return (
-                            <div key={userData.id} className='z-10  bg-opacity-100 bg-white rounded-3xl py-8 px-6 grid grid-cols-4'>
+                            <div key={userData.id} className='z-10  bg-opacity-100 bg-white rounded-3xl py-8 px-6 grid grid-cols-4 items-center'>
                                 <div className='col-span-1'>
-                                    <img src={userData.img} alt={userData.heading} className='w-8/12' />
+                                    <img src={userData.img} alt={userData.heading} className='w-[70%]' />
                                 </div> 
                                 <div className='flex flex-col flex-shrink col-span-3'>
                                     <h1 className='text-black font-medium mb-5 capitalize text-xl '>{userData.heading}</h1>

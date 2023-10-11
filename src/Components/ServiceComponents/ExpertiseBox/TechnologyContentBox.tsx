@@ -4,7 +4,7 @@ import { ImCheckmark } from 'react-icons/im';
 const TechnologyContentBox = ({ currentTab, expertise }: { currentTab: string, expertise: any }) => {
   const currentTechData = expertise?.filter((exp: any) => exp.technology === currentTab)[0]?.data;
   return (
-    <div className='flex flex-col md:flex-row gap-[70px] text-justify'>
+    <div className='flex flex-col md:flex-row gap-[70px]'>
       <div className='w-full md:w-1/2'>
         <img src={currentTechData?.image} alt={currentTechData?.title} className='md:p-[40px] border-[1px] border-[#707070]' />
       </div>
