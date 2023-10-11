@@ -4,8 +4,8 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactForm = () => {
   return (
-    <div className="h-fit w-fit ">
-      <div className=" flex justify-center flex-col md:p-14 p-7 gap-3 ">
+    <div className="h-fit md:w-full p-5">
+      <div className=" flex justify-center flex-col md:p-10 gap-3 ">
         <div>
           <h1 className="text-secondary font-bold text-2xl">Get Started?</h1>
           <p className="text-white">Fill the Form below and we will get back to you soon..</p>

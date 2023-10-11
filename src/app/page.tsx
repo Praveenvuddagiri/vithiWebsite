@@ -8,9 +8,11 @@ import componentJson from '@/utilities/ComponentData.json';
 
 const page = ({ params }: any) => {
 
-  const slugMapping = jsonData.filter((subData:any)=> subData.slug === `home`)[0];
   
 
+  const slugMapping = jsonData.filter((subData:any)=> subData.slug === `home`)[0];
+  
+  console.log(generateCompoLib(Components, slugMapping?.Components))
   return (
     <div>
       <ObjReact objReact={{
@@ -39,7 +41,8 @@ const page = ({ params }: any) => {
           ...generateCompoLib(Components, slugMapping?.Components),
           "Navbar": Components.Navbar,
           "Footer": Components.Footer,
-          "MoveToUp": Components.MoveToUp
+          "MoveToUp": Components.MoveToUp,
+          "Box1": Components.Box1
         }
       }} />
     </div>

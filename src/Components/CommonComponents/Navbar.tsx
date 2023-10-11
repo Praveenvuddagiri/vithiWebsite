@@ -34,7 +34,7 @@ const Navbar = ({
       <div className="max-w-screen-5xl mx-6 p-4">
         <div className="flex items-end justify-between">
           <div className="flex-shrink-0 xl:ml-14">
-            <img src={logo} alt="Vithi Logo" className="w-32 md:w-24 3xl:w-32" />
+            <img src={logo} alt="Vithi Logo" className="w-20 md:w-24 3xl:w-32" />
           </div>
           <div className="md:hidden">
             <button

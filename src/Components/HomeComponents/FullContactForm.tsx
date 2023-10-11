@@ -1,22 +1,32 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 
-
-const FullContactForm = ({image}:{image:string}) => {
+const FullContactForm = ({ image1,image2 }: { image1: string,image2: string }) => {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center md:justify-start bg-blue-950 mb-10">
-      <div className="md:w-1/2">
-        <ContactForm />
-      </div>
-      <div className="md:w-1/2">
+    <div className="grid md:grid-cols-12 items-center bg-primary mb-10">
+      <div className="relative md:col-span-4">
+      <div className="">
         <img
-          src={image}
+          src={image1}
           alt="Image 2"
-          className="w-[65%] h-auto hidden md:block"
+          className="w-[85%] h-auto hidden md:block absolute object-cover z-10 top-4 right-0"
         />
+      </div>
+      <div className="">
+        <img
+          src={image2}
+          alt="Image 2"
+          className="w-[85%] h-auto hidden md:block"
+        />
+      </div>
+      </div>
+      <div className="md:col-span-8">
+        <ContactForm />
       </div>
     </div>
   );
 };
 
 export default FullContactForm;
+
+

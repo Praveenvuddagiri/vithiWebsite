@@ -38,5 +38,17 @@ export {default as ContactForm } from '@/Components/ContactComponent/ContactForm
 
 
 
+// Testing components
+export {default as Box } from '@/Components/testing/Box';
+export {default as Content } from '@/Components/testing/Content';
+export {default as Heading } from '@/Components/testing/Heading';
+export {default as ImgComponent } from '@/Components/testing/ImgComponent';
+export {default as ListLinks } from '@/Components/testing/ListLinks';
+export {default as Paragraph } from '@/Components/testing/Paragraph';
+export {default as Box1 } from '@/Components/testing/Box1';
+
+
+
+
 
 
