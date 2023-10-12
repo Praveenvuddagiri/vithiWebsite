@@ -25,7 +25,7 @@ const VideoBackgroundComponent = ({videoUrl, title, content}: {videoUrl:string, 
              {content}
             </p>
             <Link href='/contact'>
-            <button className="bg-secondary hover:bg-primary text-white rounded-full py-2 px-6 text-lg">
+            <button className="bg-secondary hover:bg-primary text-white rounded-full py-2 px-6 md:px-20 text-lg md:text-base">
               Contact Us
             </button>
             </Link>

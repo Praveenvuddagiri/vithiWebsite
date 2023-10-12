@@ -60,7 +60,7 @@ const Navbar = ({
           </div>
           <div
             className={`${isOpen ? "block" : "hidden"
-              } mt-4 md:flex md:items-center md:space-x-8 hidden`}
+              } mt-4 md:flex md:items-center md:space-x-12 hidden`}
           >
             <ul className="md:flex 2xl:space-x-8 md:space-x-4 text-lg text-[#595a5b] font-[500] text-[15px] capitalize items-center cursor-pointer">
               {navItems.map((item: any) =>
@@ -163,7 +163,9 @@ const Navbar = ({
             )}
 
 
-            <li>{callButton.title}</li>
+<button className="bg-secondary rounded-full p-2 sm:px-6 sm:py-2 text-white items-start hover:text-secondary hover:bg-transparent hover:border-solid hover:border-2 hover:border-secondary">
+                {callButton.title}
+              </button>
           </ul>
         </div>
       )}

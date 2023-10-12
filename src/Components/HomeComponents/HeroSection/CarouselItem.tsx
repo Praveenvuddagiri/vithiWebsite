@@ -5,7 +5,7 @@ const CarouselItem = ({ title1, title2, description, imageUrl, discussButton }: 
   return (
     <div className="mb-16 animate-fade animate-once animate-duration-500 animate-delay-0 animate-ease-in-out">
       <div className="flex relative flex-col-reverse md:flex-row justify-between h-[90vh] items-center ">
-        <div className='absolute z-0 xl:-bottom-14 md:bottom-24 -bottom-28'>
+        <div className='absolute z-0 xl:-bottom-8 md:bottom-24 -bottom-28'>
           <video src="http://www.vithiitsolutions.com/images/particles.mp4" autoPlay loop muted
             className='opacity-25 w-[52rem]'></video>
         </div>

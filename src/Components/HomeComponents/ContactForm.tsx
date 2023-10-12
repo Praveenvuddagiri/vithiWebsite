@@ -24,13 +24,6 @@ const ContactForm = () => {
         className="custom-textarea w-full px-3 py-2 focus:outline-none"
         placeholder="Message"
         ></textarea>
-
-        <div className="mb-4">
-            <ReCAPTCHA
-            sitekey="6LeNXVAoAAAAAErd-csU4ipa0-DoKXXuR1D_tbjr"
-            size="normal" // Choose the size: "normal", "compact", or "invisible"
-        />
-        </div>
         <button className="p-3 bg-secondary w-36  rounded-full text-white hover:text-secondary hover:bg-transparent hover:border-solid hover:border-2 hover:border-secondary">SUBMIT</button>
       </div>
     </div>

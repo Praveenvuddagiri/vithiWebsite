@@ -10,8 +10,8 @@ const Footer = ({ logo, content, readMoreUrl, facebookLink, linkedinLink, fastLi
     return (
         <div className="flex flex-col items-center justify-center mt-10">
             <div className="max-w-[90%]">
-                <div className="grid grid-cols-1 xl:grid-cols-6">
-                    <div className='w-[90%] md:col-span-2 leading-[24px] font-[400] text-[13px] ml-8'>
+                <div className="grid grid-cols-1 lg:grid-cols-6">
+                    <div className='w-[90%] sm:col-span-2 leading-[24px] font-[400] text-[13px] ml-8'>
                         <img
                             className="w-32 h-auto mb-2 md:mb-4"
                             src={logo}
@@ -44,7 +44,7 @@ const Footer = ({ logo, content, readMoreUrl, facebookLink, linkedinLink, fastLi
                 </div>
             </div>
 
-            <div className='bg-gradient-to-r from-secondary to-primary text-white rounded-tr-[40px] rounded-tl-[40px] pl-5 w-3/4 p-2 text-[12px]'>
+            <div className='bg-gradient-to-r from-secondary to-primary text-white rounded-tr-[40px] rounded-tl-[40px] pl-5 w-3/4 p-2 sm:text-xs text-[8px]'>
                 <p>COPYRIGHT © 2023, VITHI IT SOLUTIONS. ALL RIGHTS RESERVED.</p>
             </div>
         </div>

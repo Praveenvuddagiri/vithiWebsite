@@ -17,13 +17,13 @@ const CombinedComponent = ({
   right: boolean;
 }) => {
   return (
-    <div className="flex justify-center gap-4">
+    <div className="flex justify-center gap-2">
       <div
         className={`flex ${
           right
             ? "flex-col md:flex-row mt-6"
             : "flex-col-reverse md:flex-row-reverse mb-6"
-        } items-center my-10 md:my-16 xl:my-20 w-full md:w-10/12 xl:w-9/12 justify-center xl:gap-10 md:gap-7 gap-5`}
+        } items-center my-10 md:my-16 xl:my-20 w-full md:w-10/12 xl:w-10/12 justify-center xl:gap-10 md:gap-7 gap-5`}
       >
         <div
           className={`relative sm:justify-center flex ${
@@ -33,18 +33,18 @@ const CombinedComponent = ({
           <img
             src={image1}
             alt="Image 1"
-            className="w-full md:w-80 h-auto object-cover animate-jump-in animate-duration-1500ms animate-delay-300 animate-ease-in animate-normal"
+            className="w-full md:w-90 lg:w-80 xl:w-90 h-auto object-cover animate-jump-in animate-duration-1500ms animate-delay-300 animate-ease-in animate-normal"
           />
 
           <img
             src={image2}
             alt="Image 2"
-            className={`absolute top-10 w-full md:w-80 h-auto z-10 ${
+            className={`absolute top-10 w-full md:w-90 lg:w-80 xl:w-90 h-auto z-10 ${
               right ? "right-0" : "left-0"
             }`}
           />
         </div>
-        <div className="w-[80%] sm:w-10/12 md:w-1/2 lg:w-1/2 xl:w-1/2 flex-grow">
+        <div className="w-[60%] md:w-1/2 flex-grow">
           <h2 className="text-2xl md:text-3xl font-semibold text-primary leading-8 md:leading-10 mb-4">
             {header}
           </h2>
