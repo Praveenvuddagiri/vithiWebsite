@@ -21,8 +21,8 @@ const CombinedComponent = ({
       <div
         className={`flex ${
           right
-            ? "flex-col md:flex-row mt-6"
-            : "flex-col-reverse md:flex-row-reverse mb-6"
+            ? "flex-col xl:flex-row mt-6"
+            : "flex-col-reverse xl:flex-row-reverse mb-6"
         } items-center my-10 md:my-16 xl:my-20 w-full md:w-10/12 xl:w-10/12 justify-center xl:gap-10 md:gap-7 gap-5`}
       >
         <div
@@ -44,7 +44,7 @@ const CombinedComponent = ({
             }`}
           />
         </div>
-        <div className="w-[60%] md:w-1/2 flex-grow">
+        <div className="w-[60%] xl:w-1/2 md:w-3/4 flex-grow">
           <h2 className="text-2xl md:text-3xl font-semibold text-primary leading-8 md:leading-10 mb-4">
             {header}
           </h2>

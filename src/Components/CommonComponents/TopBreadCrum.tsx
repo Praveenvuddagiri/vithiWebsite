@@ -22,7 +22,7 @@ const TopBreadCrum = ({ title, image, navigations }: { title: string, image: str
                     ))    
                     }
                 </div>
-                    <h1 className='text-lg md:text-4xl font-bold text-primary'>{title}</h1>
+                    <h1 className='text-lg md:text-xl lg:text-2xl font-bold text-primary'>{title}</h1>
             </div>
             <div className='flex justify-end'>
                 <img src={image} alt="top image" className='max-w-[90%]' />

@@ -6,9 +6,9 @@ const TabView = ({ tabs, currentTab, setCurrentTab }: any) => {
       {tabs?.map((tab: string) => {
         return (
           <div
-            className={`pt-[20px] pb-[20px] pr-[20px] pl-[20px] md:pr-[40px] md:pl-[40px] ${
+            className={`pt-[20px] pb-[20px] pr-[20px] pl-[20px] lg:pr-[40px] lg:pl-[40px] ${
               currentTab === tab ? "bg-secondary text-[#fff]" : "text-black"
-            } w-full md:w-fit`}
+            } w-full lg:w-fit`}
             onClick={() => setCurrentTab(tab)}
             key={tab} // Ensure each tab has a unique key
           >

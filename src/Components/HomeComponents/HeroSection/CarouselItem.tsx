@@ -4,7 +4,7 @@ import React from 'react';
 const CarouselItem = ({ title1, title2, description, imageUrl, discussButton }: { title1: string; title2: string; description: string; imageUrl: string, discussButton: any }) => {
   return (
     <div className="mb-16 animate-fade animate-once animate-duration-500 animate-delay-0 animate-ease-in-out">
-      <div className="flex relative flex-col-reverse md:flex-row justify-between h-[90vh] items-center ">
+      <div className="flex relative flex-col-reverse md:flex-row justify-between md:h-[70vh] h-[90vh] xl:h-[90vh] items-center ">
         <div className='absolute z-0 xl:-bottom-8 md:bottom-24 -bottom-28'>
           <video src="http://www.vithiitsolutions.com/images/particles.mp4" autoPlay loop muted
             className='opacity-25 w-[52rem]'></video>

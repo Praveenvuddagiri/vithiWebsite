@@ -18,7 +18,7 @@ const PostAccordion = ({postData, postNumber, setCurrentAccordion, isOpen, setIs
                         setIsOpen(true)
                 }}
             >
-                <div className="flex justify-between items-center pl-[50px] pr-[30px] py-[30px]  ">
+                <div className="flex justify-between items-center sm:pl-[30px] md:pl-[40px] xl:pl-[50px] pr-[30px] py-[30px]  ">
                     <div className='w-[90%] '>
                         <div className='flex justify-center'>
                             <div className='flex flex-row justify-between md:text-[14px] text-[10px] w-[90%] '>
