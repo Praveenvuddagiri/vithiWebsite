@@ -9,7 +9,7 @@ const FullContactForm = ({ image1,image2 }: { image1: string,image2: string }) =
         <img
           src={image1}
           alt="Image 2"
-          className="w-[85%] h-auto hidden md:block absolute object-cover z-10 top-4 right-0"
+          className="w-[75%] h-auto hidden md:block absolute object-cover z-10 top-16 right-0"
         />
       </div>
       <div className="">

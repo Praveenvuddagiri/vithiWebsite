@@ -3,7 +3,7 @@ import React from 'react';
 
 const VideoBackgroundComponent = ({videoUrl, title, content}: {videoUrl:string, title: string, content: string}) => {
   return (
-    <div className="relative w-full h-80 bg-gradient-to-t from-blue-900 via-blue-900 to-blue-400">
+    <div className="relative w-full h-80 bg-gradient-to-bl from-secondary to-secondary">
       <video
         src={videoUrl}
         autoPlay
