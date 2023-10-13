@@ -527,14 +527,8 @@
       {
         "component": "PartnersSection",
         "props": {
-          "partners": [
-            "https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg",
-            "https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg",
-            "https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg",
-            "https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg",
-            "https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg",
-            "https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg",
-            "https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"
+          "partners": ["https://res.cloudinary.com/dagmm478n/image/upload/v1697177033/vithi/ubl8h7rvq3bdsvyefzpy.png","https://res.cloudinary.com/dagmm478n/image/upload/v1697179877/vithi/qxf9eyzdizvxoa5llyjb.jpg","https://res.cloudinary.com/dagmm478n/image/upload/v1697180001/vithi/p0itxwikcrp9lfhrfdtm.webp"
+            
           ]
         }
       },

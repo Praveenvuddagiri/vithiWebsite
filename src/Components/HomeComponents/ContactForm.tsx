@@ -13,8 +13,8 @@ const ContactForm = () => {
         <div className="flex flex-col gap-4 ">
           <input type="text" placeholder="Full Name" className="p-2 focus:outline-none" />
           <div className="flex gap-4">
-            <input type="text"  placeholder="Email" className="p-2 w-full focus:outline-none"/>
-            <input type="text" placeholder="Phone Number" className=" p-2 w-full focus:outline-none"/>
+            <input type="email"  placeholder="Email" className="p-2 w-full focus:outline-none"/>
+            <input type="number" placeholder="Phone Number" className=" p-2 w-full focus:outline-none"/>
           </div>
         </div>
         <textarea
