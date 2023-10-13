@@ -9,7 +9,10 @@
         "props": {
           "title": "Custom technology solutions specific to your industry and business.",
           "image": "https://www.vithiitsolutions.com/images/4e0fecc1a564f2bedda9d6e00db11dda.png",
-          "navigations": ["services", "Aplication Development"]
+          "navigations": [
+            "services",
+            "Aplication Development"
+          ]
         }
       },
       {
@@ -92,7 +95,10 @@
         "props": {
           "image": "https://www.vithiitsolutions.com/images/f17938d66a310c7a9e6fc4b6e781b7ff.png",
           "title": "Empower Your Business with Our Data Science & Analytics Solutions. ",
-          "navigations": ["services", "Data Services"]
+          "navigations": [
+            "services",
+            "Data Services"
+          ]
         }
       },
       {
@@ -169,7 +175,10 @@
         "props": {
           "image": "https://www.vithiitsolutions.com/images/093645b0fa357477be35ea7c7ee51786.png",
           "title": "Empowering Digital Transformation through Integration",
-          "navigations": ["services", "Integration & Automation"]
+          "navigations": [
+            "services",
+            "Integration & Automation"
+          ]
         }
       },
       {
@@ -247,7 +256,10 @@
         "props": {
           "image": "https://www.vithiitsolutions.com/images/f0536a80a325c0fc96ad7f25a1a84443.png",
           "title": "Technologies that can change the way you look at the world",
-          "navigations": ["services", "Digital Innovation"]
+          "navigations": [
+            "services",
+            "Digital Innovation"
+          ]
         }
       },
       {
@@ -272,7 +284,12 @@
                 ],
                 "workList": {
                   "title": "Ecommerce Platforms We Work On:",
-                  "list": ["Bigcommerce", "Magento", "Shopify", "Woocommerce"]
+                  "list": [
+                    "Bigcommerce",
+                    "Magento",
+                    "Shopify",
+                    "Woocommerce"
+                  ]
                 }
               }
             },
@@ -353,7 +370,9 @@
         "props": {
           "title": " We are just an email, call or inquiry form away.",
           "image": "http://www.vithiitsolutions.com/images/e2161c861f0bf481f33750f909300ac8.png",
-          "navigations": ["Contact Us"]
+          "navigations": [
+            "Contact Us"
+          ]
         }
       },
       {
@@ -503,7 +522,6 @@
           "right": false,
           "header": "Digital Innovation",
           "para": "Our constantly evolving and refined expertise with technologies such as Blockchain, VR and Robotic Process Automation is creating support for businesses to create distinct digital-first solutions that promise superior returns on investment and delight customers across channels and platforms.",
-
           "links": [
             {
               "title": "eCommerce Platforms",
@@ -527,8 +545,9 @@
       {
         "component": "PartnersSection",
         "props": {
-          "partners": ["https://res.cloudinary.com/dagmm478n/image/upload/v1697177033/vithi/ubl8h7rvq3bdsvyefzpy.png","https://res.cloudinary.com/dagmm478n/image/upload/v1697179877/vithi/qxf9eyzdizvxoa5llyjb.jpg","https://res.cloudinary.com/dagmm478n/image/upload/v1697180001/vithi/p0itxwikcrp9lfhrfdtm.webp","https://res.cloudinary.com/dagmm478n/image/upload/v1697188038/vithi/m4cdnhcwnstshwy4s5te.png"
-            
+          "partners": [
+            "https://res.cloudinary.com/dagmm478n/image/upload/v1697212917/vithi/o-prtnr-clr-rgb_jvybkq.png",
+            "https://res.cloudinary.com/dagmm478n/image/upload/v1697214006/vithi/Salesforce_Corporate_Logo_RGB_koyaie.png"
           ]
         }
       },
@@ -545,7 +564,6 @@
         "props": {
           "image1": "http://www.vithiitsolutions.com/images/f1.png",
           "image2": "http://www.vithiitsolutions.com/images/f2.jpg"
-
         }
       }
     ]
@@ -560,7 +578,9 @@
         "props": {
           "title": "All Your Technology and Data Management Needs. One Group of Technology Experts.",
           "image": "https://www.vithiitsolutions.com/images/0a3116c138ebf8b4636c0eb67914c2be.png",
-          "navigations": ["About Us"]
+          "navigations": [
+            "About Us"
+          ]
         }
       },
       {
@@ -668,7 +688,9 @@
         "props": {
           "title": "We're always looking for talented people",
           "image": "http://www.vithiitsolutions.com/images/9fda3ccbc09fd6b1db76410e59c325d0.png",
-          "navigations": ["Careers"]
+          "navigations": [
+            "Careers"
+          ]
         }
       },
       {

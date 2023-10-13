@@ -48,15 +48,14 @@ const PartnersSection = ({ partners }: { partners: string[] }) => {
                 return (
                   <div
                     key={index}
-                    className={`w-full md:w-1/4 lg:w-1/6 p-4 flex `}
+                    className={`w-full md:w-1/4 lg:w-1/6 p-4 flex items-center`}
                     style={{ flex: `0 0 ${(100 / partners.length).toFixed(2)}%` }}
                   >
 
                     <img
                       src={partner}
                       alt={`Partner ${index + 1}`}
-                      className="mx-auto max-w-[180px] h-auto border-double border-2 border-light rounded-full "
-                      style={{ boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px" }}
+                      className="h-fit w-[40%] rounded-xl xl:p-4 md:p-3 p-2 mx-auto"
                     />
 
 
