@@ -21,7 +21,7 @@ const Navbar = ({
   useEffect(() => {
     const timeout = setTimeout(() => {
       setAnimateNavbar(false);
-    }, 1000);
+    }, 500);
 
     return () => clearTimeout(timeout);
   }, []);
@@ -42,7 +42,7 @@ const Navbar = ({
     <nav
       className={`fixed top-0 left-0 right-0 z-50 bg-white ${
         animateNavbar
-          ? "transform -translate-y-full transition-transform duration-1000 ease-in"
+          ? "transform -translate-y-full transition-transform duration-500 ease-in"
           : "transition-transform duration-300 ease-in-out translate-y-0"
       }`}
     >

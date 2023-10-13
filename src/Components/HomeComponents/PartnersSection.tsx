@@ -32,7 +32,7 @@ const PartnersSection = ({ partners }: { partners: string[] }) => {
   }, [currentSlide]);
 
   return (
-    <div className="bg-white py-10 flex justify-center mb-10 mt-10">
+    <div className="py-10 flex justify-center mt-10 " style={{backgroundColor: "rgb(246 246 246)"}}>
       <div className="container mx-auto w-[90%] md:w-[60%]">
         <h2 className="text-center text-3xl font-bold mb-8 text-primary ">Our Partners</h2>
         <div className="relative overflow-hidden">

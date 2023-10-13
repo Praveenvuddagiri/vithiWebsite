@@ -527,7 +527,7 @@
       {
         "component": "PartnersSection",
         "props": {
-          "partners": ["https://res.cloudinary.com/dagmm478n/image/upload/v1697177033/vithi/ubl8h7rvq3bdsvyefzpy.png","https://res.cloudinary.com/dagmm478n/image/upload/v1697179877/vithi/qxf9eyzdizvxoa5llyjb.jpg","https://res.cloudinary.com/dagmm478n/image/upload/v1697180001/vithi/p0itxwikcrp9lfhrfdtm.webp"
+          "partners": ["https://res.cloudinary.com/dagmm478n/image/upload/v1697177033/vithi/ubl8h7rvq3bdsvyefzpy.png","https://res.cloudinary.com/dagmm478n/image/upload/v1697179877/vithi/qxf9eyzdizvxoa5llyjb.jpg","https://res.cloudinary.com/dagmm478n/image/upload/v1697180001/vithi/p0itxwikcrp9lfhrfdtm.webp","https://res.cloudinary.com/dagmm478n/image/upload/v1697188038/vithi/m4cdnhcwnstshwy4s5te.png"
             
           ]
         }

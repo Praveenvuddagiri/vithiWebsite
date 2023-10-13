@@ -33,18 +33,18 @@ const CombinedComponent = ({
           <img
             src={image1}
             alt="Image 1"
-            className="w-full md:w-auto lg:w-4/5 xl:w-4/5 h-auto object-cover animate-jump-in animate-duration-1500ms animate-delay-300 animate-ease-in animate-normal"
+            className="w-full md:w-auto lg:w-4/5 xl:w-full h-auto object-cover animate-jump-in animate-duration-1500ms animate-delay-300 animate-ease-in animate-normal"
           />
 
           <img
             src={image2}
             alt="Image 2"
-            className={`absolute top-10 w-full md:w-auto lg:w-4/5 xl:w-4/5 h-auto z-10 ${
+            className={`absolute top-10 w-full md:w-auto lg:w-4/5 xl:w-full h-auto z-10 ${
               right ? "right-0" : "left-0"
             }`}
           />
         </div>
-        <div className="w-80 md:w-10/12 xl:w-10/12 flex-grow"> {/* Adjusted width properties */}
+        <div className="w-80 md:w-10/12 xl:w-11/12 flex-grow"> {/* Adjusted width properties */}
           <h2 className="text-2xl md:text-3xl font-semibold text-primary leading-8 md:leading-10 mb-4">
             {header}
           </h2>
