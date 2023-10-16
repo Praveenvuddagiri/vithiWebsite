@@ -11,7 +11,7 @@ const CarouselItem = ({ title1, title2, description, imageUrl, discussButton }: 
         </div>
         <div className="min-h- px-4 md:px-5 lg:px-8 xl:px-16 2xl:px-24 z-10 max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl w-[90%] md:w-full animate-fade-up animate-once animate-delay-100 animate-ease-in-out">
           <div className="flex flex-col justify-center p-4 items-center md:items-start">
-            <h2 className="text-3xl md:text-3xl xl:text-5xl font-bold leading-10 text-primary ">{title1} {title2}</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-3xl xl:text-5xl font-bold leading-10 text-primary ">{title1} {title2}</h2>
             <p className="mt-5 text-lg text-light leading-7 text-justify">{description}</p>
 
             <Link href={discussButton.link}>
