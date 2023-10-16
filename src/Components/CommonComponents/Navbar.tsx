@@ -63,21 +63,11 @@ const Navbar = ({
               onClick={toggleMenu}
               className="text-gray-600 dark:text-white hover:text-primary focus:outline-none focus:text-primary"
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
                 {isOpen ? (
-                  <FaTimes/>
+                  <FaTimes className="text-primary"/>
                 ) : (
-                  <FaBars />
+                  <FaBars className="text-primary" />
                 )}
-              </svg>
             </button>
           </div>
           <div
