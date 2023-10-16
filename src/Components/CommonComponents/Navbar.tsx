@@ -1,6 +1,9 @@
 "use client";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
+import { BiX } from "react-icons/bi";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = ({
   active,
@@ -52,7 +55,7 @@ const Navbar = ({
             <img
               src={logo}
               alt="Vithi Logo"
-              className="w-20 md:w-24 3xl:w-32"
+              className="w-16 sm:20 md:w-24 3xl:w-32"
             />
           </div>
           <div className="md:hidden">
@@ -70,9 +73,9 @@ const Navbar = ({
                 stroke="currentColor"
               >
                 {isOpen ? (
-                  <path d="M6 18L18 6M6 6l12 12"></path>
+                  <FaTimes/>
                 ) : (
-                  <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                  <FaBars />
                 )}
               </svg>
             </button>

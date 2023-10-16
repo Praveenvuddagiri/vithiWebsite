@@ -546,8 +546,8 @@
         "component": "PartnersSection",
         "props": {
           "partners": [
-            "https://res.cloudinary.com/dagmm478n/image/upload/v1697212917/vithi/o-prtnr-clr-rgb_jvybkq.png",
-            "https://res.cloudinary.com/dagmm478n/image/upload/v1697214006/vithi/Salesforce_Corporate_Logo_RGB_koyaie.png"
+            "https://res.cloudinary.com/dagmm478n/image/upload/v1697433852/vithi/Salesforce_Corporate_o3dilu.png",
+            "https://res.cloudinary.com/dagmm478n/image/upload/v1697433836/vithi/o-prtnr_b9b2nm.png"
           ]
         }
       },
