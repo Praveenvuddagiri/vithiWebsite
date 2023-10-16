@@ -79,7 +79,7 @@ const Navbar = ({
               {navItems.map((item: any) =>
                 item?.serviceTypes ? (
                   <li
-                    className={`relative ${
+                    className={`relative text-light ${ 
                       activeItem === "services"
                         ? "text-secondary border-b-2 border-b-secondary"
                         : "text-black"
