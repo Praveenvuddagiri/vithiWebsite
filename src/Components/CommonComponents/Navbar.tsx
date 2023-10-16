@@ -149,7 +149,7 @@ const Navbar = ({
                 onMouseLeave={closeServicesDropdown}
               >
                 <button
-                  className={` dark:text-white hover:text-primary focus:outline-none focus:text-primary ${
+                  className={` dark:text-white hover:text-primary text-light focus:outline-none focus:text-primary ${
                     servicesDropdownOpen ? "text-primary" : ""
                   }`}
                 >
