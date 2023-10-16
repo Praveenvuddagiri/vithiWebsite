@@ -48,7 +48,7 @@ const CombinedComponent = ({
           <h2 className="text-2xl md:text-3xl font-semibold text-primary leading-8 md:leading-10 mb-4">
             {header}
           </h2>
-          <div className="text-lg text-light mb-6 text-justify">
+          <div className="text-lg text-light mb-6 sm:text-justify">
             <p>{para}</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4">
