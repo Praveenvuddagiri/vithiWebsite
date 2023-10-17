@@ -30,7 +30,7 @@ const page = ({ params }: any) => {
           {
             component: "Footer",
             children: null,
-            props: componentJson[1].props
+            props: componentJson[2].props
           },
           {
             component: "MoveToUp",

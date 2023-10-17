@@ -9,10 +9,7 @@
         "props": {
           "title": "Custom technology solutions specific to your industry and business.",
           "image": "https://www.vithiitsolutions.com/images/4e0fecc1a564f2bedda9d6e00db11dda.png",
-          "navigations": [
-            "services",
-            "Aplication Development"
-          ]
+          "navigations": ["services", "Aplication Development"]
         }
       },
       {
@@ -95,10 +92,7 @@
         "props": {
           "image": "https://www.vithiitsolutions.com/images/f17938d66a310c7a9e6fc4b6e781b7ff.png",
           "title": "Empower Your Business with Our Data Science & Analytics Solutions. ",
-          "navigations": [
-            "services",
-            "Data Services"
-          ]
+          "navigations": ["services", "Data Services"]
         }
       },
       {
@@ -175,10 +169,7 @@
         "props": {
           "image": "https://www.vithiitsolutions.com/images/093645b0fa357477be35ea7c7ee51786.png",
           "title": "Empowering Digital Transformation through Integration",
-          "navigations": [
-            "services",
-            "Integration & Automation"
-          ]
+          "navigations": ["services", "Integration & Automation"]
         }
       },
       {
@@ -256,10 +247,7 @@
         "props": {
           "image": "https://www.vithiitsolutions.com/images/f0536a80a325c0fc96ad7f25a1a84443.png",
           "title": "Technologies that can change the way you look at the world",
-          "navigations": [
-            "services",
-            "Digital Innovation"
-          ]
+          "navigations": ["services", "Digital Innovation"]
         }
       },
       {
@@ -284,12 +272,7 @@
                 ],
                 "workList": {
                   "title": "Ecommerce Platforms We Work On:",
-                  "list": [
-                    "Bigcommerce",
-                    "Magento",
-                    "Shopify",
-                    "Woocommerce"
-                  ]
+                  "list": ["Bigcommerce", "Magento", "Shopify", "Woocommerce"]
                 }
               }
             },
@@ -370,9 +353,7 @@
         "props": {
           "title": " We are just an email, call or inquiry form away.",
           "image": "http://www.vithiitsolutions.com/images/e2161c861f0bf481f33750f909300ac8.png",
-          "navigations": [
-            "Contact Us"
-          ]
+          "navigations": ["Contact Us"]
         }
       },
       {
@@ -578,9 +559,7 @@
         "props": {
           "title": "All Your Technology and Data Management Needs. One Group of Technology Experts.",
           "image": "https://www.vithiitsolutions.com/images/0a3116c138ebf8b4636c0eb67914c2be.png",
-          "navigations": [
-            "About Us"
-          ]
+          "navigations": ["About Us"]
         }
       },
       {
@@ -688,9 +667,7 @@
         "props": {
           "title": "We're always looking for talented people",
           "image": "http://www.vithiitsolutions.com/images/9fda3ccbc09fd6b1db76410e59c325d0.png",
-          "navigations": [
-            "Careers"
-          ]
+          "navigations": ["Careers"]
         }
       },
       {
@@ -844,6 +821,22 @@
           "title": "Submit Your Resume",
           "description": "If you want to be part of our existing team, kindly fill in the form below and we will reach out to you as soon as possible.",
           "image": "http://www.vithiitsolutions.com/images/portrait-business-executive-us.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "blog",
+    "title": "blog",
+    "description": "VITHI IT SOLUTIONS",
+    "Components": [
+      {
+        "component": "Blog",
+
+        "props": {
+          "image": "https://blog.hubspot.com/hs-fs/hubfs/blog-homepage-designs_10.webp?width=975&height=543&name=blog-homepage-designs_10.webp",
+          "heading": "Blog Heading text example ",
+          "para": " Descriptions of blog will be here"
         }
       }
     ]

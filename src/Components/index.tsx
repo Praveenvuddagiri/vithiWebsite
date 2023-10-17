@@ -13,6 +13,7 @@ export {default as ContentBox} from '@/Components/HomeComponents/ContentBox';
 export {default as Hero} from '@/Components/HomeComponents/HeroSection';
 export {default as CombinedComponent} from '@/Components/HomeComponents/CombinedComponent';
 export {default as PartnersSection} from '@/Components/HomeComponents/PartnersSection';
+export {default as Blog} from '@/Components/HomeComponents/Blog';
 
 //About Components here
 export {default as AboutContentBox} from '@/Components/AboutComponents/AboutContentBox';
