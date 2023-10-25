@@ -15,7 +15,7 @@ const ContactDetails = ({ content, address, phonenumber }: { content: string, ad
           <h1 className='text-[16px] leading-[21px] uppercase text-secondary tracking-[1] font-[700]'>ADDRESS</h1>
           <h2 className='text-light font-sans font-[600] text-[16px] mb-[2px] md:font-[600] md:text-[20px]'>Corporate Office:</h2>
           <p className='text-light font-sans font-[600] text-[16px] mb-[1rem] md:font-[600] md:text-[20px]'>{address.addressOffice}</p>
-          <h2 className='text-light font-sans font-[600] text-[16px] mb-[2px] md:font-[600] md:text-[20px]'>Working Location:</h2>
+          <h2 className='text-secondary font-sans font-[600] text-[16px] mb-[2px] md:font-[600] md:text-[20px]'>Office Address:</h2>
           <p className='text-light font-sans font-[600] text-[16px] mb-[2px] md:font-[600] md:text-[20px]'>{address.addressWorkingLocation}</p>
         </div>
         <div>

@@ -48,13 +48,8 @@
                     "link": "/contact",
                     "activeName":"contact"
                 }
-            ],
-            "callButton": {
-                "title": "Schedule Call",
-                "link": ""
-            }
-        }
-    },
+            ]
+    }},
     {
         "componentName": "Footer",
         "props": {

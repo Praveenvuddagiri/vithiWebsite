@@ -73,9 +73,9 @@ const Navbar = ({
           <div
             className={`${
               isOpen ? "block" : "hidden"
-            } mt-4 md:flex md:items-center md:space-x-12 hidden`}
+            } mt-4 md:flex md:items-center md:space-x-6 hidden`}
           >
-            <ul className="md:flex 2xl:space-x-8 md:space-x-4 text-lg text-primary font-[500] text-[15px] capitalize items-center cursor-pointer">
+            <ul className="md:flex 2xl:space-x-8 md:space-x-4 text-2xl text-primary font-[500] capitalize items-center cursor-pointer">
               {navItems.map((item: any) =>
                 item?.serviceTypes ? (
                   <li
@@ -127,10 +127,10 @@ const Navbar = ({
                   </Link>
                 )
               )}
-
+{/* 
               <button className="bg-secondary rounded-full px-6 py-2 text-white items-start hover:text-secondary hover:bg-transparent hover:border-solid hover:border-2 hover:border-secondary">
                 {callButton.title}
-              </button>
+              </button> */}
             </ul>
           </div>
         </div>
@@ -180,10 +180,10 @@ const Navbar = ({
             </Link>
           )
         )}
-
+{/* 
         <button className="bg-secondary rounded-full p-2 sm:px-6 sm:py-2 text-white items-start hover:text-secondary hover:bg-transparent hover:border-solid hover:border-2 hover:border-secondary">
           {callButton.title}
-        </button>
+        </button> */}
       </ul>
     </div>
   )
