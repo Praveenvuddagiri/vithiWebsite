@@ -4,7 +4,7 @@ import { coreValuesData } from '@/utilities/constant'
 
 const CoreValuesList = ({valuesList}: {valuesList:any[]}) => {
   return (
-    <div className='p-12 bg-[#f3f6ff]'>
+    <div className='p-12 bg-[#f3f6ff]' id="core">
       <div className='text-center text-3xl font-bold mb-8'>
       <h1>CORE VALUES</h1>
       </div>

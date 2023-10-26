@@ -379,7 +379,8 @@
         "component": "ContactDetails",
         "props": {
           "content": "This could be the beginning of a collaboration that will create something of value. Something that both you and us can feel proud about having been a part of.",
-          "phonenumber": "+(91) 8977767382",
+          "phonenumber": "+(91) 9154152931",
+          "landline":"040-35180165",
           "address": {
             "addressOffice": "203, Cyber Crown, Sec-II Village, HUDA Techno Enclave, Madhapur, Telangana 500081",
             "addressWorkingLocation": "P. NO. 227, Street No. 7, Patrika Nagar, Madhapur, Hyderabad, Telangana 500081",

@@ -17,15 +17,15 @@
                     "serviceTypes": [
                       {
                           "name": "Our Vision",
-                          "link": "/aboutus#"
+                          "link": "/aboutus/#vision"
                       },
                       {
                           "name": "Key Differentiators",
-                          "link": "/aboutus#"
+                          "link": "/aboutus/#key"
                       },
                       {
                           "name": "Core Values",
-                          "link": "/aboutus#"
+                          "link": "/aboutus/#core"
                       }
                   ]
                 },

@@ -3,7 +3,7 @@ import React from 'react';
 
 const About = ({bgImage, content, differences}: {bgImage: string, content: string, differences:any[]}) => {
   return (
-    <div className='relative bg-[#0b163b] h-fit flex justify-center pt-10'>
+    <div className='relative bg-[#0b163b] h-fit flex justify-center pt-10 'id="key">
         <img src={bgImage} alt="" className='w-full h-full absolute inset-0 object-cover opacity-10' />
       <div className='w-[90%] flex flex-col gap-7'>
         <div className='text-white text-center'>
