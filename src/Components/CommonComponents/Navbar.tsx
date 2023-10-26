@@ -48,13 +48,13 @@ const Navbar = ({
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 bg-white ${
+      className={`fixed top-0 z-50 bg-white w-full ${
         animateNavbar
           ? "transform -translate-y-full transition-transform duration-500 ease-in"
           : "transition-transform duration-300 ease-in-out translate-y-0"
       }`}
     >
-      <div className="max-w-screen-5xl mx-6 p-4">
+      <div className="max-w-screen-2xl mx-6 p-4">
         <div className="flex items-end justify-between">
           <div className="flex-shrink-0 xl:ml-14">
             <img
@@ -80,7 +80,7 @@ const Navbar = ({
               isOpen ? "block" : "hidden"
             } mt-4 md:flex md:items-center md:space-x-6 hidden`}
           >
-            <ul className="md:flex 2xl:space-x-8 md:space-x-4 text-xl text-primary font-[500] capitalize items-center cursor-pointer">
+            <ul className="md:flex 2xl:space-x-8 md:space-x-4 text-base text-primary font-[500] capitalize items-center cursor-pointer">
               {navItems.map((item: any) =>
                 item?.serviceTypes ? (
                   <Link href={item.link}>
