@@ -469,19 +469,19 @@
           "links": [
             {
               "title": "Cloud/DevOps",
-              "link": "/services/data-services"
+              "link": "/services/data-services#tabs"
             },
             {
               "title": "Big Data and Data Management",
-              "link": "/services/data-services"
+              "link": "/services/data-services#tabs"
             },
             {
               "title": "Data Engineering & BI ",
-              "link": "/services/data-services"
+              "link": "/services/data-services#tabs"
             },
             {
-              "title": "Data Science & AI",
-              "link": "/services/data-services"
+              "title": "Data Science",
+              "link": "/services/data-services#tabs"
             }
           ]
         }
@@ -497,19 +497,19 @@
           "links": [
             {
               "title": "Integration",
-              "link": "/services/integration-automation"
+              "link": "/services/integration-automation#tabs"
             },
             {
               "title": "Test Automation",
-              "link": "/services/integration-automation"
+              "link": "/services/integration-automation#tabs"
             },
             {
               "title": "Serverless Computing",
-              "link": "/services/integration-automation"
+              "link": "/services/integration-automation#tabs"
             },
             {
               "title": "IoT",
-              "link": "/services/integration-automation"
+              "link": "/services/integration-automation#tabs"
             }
           ]
         }
@@ -525,19 +525,19 @@
           "links": [
             {
               "title": "eCommerce Platforms",
-              "link": "/services/digital-innovation"
+              "link": "/services/digital-innovation#tabs"
             },
             {
               "title": "Virtual Reality",
-              "link": "/services/digital-innovation"
+              "link": "/services/digital-innovation#tabs"
             },
             {
               "title": "Robotics",
-              "link": "/services/digital-innovation"
+              "link": "/services/digital-innovation#tabs"
             },
             {
               "title": "Blockchain",
-              "link": "/services/digital-innovation"
+              "link": "/services/digital-innovation#tabs"
             }
           ]
         }

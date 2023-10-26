@@ -17,7 +17,10 @@ const Navbar = ({
   callButton: any;
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState<any>({
+    state: false,
+    item: "",
+  });
   const [activeItem, setActiveItem] = useState(active);
   const [animateNavbar, setAnimateNavbar] = useState(true);
 
@@ -33,12 +36,14 @@ const Navbar = ({
     setIsOpen(!isOpen);
   };
 
-  const toggleServicesDropdown = () => {
-    setServicesDropdownOpen(true);
+  const toggleServicesDropdown = (itemName: string) => {
+    const obj = { state: true, item: itemName };
+    setServicesDropdownOpen(obj);
   };
 
-  const closeServicesDropdown = () => {
-    setServicesDropdownOpen(false);
+  const closeServicesDropdown = (itemName: string) => {
+    const obj = { state: false, item: itemName };
+    setServicesDropdownOpen(obj);
   };
 
   return (
@@ -63,11 +68,11 @@ const Navbar = ({
               onClick={toggleMenu}
               className="text-gray-600 dark:text-white hover:text-primary focus:outline-none focus:text-primary"
             >
-                {isOpen ? (
-                  <FaTimes className="text-primary"/>
-                ) : (
-                  <FaBars className="text-primary" />
-                )}
+              {isOpen ? (
+                <FaTimes className="text-primary" />
+              ) : (
+                <FaBars className="text-primary" />
+              )}
             </button>
           </div>
           <div
@@ -75,43 +80,50 @@ const Navbar = ({
               isOpen ? "block" : "hidden"
             } mt-4 md:flex md:items-center md:space-x-6 hidden`}
           >
-            <ul className="md:flex 2xl:space-x-8 md:space-x-4 text-2xl text-primary font-[500] capitalize items-center cursor-pointer">
+            <ul className="md:flex 2xl:space-x-8 md:space-x-4 text-xl text-primary font-[500] capitalize items-center cursor-pointer">
               {navItems.map((item: any) =>
                 item?.serviceTypes ? (
+                  <Link href={item.link}>
                   <li
-                    className={`relative text-light ${ 
-                      activeItem === "services"
+                    className={`relative text-light ${
+                      activeItem === item.activeName
                         ? "text-secondary border-b-2 border-b-secondary"
                         : "text-black"
                     } hover:border-b-2 hover:border-b-secondary`}
-                    onMouseEnter={toggleServicesDropdown}
-                    onMouseLeave={closeServicesDropdown}
-                    onClick={() => setActiveItem("services")}
+                    onMouseEnter={() => toggleServicesDropdown(item.activeName)}
+                    onMouseLeave={() => closeServicesDropdown(item.activeName)}
+                    onClick={() => setActiveItem(item.activeName)}
                   >
                     <button
                       className={`text-gray-600 dark:text-white hover:text-primary focus:outline-none focus:text-primary ${
                         servicesDropdownOpen ? "text-primary" : ""
                       }`}
                     >
-                      Services
+                      {item.name}
                     </button>
-                    {servicesDropdownOpen && (
-                      <ul
-                        className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-72 p-2 text-secondary leading-[22px] font-[400]"
-                        onMouseEnter={toggleServicesDropdown}
-                        onMouseLeave={closeServicesDropdown}
-                      >
-                        {item.serviceTypes.map((ser: any) => (
-                          <Link href={ser.link}>
-                            <li className="px-3 py-2 hover:bg-light hover:text-white text-primary">
-                              <a href="#">{ser.name}</a>
-                            </li>
-                            <hr />
-                          </Link>
-                        ))}
-                      </ul>
-                    )}
+                    {servicesDropdownOpen.state &&
+                      servicesDropdownOpen.item === item.activeName && (
+                        <ul
+                          className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-72 p-2 text-secondary leading-[22px] font-[400]"
+                          onMouseEnter={() =>
+                            toggleServicesDropdown(item.activeName)
+                          }
+                          onMouseLeave={() =>
+                            closeServicesDropdown(item.activeName)
+                          }
+                        >
+                          {item.serviceTypes.map((ser: any) => (
+                            <Link href={ser.link}>
+                              <li className="px-3 py-2 hover:bg-light hover:text-white text-primary">
+                                <a href="#">{ser.name}</a>
+                              </li>
+                              <hr />
+                            </Link>
+                          ))}
+                        </ul>
+                      )}
                   </li>
+                  </Link>
                 ) : (
                   <Link href={item.link}>
                     <li
@@ -127,7 +139,7 @@ const Navbar = ({
                   </Link>
                 )
               )}
-{/* 
+              {/* 
               <button className="bg-secondary rounded-full px-6 py-2 text-white items-start hover:text-secondary hover:bg-transparent hover:border-solid hover:border-2 hover:border-secondary">
                 {callButton.title}
               </button> */}
@@ -135,60 +147,62 @@ const Navbar = ({
           </div>
         </div>
       </div>
-      
-{
-  isOpen && (
-    <div className="md:hidden mt-3 p-4">
-      <ul className="flex flex-col space-y-4 text-lg   text-primary">
-        {navItems.map((item: any) =>
-          item?.serviceTypes ? (
-            <>
-              <li
-                className="relative"
-                onMouseEnter={toggleServicesDropdown}
-                onMouseLeave={closeServicesDropdown}
-              >
-                <button
-                  className={` dark:text-white hover:text-primary text-light focus:outline-none focus:text-primary ${
-                    servicesDropdownOpen ? "text-primary" : ""
-                  }`}
-                >
-                  Services
-                </button>
-                {servicesDropdownOpen && (
-                  <ul
-                    className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-64 text-gray-600 p-2"
-                    onMouseEnter={toggleServicesDropdown}
-                    onMouseLeave={closeServicesDropdown}
+
+      {isOpen && (
+        <div className="md:hidden mt-3 p-4">
+          <ul className="flex flex-col space-y-4 text-lg   text-primary">
+            {navItems.map((item: any) =>
+              item?.serviceTypes ? (
+                <>
+                  <li
+                    className="relative"
+                    onMouseEnter={() => toggleServicesDropdown(item.activeName)}
+                    onMouseLeave={() => closeServicesDropdown(item.activeName)}
                   >
-                    {item.serviceTypes.map((ser: any) => (
-                      <Link href={ser.link}>
-                        <li className="px-3 py-2 hover:bg-gray-100 w-60">
-                          <a>{ser.name}</a>
-                        </li>
-                      </Link>
-                    ))}
-                  </ul>
-                )}
-              </li>
-              <hr />
-            </>
-          ) : (
-            <Link href={item.link}>
-              <li>{item.name}</li>
-              <hr />
-            </Link>
-          )
-        )}
-{/* 
+                    <button
+                      className={` dark:text-white hover:text-primary text-light focus:outline-none focus:text-primary ${
+                        servicesDropdownOpen ? "text-primary" : ""
+                      }` }
+                    >
+                      {item.name}
+                    </button>
+                    {servicesDropdownOpen.state &&
+                      servicesDropdownOpen.item === item.activeName && (
+                      <ul
+                        className="absolute bg-white border border-gray-300 rounded-lg shadow-lg w-64 text-gray-600 p-2"
+                        onMouseEnter={() =>
+                          toggleServicesDropdown(item.activeName)
+                        }
+                        onMouseLeave={() =>
+                          closeServicesDropdown(item.activeName)
+                        }
+                      >
+                        {item.serviceTypes.map((ser: any) => (
+                          <Link href={ser.link}>
+                            <li className="px-3 py-2 hover:bg-gray-100 w-60">
+                              <a>{ser.name}</a>
+                            </li>
+                          </Link>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                  <hr />
+                </>
+              ) : (
+                <Link href={item.link}>
+                  <li>{item.name}</li>
+                  <hr />
+                </Link>
+              )
+            )}
+            {/* 
         <button className="bg-secondary rounded-full p-2 sm:px-6 sm:py-2 text-white items-start hover:text-secondary hover:bg-transparent hover:border-solid hover:border-2 hover:border-secondary">
           {callButton.title}
         </button> */}
-      </ul>
-    </div>
-  )
-}
-
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };

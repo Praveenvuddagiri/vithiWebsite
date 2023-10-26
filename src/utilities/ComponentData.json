@@ -13,7 +13,21 @@
                 {
                     "name": "About Us",
                     "link": "/aboutus",
-                    "activeName":"aboutus"
+                    "activeName":"aboutus",
+                    "serviceTypes": [
+                      {
+                          "name": "Our Vision",
+                          "link": "/aboutus#"
+                      },
+                      {
+                          "name": "Key Differentiators",
+                          "link": "/aboutus#"
+                      },
+                      {
+                          "name": "Core Values",
+                          "link": "/aboutus#"
+                      }
+                  ]
                 },
                 {
                     "name": "Services",
