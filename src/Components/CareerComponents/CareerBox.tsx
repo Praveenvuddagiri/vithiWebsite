@@ -11,9 +11,9 @@ const CareerBox = ({bgimage, careersData}: {bgimage: string, careersData: any[]}
         className='w-full h-full absolute inset-0 object-cover opacity-10'
       />
       <div className=''>
-        <h2 className='text-[24px] md:text-[36px] leading-[36px] text-center mb-[15px] md:mb-[30px] text-white capitalize font-[700]'>
+        <h1 className='text-[24px] md:text-[36px] leading-[36px] text-center mb-[15px] md:mb-[30px] text-white capitalize font-[700]'>
           A Career With Real Benefits
-        </h2>
+        </h1>
       </div>
       <div className='grid gap-7 sm:grid-cols-12'>
         {careersData?.map((e, index) => {

@@ -19,9 +19,9 @@ const CareerContactForm = ({
       />
 
       <div className="xl:absolute xl:h-full top-0 right-0 w-full xl:w-3/5 bg-[#84b85dcc] opacity-95 text-white font-bold text-left px-4 sm:p-8 md:px-24 md:py-14 xl:px-32 mt-6 md:m-0">
-        <h2 className="text-[#fff] text-3xl md:text-4xl mb-5 mt-8 lg:mt-8 capitalize font-[700] leading-10 p-4">
+        <h1 className="text-[#fff] text-3xl md:text-4xl mb-5 mt-8 lg:mt-8 capitalize font-[700] leading-10 p-4">
           {title}
-        </h2>
+        </h1>
         <p className="text-base sm:text-lg md:text-xl leading-6 sm:leading-8 text-[#fff] font-light pb-4">
           {description}
         </p>

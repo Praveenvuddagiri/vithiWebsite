@@ -45,9 +45,9 @@ const CombinedComponent = ({
           />
         </div>
         <div className="w-80 md:w-10/12 xl:w-11/12"> {/* Adjusted width properties */}
-          <h2 className="text-2xl md:text-3xl font-semibold text-primary leading-8 md:leading-10 mb-4">
+          <h1 className="text-2xl md:text-3xl font-semibold text-primary leading-8 md:leading-10 mb-4">
             {header}
-          </h2>
+          </h1>
           <div className="text-lg text-light mb-6 sm:text-justify">
             <p>{para}</p>
           </div>

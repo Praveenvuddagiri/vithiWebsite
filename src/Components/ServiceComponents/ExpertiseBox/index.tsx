@@ -12,7 +12,7 @@ const ExpertiseBox = ({ expertise }: { expertise: any }) => {
   return (
     <div className='w-full flex flex-col items-center justify-center mt-20 mb-24 gap-8' id='tabs'>
       <div className='text-primary text-center font-[600] text-[42px] leading-[60px] w-[80%]'>
-        <h2>Our expertise</h2>
+        <h1>Our expertise</h1>
       </div>
       <TabView tabs={tabs} currentTab={currentTab} setCurrentTab={setCurrentTab} />
       <div className='w-[85%] flex flex-col justify-center'>

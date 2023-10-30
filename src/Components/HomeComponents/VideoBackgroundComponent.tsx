@@ -14,9 +14,9 @@ const VideoBackgroundComponent = ({videoUrl, title, content}: {videoUrl:string, 
 
       <div className="container mx-auto flex flex-col justify-end items-end h-full">
         <div className="p-10 relative z-10">
-          <h2 className="text-4xl md:text-5xl xl:text-7xl text-white font-bold mb-4">
+          <h1 className="text-4xl md:text-5xl xl:text-7xl text-white font-bold mb-4">
             {title}
-          </h2>
+          </h1>
           <div className="flex flex-col md:flex-row md:justify-between">
             <p className="text-white text-sm md:text-xl mb-6">
              {content}

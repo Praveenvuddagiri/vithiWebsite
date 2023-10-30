@@ -8,11 +8,11 @@ const HomeServicesBox = ({ servicesData, image, title1, title2, description }: {
             <div className="w-11/12 md:w-10/12 lg:w-7/5 bg-gradient-to-bl from-secondary to-primary pt-7 pr-7 pb-7 pl-7 xl:pb-0 xl:pl-0 rounded-lg shadow-xl ">
                 <div className="flex flex-col md:flex-row gap-4">
                     <div className="w-full md:w-1/3 flex flex-col justify-center items-center">
-                        <h2 className="text-white text-4xl font-bold mb-4 leading-10">
+                        <h1 className="text-white text-4xl font-bold mb-4 leading-10">
                             {title1}
                             <br />
                             {title2}
-                        </h2>
+                        </h1>
                         <img
                             src={image}
                             alt="Left Image"
